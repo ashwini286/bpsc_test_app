@@ -12,10 +12,10 @@ const TopicsGrid = ({ topics, onStartTest }) => {
         {/* Title Section */}
         <div className="text-center mb-5">
           <h1 className="fw-bold mb-3" style={{ fontSize: "2.5rem", color: "#1f2937" }}>
-            Online MCQ Test Platform
+           Online MCQ Test Portal for BPSC & STET
           </h1>
           <p className="fs-5" style={{ color: "#4b5563" }}>
-            Choose a topic and challenge yourself with 500+ questions
+           Challenge yourself, track progress, and prepare smarter with 500+ questions.
           </p>
         </div>
 
