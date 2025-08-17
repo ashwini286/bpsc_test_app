@@ -23,25 +23,25 @@ const TestHeader = ({
   return (
     <div className="bg-white border-bottom shadow-sm">
       <div className="container py-3">
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="row align-items-center">
           {/* Left Section */}
-          <div>
+          <div className="col-12 col-md-6 mb-3 mb-md-0 gap">
             <h2 className="h5 fw-semibold text-dark mb-1">{selectedTopic}</h2>
-            <p className="small text-secondary mb-0">
+            <p className="small text-secondary  text-center text-md-start mb-0">
               Question {currentQuestion + 1} of {totalQuestions}
             </p>
           </div>
 
           {/* Right Section */}
-          <div className="d-flex align-items-center gap-4">
+          <div className="col-12 col-md-6 d-flex flex-column flex-md-row align-items-md-center gap-3 justify-content-md-end">
             {/* Timer */}
-            <div className="d-flex align-items-center text-secondary gap-2">
+            <div className="d-flex align-items-center text-secondary gap-2 justify-content-center mb-2 mb-md-0">
               <Clock style={{ width: "1rem", height: "1rem" }} />
               <span>{formatTime(timeElapsed)}</span>
             </div>
 
             {/* Buttons */}
-            <div className="d-flex gap-2">
+            <div className="d-flex gap-2 justify-content-center">
               <button
                 onClick={onPause}
                 className={`btn d-flex align-items-center gap-2 fw-medium ${
