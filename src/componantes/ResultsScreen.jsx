@@ -1,6 +1,9 @@
 import { BarChart3 } from "lucide-react";
 
-const ResultsScreen = ({ results, selectedTopic, onBackToTopics }) => {
+const ResultsScreen = ({ results, selectedTopic, onBackToTopics, questions = [],
+  answers = {},
+}) => {
+
   return (
     <div className="bg-white rounded-3 shadow p-4">
       <div className="text-center mb-4">
@@ -64,7 +67,57 @@ const ResultsScreen = ({ results, selectedTopic, onBackToTopics }) => {
         </div>
       </div>
 
-      <div className="text-center">
+    <div className="mt-5">
+        <h4 className="fw-bold mb-3">Review Answers</h4>
+        {Array.isArray(questions) && questions.length > 0 ? (
+          questions.map((q, idx) => {
+            const userAnswer = answers[idx];
+            const isCorrect = userAnswer === q.correct;
+            return (
+              <div key={idx} className="mb-4 p-3 border rounded-3">
+                <div className="fw-semibold mb-2">{idx + 1}. {q.question}</div>
+                <div>
+                  {q.options.map((opt, optIdx) => {
+                    let optionStyle = {};
+                    if (userAnswer === optIdx) {
+                      optionStyle.backgroundColor = isCorrect
+                        ? "#d1fae5" // green for correct
+                        : "#fee2e2"; // red for wrong
+                    }
+                    if (!isCorrect && optIdx === q.correct) {
+                      optionStyle.backgroundColor = "#dbeafe"; // blue for correct answer if user was wrong
+                    }
+                    return (
+                      <div
+                        key={optIdx}
+                        className="p-2 mb-1 rounded"
+                        style={optionStyle}
+                      >
+                        <span className="me-2">{String.fromCharCode(65 + optIdx)}.</span>
+                        {opt}
+                        {userAnswer === optIdx && (
+                          <strong className="ms-2">
+                            (Your answer)
+                          </strong>
+                        )}
+                        {!isCorrect && optIdx === q.correct && (
+                          <strong className="ms-2 text-primary">
+                            (Correct answer)
+                          </strong>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })
+        ) : (
+          <div className="text-muted">No questions to review.</div>
+        )}
+      </div>
+
+  <div className="text-center">
         <button
           onClick={onBackToTopics}
           className="btn btn-primary px-4 py-2 fw-semibold"

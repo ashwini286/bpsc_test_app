@@ -1,8 +1,8 @@
-import React from 'react';
-import TestHeader from './TestHeader';
-import QuestionCard from './QuestionCard';
-import PauseScreen from './PauseScreen';
-import ResultsScreen from './ResultsScreen';
+import React from "react";
+import TestHeader from "./TestHeader";
+import QuestionCard from "./QuestionCard";
+import PauseScreen from "./PauseScreen";
+import ResultsScreen from "./ResultsScreen";
 
 const TestInterface = ({
   selectedTopic,
@@ -17,7 +17,7 @@ const TestInterface = ({
   onNextQuestion,
   onPause,
   onEndTest,
-  onBackToTopics
+  onBackToTopics,
 }) => {
   const currentQ = questions[currentQuestion];
 
@@ -43,6 +43,8 @@ const TestInterface = ({
             results={results}
             selectedTopic={selectedTopic}
             onBackToTopics={onBackToTopics}
+            questions={questions}
+            answers={answers}
           />
         ) : (
           <QuestionCard

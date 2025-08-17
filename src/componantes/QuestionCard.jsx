@@ -6,6 +6,8 @@ const QuestionCard = ({
   onBackToTopics,
   isLastQuestion
 }) => {
+  console.log("QuestionCard rendered with question:", question);
+  console.log("QuestionCard rendered with selectedAnswer:", selectedAnswer);
   return (
     <div className="bg-white rounded-3 shadow p-4">
       <div className="mb-4">
