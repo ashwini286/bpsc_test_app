@@ -1,7 +1,7 @@
 import { BarChart3 } from 'lucide-react';
 
-const TopicCard = ({ topicName, topicData, onStartTest }) => {
-  console.log("TopicCard data  with:", topicData.topicData);
+const TopicCard = ({ topicName, topicData, onStartTest,subtopics }) => {
+
   return (
     <div
       className="card shadow border-0 h-100"
@@ -24,7 +24,7 @@ const TopicCard = ({ topicName, topicData, onStartTest }) => {
           {topicName}
         </h5>
         <p className="text-muted mb-3">
-          {Array.isArray(topicData.questions) ? topicData.questions.length : 0} Multiple Choice Questions
+        500+ Multiple Choice Questions
         </p>
         {/* Info Row */}
         <div className="d-flex justify-content-between text-muted small mb-4">
