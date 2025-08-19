@@ -9443,6 +9443,412 @@ const chapters = {
                     },
                 ],
             },
+            "Mix OS questions": {
+                color: "#FBBF24",
+                questions: [
+                    { id: 1, question: "Which of the following is the main purpose of an Operating System?", options: ["To provide hardware only", "To provide interface between user and hardware", "To develop applications", "To manage compilers"], correct: 2 },
+
+                    { id: 2, question: "Which of the following is NOT a type of Operating System?", options: ["Batch OS", "Time-Sharing OS", "Compiler OS", "Distributed OS"], correct: 3 },
+
+                    { id: 3, question: "In multiprogramming, the CPU is ___", options: ["always busy", "always idle", "used rarely", "used only for one process"], correct: 1 },
+
+                    { id: 4, question: "Round Robin scheduling is mainly designed for ___", options: ["Batch systems", "Interactive systems", "Real-time systems", "None"], correct: 2 },
+
+                    { id: 5, question: "Which of these is volatile memory?", options: ["ROM", "Hard Disk", "RAM", "CD"], correct: 3 },
+
+                    { id: 6, question: "Which of these is not a CPU scheduling algorithm?", options: ["FCFS", "SJF", "Round Robin", "Swapping"], correct: 4 },
+
+                    { id: 7, question: "Deadlock occurs when processes are ___", options: ["Running independently", "Competing for same resource", "Idle", "In ready queue"], correct: 2 },
+
+                    { id: 8, question: "Which memory management technique suffers from external fragmentation?", options: ["Paging", "Segmentation", "Contiguous allocation", "Virtual memory"], correct: 3 },
+
+                    { id: 9, question: "The process control block (PCB) contains ___", options: ["User data only", "Process information", "Compiler code", "OS files"], correct: 2 },
+
+                    { id: 10, question: "Thrashing occurs when ___", options: ["CPU is overloaded", "Too many page faults", "Disk crashes", "Deadlock occurs"], correct: 2 },
+
+                    { id: 11, question: "Which of these is NOT a state of a process?", options: ["Running", "Ready", "Waiting", "Linked"], correct: 4 },
+
+                    { id: 12, question: "Which OS is open source?", options: ["Windows", "Linux", "MacOS", "MS-DOS"], correct: 2 },
+
+                    { id: 13, question: "The short-term scheduler selects ___", options: ["Jobs from disk", "Processes from ready queue", "Pages from memory", "Files from storage"], correct: 2 },
+
+                    { id: 14, question: "Virtual memory is implemented using ___", options: ["Disk", "Cache", "Registers", "ROM"], correct: 1 },
+
+                    { id: 15, question: "Which one is the fastest memory?", options: ["Hard disk", "Cache", "RAM", "Virtual memory"], correct: 2 },
+
+                    { id: 16, question: "Semaphore is used for ___", options: ["Scheduling", "Synchronization", "Deadlock recovery", "Memory allocation"], correct: 2 },
+
+                    { id: 17, question: "Which page replacement algorithm suffers from Belady’s anomaly?", options: ["FIFO", "LRU", "Optimal", "Clock"], correct: 1 },
+
+                    { id: 18, question: "A context switch happens when ___", options: ["CPU changes from one process to another", "Memory is full", "Deadlock occurs", "File is closed"], correct: 1 },
+
+                    { id: 19, question: "Which file system is used in Windows?", options: ["EXT4", "NTFS", "FAT32", "Both FAT32 and NTFS"], correct: 4 },
+
+                    { id: 20, question: "Which of the following is NOT a type of kernel?", options: ["Monolithic", "Microkernel", "Hybrid", "Batch kernel"], correct: 4 },
+
+                    {
+                        "id": 21,
+                        "question": "Which part of the operating system manages the execution of processes?",
+                        "options": ["Memory manager", "Process manager", "File manager", "I/O manager"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 22,
+                        "question": "Which scheduling algorithm selects the process that has been waiting the longest?",
+                        "options": ["Round Robin", "First Come First Serve", "Shortest Job Next", "Priority Scheduling"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 23,
+                        "question": "Which of the following is NOT an example of an operating system?",
+                        "options": ["Windows", "Linux", "Oracle", "macOS"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 24,
+                        "question": "Page replacement algorithms are used in:",
+                        "options": ["File management", "Process management", "Virtual memory management", "CPU scheduling"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 25,
+                        "question": "Which CPU scheduling algorithm can lead to starvation?",
+                        "options": ["Round Robin", "First Come First Serve", "Priority Scheduling", "Shortest Remaining Time"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 26,
+                        "question": "Which type of OS is used in mobile phones?",
+                        "options": ["Real-time OS", "Batch OS", "Embedded OS", "Multiprogramming OS"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 27,
+                        "question": "What is the main purpose of device drivers?",
+                        "options": ["Provide security", "Allow communication between OS and hardware", "Manage memory", "Execute processes"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 28,
+                        "question": "Which command is used to change file permissions in UNIX/Linux?",
+                        "options": ["ls", "chmod", "grep", "pwd"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 29,
+                        "question": "In Round Robin scheduling, the key parameter is:",
+                        "options": ["Priority", "Time quantum", "Burst time", "Arrival time"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 30,
+                        "question": "Which file system is commonly used in Windows OS?",
+                        "options": ["ext4", "FAT32/NTFS", "HFS+", "ZFS"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 31,
+                        "question": "Deadlock can occur when processes hold resources and wait for:",
+                        "options": ["New resources", "Other processes", "Other held resources", "CPU time"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 32,
+                        "question": "Which of the following is a real-time operating system?",
+                        "options": ["Windows 10", "Linux Ubuntu", "VxWorks", "macOS"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 33,
+                        "question": "Which OS concept provides multiple users to work simultaneously?",
+                        "options": ["Multiprogramming", "Multitasking", "Time-sharing", "Batch processing"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 34,
+                        "question": "Which data structure is used for implementing Round Robin scheduling?",
+                        "options": ["Stack", "Queue", "Priority Queue", "Linked List"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 35,
+                        "question": "The process of loading pages from disk to memory when needed is called:",
+                        "options": ["Paging", "Demand paging", "Segmentation", "Swapping"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 36,
+                        "question": "Which of these is NOT a CPU scheduling criterion?",
+                        "options": ["Turnaround time", "Waiting time", "Response time", "File size"],
+                        "correct": 4
+                    },
+                    {
+                        "id": 37,
+                        "question": "Which OS architecture gives maximum security?",
+                        "options": ["Monolithic", "Layered", "Microkernel", "Distributed"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 38,
+                        "question": "The critical section problem occurs in:",
+                        "options": ["Memory management", "File management", "Process synchronization", "I/O management"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 39,
+                        "question": "Which algorithm is used in page replacement that removes the least recently used page?",
+                        "options": ["FIFO", "LRU", "Optimal", "Clock"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 40,
+                        "question": "Which part of the OS deals with user interaction?",
+                        "options": ["Kernel", "Shell", "Device driver", "Scheduler"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 21,
+                        "question": "Which part of the operating system manages the execution of processes?",
+                        "options": ["Memory manager", "Process manager", "File manager", "I/O manager"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 22,
+                        "question": "Which scheduling algorithm selects the process that has been waiting the longest?",
+                        "options": ["Round Robin", "First Come First Serve", "Shortest Job Next", "Priority Scheduling"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 23,
+                        "question": "Which of the following is NOT an example of an operating system?",
+                        "options": ["Windows", "Linux", "Oracle", "macOS"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 24,
+                        "question": "Page replacement algorithms are used in:",
+                        "options": ["File management", "Process management", "Virtual memory management", "CPU scheduling"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 25,
+                        "question": "Which CPU scheduling algorithm can lead to starvation?",
+                        "options": ["Round Robin", "First Come First Serve", "Priority Scheduling", "Shortest Remaining Time"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 26,
+                        "question": "Which type of OS is used in mobile phones?",
+                        "options": ["Real-time OS", "Batch OS", "Embedded OS", "Multiprogramming OS"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 27,
+                        "question": "What is the main purpose of device drivers?",
+                        "options": ["Provide security", "Allow communication between OS and hardware", "Manage memory", "Execute processes"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 28,
+                        "question": "Which command is used to change file permissions in UNIX/Linux?",
+                        "options": ["ls", "chmod", "grep", "pwd"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 29,
+                        "question": "In Round Robin scheduling, the key parameter is:",
+                        "options": ["Priority", "Time quantum", "Burst time", "Arrival time"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 30,
+                        "question": "Which file system is commonly used in Windows OS?",
+                        "options": ["ext4", "FAT32/NTFS", "HFS+", "ZFS"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 31,
+                        "question": "Deadlock can occur when processes hold resources and wait for:",
+                        "options": ["New resources", "Other processes", "Other held resources", "CPU time"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 32,
+                        "question": "Which of the following is a real-time operating system?",
+                        "options": ["Windows 10", "Linux Ubuntu", "VxWorks", "macOS"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 33,
+                        "question": "Which OS concept provides multiple users to work simultaneously?",
+                        "options": ["Multiprogramming", "Multitasking", "Time-sharing", "Batch processing"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 34,
+                        "question": "Which data structure is used for implementing Round Robin scheduling?",
+                        "options": ["Stack", "Queue", "Priority Queue", "Linked List"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 35,
+                        "question": "The process of loading pages from disk to memory when needed is called:",
+                        "options": ["Paging", "Demand paging", "Segmentation", "Swapping"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 36,
+                        "question": "Which of these is NOT a CPU scheduling criterion?",
+                        "options": ["Turnaround time", "Waiting time", "Response time", "File size"],
+                        "correct": 4
+                    },
+                    {
+                        "id": 37,
+                        "question": "Which OS architecture gives maximum security?",
+                        "options": ["Monolithic", "Layered", "Microkernel", "Distributed"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 38,
+                        "question": "The critical section problem occurs in:",
+                        "options": ["Memory management", "File management", "Process synchronization", "I/O management"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 39,
+                        "question": "Which algorithm is used in page replacement that removes the least recently used page?",
+                        "options": ["FIFO", "LRU", "Optimal", "Clock"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 40,
+                        "question": "Which part of the OS deals with user interaction?",
+                        "options": ["Kernel", "Shell", "Device driver", "Scheduler"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 41,
+                        "question": "Which of the following is NOT a function of an operating system?",
+                        "options": ["Process management", "Memory management", "Web page design", "File management"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 42,
+                        "question": "In multiprogramming, the main advantage is:",
+                        "options": ["Faster execution of a single process", "Efficient CPU utilization", "Simple OS design", "No need for scheduling"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 43,
+                        "question": "Which scheduling algorithm gives first priority to the shortest job?",
+                        "options": ["FCFS", "SJF", "Round Robin", "Priority Scheduling"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 44,
+                        "question": "Virtual memory is:",
+                        "options": ["An extension of RAM using disk storage", "Another name for cache memory", "Memory only for virtual machines", "A replacement for physical memory"],
+                        "correct": 1
+                    },
+                    {
+                        "id": 45,
+                        "question": "Thrashing in operating systems is caused by:",
+                        "options": ["High CPU usage", "Excessive page swapping", "Low disk I/O", "Multiple printers"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 46,
+                        "question": "Which of these is a non-preemptive scheduling algorithm?",
+                        "options": ["FCFS", "Round Robin", "SRTF", "Priority (preemptive)"],
+                        "correct": 1
+                    },
+                    {
+                        "id": 47,
+                        "question": "In OS, semaphore is used for:",
+                        "options": ["File organization", "Deadlock avoidance", "Process synchronization", "Memory allocation"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 48,
+                        "question": "Which is an example of a spooling device?",
+                        "options": ["Printer", "Hard disk", "Keyboard", "CPU"],
+                        "correct": 1
+                    },
+                    {
+                        "id": 49,
+                        "question": "The Banker’s algorithm is used for:",
+                        "options": ["CPU scheduling", "Deadlock avoidance", "Memory allocation", "Page replacement"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 50,
+                        "question": "Page fault occurs when:",
+                        "options": ["Page is in memory", "Page is not in memory", "Disk is full", "Cache is empty"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 51,
+                        "question": "Which of these is a contiguous memory allocation technique?",
+                        "options": ["Paging", "Segmentation", "Fixed partitioning", "Demand paging"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 52,
+                        "question": "The round robin scheduling algorithm is designed for:",
+                        "options": ["Batch systems", "Interactive systems", "Multiprocessing", "Memory management"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 53,
+                        "question": "Which data structure is used in Round Robin scheduling?",
+                        "options": ["Stack", "Queue", "Tree", "Graph"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 54,
+                        "question": "Which of the following is not a state of a process?",
+                        "options": ["Running", "Ready", "Waiting", "Blocked RAM"],
+                        "correct": 4
+                    },
+                    {
+                        "id": 55,
+                        "question": "Which page replacement algorithm suffers from Belady’s anomaly?",
+                        "options": ["LRU", "Optimal", "FIFO", "MRU"],
+                        "correct": 3
+                    },
+                    {
+                        "id": 56,
+                        "question": "Context switching occurs when:",
+                        "options": ["Process changes from user to kernel mode", "OS switches from one process to another", "Memory is full", "Deadlock occurs"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 57,
+                        "question": "Which is the fastest memory?",
+                        "options": ["Cache", "RAM", "Virtual memory", "Hard disk"],
+                        "correct": 1
+                    },
+                    {
+                        "id": 58,
+                        "question": "A deadlock situation requires:",
+                        "options": ["Mutual exclusion", "Hold and wait", "No preemption", "Circular wait"],
+                        "correct": 4
+                    },
+                    {
+                        "id": 59,
+                        "question": "Which type of fragmentation occurs in paging?",
+                        "options": ["External", "Internal", "Both", "None"],
+                        "correct": 2
+                    },
+                    {
+                        "id": 60,
+                        "question": "Swapping is:",
+                        "options": ["Copying process between CPU and cache", "Copying process between main memory and disk", "Copying data from disk to cache", "Copying registers into stack"],
+                        "correct": 2
+                    },
+
+                ]
+            }
         },
     },
     "Database Management System (DBMS)": {
