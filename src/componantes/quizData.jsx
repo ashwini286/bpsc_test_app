@@ -142,10 +142,10 @@
 // quizData.js
 const chapters = {
     "Computer Basics & Hardware": {
-        color: "#4F46E5",
+        color: "#d643e2",
         subtopics: {
             "Characteristics and applications of computers; generations overview": {
-                color: "#4F46E5",
+                color: "#d643e2",
                 questions: [
                     {
                         id: 1,
@@ -4484,7 +4484,7 @@ const chapters = {
                 ],
             },
             "Mixed Computer Topics": {
-                color: "#4F46E5",
+                color: "#95C7F9",
                 questions: [
                     {
                         id: 1,
@@ -8326,10 +8326,10 @@ const chapters = {
         },
     },
     "Operating Systems": {
-        color: "#6366F1",
+        color: "#e28743",
         subtopics: {
             "Functions of OS; user interface concepts": {
-                color: "#6366F1",
+                color: "#e28743",
                 questions: [
                     { id: 1, question: "Which of the following is NOT a function of an operating system?", options: ["Process Management", "Memory Management", "Compiler Optimization", "File Management"], correct: 3 },
                     { id: 2, question: "The operating system acts as a bridge between:", options: ["Hardware and Software", "Compiler and User", "Memory and CPU", "Input and Output devices"], correct: 1 },
@@ -9857,77 +9857,307 @@ const chapters = {
             "Need for databases vs file systems; RDBMS concepts": {
                 color: "#8B5CF6",
                 questions: [
-                    {
-                        id: 1,
-                        question:
-                            "1. Sample question about Need for databases vs file systems; RDBMS concepts?",
-                        options: ["Option A1", "Option B1", "Option C1", "Option D1"],
-                        correct: 1,
-                    },
-                    {
-                        id: 2,
-                        question:
-                            "2. Sample question about Need for databases vs file systems; RDBMS concepts?",
-                        options: ["Option A2", "Option B2", "Option C2", "Option D2"],
-                        correct: 1,
-                    },
-                    {
-                        id: 3,
-                        question:
-                            "3. Sample question about Need for databases vs file systems; RDBMS concepts?",
-                        options: ["Option A3", "Option B3", "Option C3", "Option D3"],
-                        correct: 1,
-                    },
-                    {
-                        id: 4,
-                        question:
-                            "4. Sample question about Need for databases vs file systems; RDBMS concepts?",
-                        options: ["Option A4", "Option B4", "Option C4", "Option D4"],
-                        correct: 2,
-                    },
-                    {
-                        id: 5,
-                        question:
-                            "5. Sample question about Need for databases vs file systems; RDBMS concepts?",
-                        options: ["Option A5", "Option B5", "Option C5", "Option D5"],
-                        correct: 1,
-                    },
-                    {
-                        id: 6,
-                        question:
-                            "6. Sample question about Need for databases vs file systems; RDBMS concepts?",
-                        options: ["Option A6", "Option B6", "Option C6", "Option D6"],
-                        correct: 1,
-                    },
-                    {
-                        id: 7,
-                        question:
-                            "7. Sample question about Need for databases vs file systems; RDBMS concepts?",
-                        options: ["Option A7", "Option B7", "Option C7", "Option D7"],
-                        correct: 3,
-                    },
-                    {
-                        id: 8,
-                        question:
-                            "8. Sample question about Need for databases vs file systems; RDBMS concepts?",
-                        options: ["Option A8", "Option B8", "Option C8", "Option D8"],
-                        correct: 3,
-                    },
-                    {
-                        id: 9,
-                        question:
-                            "9. Sample question about Need for databases vs file systems; RDBMS concepts?",
-                        options: ["Option A9", "Option B9", "Option C9", "Option D9"],
-                        correct: 3,
-                    },
-                    {
-                        id: 10,
-                        question:
-                            "10. Sample question about Need for databases vs file systems; RDBMS concepts?",
-                        options: ["Option A10", "Option B10", "Option C10", "Option D10"],
-                        correct: 2,
-                    },
+                    { id: 1, question: "Which of the following is a limitation of traditional file systems?", options: ["Data redundancy", "High consistency", "Easy access control", "Data independence"], correct: 1 },
+
+                    { id: 2, question: "In databases, 'data independence' refers to:", options: ["Storing redundant data", "Changing data structure without affecting applications", "Eliminating primary keys", "Ability to store unstructured files"], correct: 2 },
+
+                    { id: 3, question: "Which of the following best describes a database management system (DBMS)?", options: ["A collection of unrelated files", "Software to manage, store, and retrieve data", "An operating system", "A file compression tool"], correct: 2 },
+
+                    { id: 4, question: "File systems suffer from which major drawback compared to databases?", options: ["Complex queries support", "Lack of data redundancy", "Easy transaction handling", "Strong security structure"], correct: 1 },
+
+                    { id: 5, question: "Which factor leads to inconsistency in file-based systems?", options: ["Centralized storage", "Data redundancy", "Normalization", "Use of SQL"], correct: 2 },
+
+                    { id: 6, question: "The capability of handling simultaneous data access is better in:", options: ["File systems", "Databases", "Operating systems", "Compilers"], correct: 2 },
+
+                    { id: 7, question: "Which of the following is NOT an advantage of databases over file systems?", options: ["Reduced redundancy", "Easier backup & recovery", "Data independence", "Increased redundancy"], correct: 4 },
+
+                    { id: 8, question: "The primary purpose of a DBMS is:", options: ["Editing images", "Managing data efficiently", "Operating hardware", "Compiling code"], correct: 2 },
+
+                    { id: 9, question: "Which system uses indexes for faster searching of data?", options: ["File system", "Database system", "Assembler", "Cache memory"], correct: 2 },
+
+                    { id: 10, question: "Which of the following operations is difficult in file systems but easier in RDBMS?", options: ["Data backup", "Data compression", "Complex queries", "File storage"], correct: 3 },
+
+                    { id: 11, question: "RDBMS stands for:", options: ["Relational Data Base Management System", "Reduced Database Management System", "Regular Data Backup Management System", "Relatable Database Measuring Standard"], correct: 1 },
+
+                    { id: 12, question: "In an RDBMS, data is stored in:", options: ["XML trees", "Tables", "Flat files", "Hierarchies"], correct: 2 },
+
+                    { id: 13, question: "Which of the following uniquely identifies a record in a table?", options: ["Foreign key", "Primary key", "Composite attribute", "Candidate key"], correct: 2 },
+
+                    { id: 14, question: "Which language is primarily used for querying RDBMS?", options: ["C++", "Java", "SQL", "Python"], correct: 3 },
+
+                    { id: 15, question: "The concept of normalization is introduced to:", options: ["Speed up execution", "Reduce redundancy", "Increase redundancy", "Create duplicate records"], correct: 2 },
+
+                    { id: 16, question: "Which of the following is NOT a relational operator in SQL?", options: ["SELECT", "JOIN", "DELETE", "COMPILE"], correct: 4 },
+
+                    { id: 17, question: "The process of ensuring data accuracy and consistency is called:", options: ["Integrity", "Redundancy", "Duplication", "Volatility"], correct: 1 },
+
+                    { id: 18, question: "A foreign key is used to:", options: ["Ensure uniqueness", "Connect two tables", "Delete records", "Create indexes"], correct: 2 },
+
+                    { id: 19, question: "Which of the following ensures that no two rows have the same value in a specific column?", options: ["NOT NULL", "UNIQUE", "CHECK", "DEFAULT"], correct: 2 },
+
+                    { id: 20, question: "Which database property ensures that either all operations succeed or none do?", options: ["Durability", "Atomicity", "Isolation", "Consistency"], correct: 2 },
+
+                    { id: 21, question: "Which of the following is part of ACID properties?", options: ["Atomicity", "Concurrency", "Dependency", "Iteration"], correct: 1 },
+
+                    { id: 22, question: "The consistency property in ACID ensures:", options: ["Database always in valid state", "Transactions happen instantly", "Data is redundant", "Rollback never occurs"], correct: 1 },
+
+                    { id: 23, question: "Isolation in RDBMS transactions means:", options: ["Multiple transactions interfere", "Transactions execute independently", "No rollback is possible", "Only a single transaction is allowed forever"], correct: 2 },
+
+                    { id: 24, question: "Durability in ACID ensures:", options: ["Changes are temporary", "Changes are permanent after commit", "Transactions will not execute", "Data stored in cache only"], correct: 2 },
+
+                    { id: 25, question: "In RDBMS, which key can accept NULL values?", options: ["Primary key", "Foreign key", "Unique key", "Super key"], correct: 2 },
+
+                    { id: 26, question: "A set of attributes that can uniquely identify a row but not the minimal set is called:", options: ["Candidate key", "Super key", "Composite key", "Foreign key"], correct: 2 },
+
+                    { id: 27, question: "Which SQL command is used to remove a table from a database?", options: ["DELETE", "REMOVE", "DROP", "CLEAR"], correct: 3 },
+
+                    { id: 28, question: "Which SQL clause is used to filter results?", options: ["ORDER BY", "HAVING", "WHERE", "GROUP BY"], correct: 3 },
+
+                    { id: 29, question: "The 'JOIN' operation in SQL is used to:", options: ["Add new rows", "Combine data from multiple tables", "Delete duplicates", "Rename attributes"], correct: 2 },
+
+                    { id: 30, question: "Which SQL statement is used to insert new data?", options: ["ADD INTO", "INSERT INTO", "CREATE DATA", "PUT INTO"], correct: 2 },
+
+                    { id: 31, question: "In RDBMS, normalization is often carried out to achieve:", options: ["Data redundancy", "Data inconsistency", "Data integrity", "Data complexity"], correct: 3 },
+
+                    { id: 32, question: "The most basic normal form in normalization is:", options: ["2NF", "3NF", "BCNF", "1NF"], correct: 4 },
+
+                    { id: 33, question: "Which normal form eliminates transitive dependencies?", options: ["1NF", "2NF", "3NF", "BCNF"], correct: 3 },
+
+                    { id: 34, question: "Which level of database architecture provides the physical storage details?", options: ["Logical", "Conceptual", "Internal", "External"], correct: 3 },
+
+                    { id: 35, question: "In ER diagrams, relationships are represented as:", options: ["Ovals", "Rectangles", "Diamonds", "Lines"], correct: 3 },
+
+                    { id: 36, question: "Which part of SQL is used to change the data definition (like creating tables)?", options: ["DML", "DCL", "TCL", "DDL"], correct: 4 },
+
+                    { id: 37, question: "Which part of SQL deals with granting and revoking privileges?", options: ["DDL", "DML", "DCL", "TCL"], correct: 3 },
+
+                    { id: 38, question: "Which of these operations belongs to DML in SQL?", options: ["CREATE", "GRANT", "SELECT", "COMMIT"], correct: 3 },
+
+                    { id: 39, question: "Indexes in databases are mainly used to:", options: ["Reduce redundancy", "Speed up searches", "Ensure ACID", "Maintain normalization"], correct: 2 },
+
+                    { id: 40, question: "Which constraint ensures that a column must have a value?", options: ["DEFAULT", "CHECK", "UNIQUE", "NOT NULL"], correct: 4 },
+
+                    { id: 41, question: "In RDBMS, a transaction rollback is used to:", options: ["Save changes permanently", "Undo changes", "Increase consistency", "Improve indexing"], correct: 2 },
+
+                    { id: 42, question: "Which one of the following is a TCL command?", options: ["ROLLBACK", "CREATE", "UPDATE", "GRANT"], correct: 1 },
+
+                    { id: 43, question: "The SQL command SAVEPOINT is used to:", options: ["Exit session", "Define a point to rollback to", "Backup database", "Update data"], correct: 2 },
+
+                    { id: 44, question: "Which of the following is NOT a benefit of database indexes?", options: ["Fast retrieval", "Slower updates", "Efficient querying", "Sorted data"], correct: 2 },
+
+                    { id: 45, question: "The relational model was proposed by:", options: ["Charles Babbage", "E. F. Codd", "Von Neumann", "Michael Stonebraker"], correct: 2 },
+
+                    { id: 46, question: "Which of the following ensures no duplicate rows in SQL output?", options: ["DISTINCT", "ORDER BY", "GROUP BY", "CHECK"], correct: 1 },
+
+                    { id: 47, question: "Which of the following is used for data analysis in RDBMS?", options: ["Transaction logs", "OLAP", "Rollback", "Normalization"], correct: 2 },
+
+                    { id: 48, question: "The GROUP BY clause is used with:", options: ["Constraints", "Aggregate functions", "Transactions", "Normalization"], correct: 2 },
+
+                    { id: 49, question: "Which SQL keyword is used to sort query results?", options: ["SORT", "ORDER BY", "ARRANGE", "GROUP BY"], correct: 2 },
+
+                    { id: 50, question: "What does the term 'referential integrity' mean?", options: ["Foreign key must match primary key", "Data must not be null", "Each tuple must be unique", "Data retrieval must be fast"], correct: 1 },
+
+                    { id: 51, question: "Which of the following is not part of the DBMS architecture?", options: ["External level", "Conceptual level", "Internal level", "Functional level"], correct: 4 },
+
+                    { id: 52, question: "Which of the following is most critical for RDBMS transactions?", options: ["ACID properties", "Compilation", "Data compression", "Indexing only"], correct: 1 },
+
+                    { id: 53, question: "A composite key is:", options: ["Multiple fields together acting as a primary key", "A candidate key with a foreign key", "A key created from hashing", "An automatically generated key"], correct: 1 },
+
+                    { id: 54, question: "Which SQL command is used to modify an existing table structure?", options: ["UPDATE", "ALTER", "MODIFY", "CHANGE"], correct: 2 },
+
+                    { id: 55, question: "In databases, 'schema' defines:", options: ["The data itself", "The structure of the database", "Only primary keys", "Backup format"], correct: 2 },
+
+                    { id: 56, question: "An unnormalized form may contain:", options: ["Atomic values only", "Repeating groups and redundancy", "No transitive dependency", "Fully reduced redundancy"], correct: 2 },
+
+                    { id: 57, question: "Which SQL clause is used with aggregate functions to filter groups?", options: ["WHERE", "FROM", "HAVING", "ORDER BY"], correct: 3 },
+
+                    { id: 58, question: "Which of these ensures strong security in RDBMS?", options: ["File duplication", "User authentication & authorization", "Redundancy", "Indexes"], correct: 2 },
+
+                    { id: 59, question: "Which of these anomalies is resolved by normalization?", options: ["Update anomalies", "Download errors", "Deadlocks", "Indexing delay"], correct: 1 },
+
+                    { id: 60, question: "BCNF stands for:", options: ["Boyce Codd Normal Form", "Basic Code Normal Form", "Binary Consistent Normal Form", "Best Common Normal Form"], correct: 1 },
+
+                    { id: 61, question: "Which of these is not a valid SQL data type?", options: ["VARCHAR", "NUMBER", "DATE", "FLOATING"], correct: 4 },
+
+                    { id: 62, question: "Which SQL statement permanently saves a transaction?", options: ["SAVEPOINT", "ROLLBACK", "COMMIT", "UNDO"], correct: 3 },
+
+                    { id: 63, question: "Which RDBMS feature ensures fault tolerance?", options: ["Data structures", "Backup & recovery", "Normalization", "Join operations"], correct: 2 },
+
+                    { id: 64, question: "Which key constraint prevents two rows from having the same value in a column?", options: ["DEFAULT", "NOT NULL", "CHECK", "UNIQUE"], correct: 4 },
+
+                    { id: 65, question: "Which SQL keyword is used to define conditions on groups?", options: ["WHERE", "HAVING", "GROUP BY", "ORDER"], correct: 2 },
+
+                    { id: 66, question: "Which RDBMS operation combines rows based on common columns?", options: ["Union", "Join", "Intersect", "Minus"], correct: 2 },
+
+                    { id: 67, question: "Which SQL keyword removes duplicate records when retrieving data?", options: ["DISTINCT", "UNIQUE", "FILTER", "CHECK"], correct: 1 },
+
+                    { id: 68, question: "Which SQL operator is used for pattern matching?", options: ["IN", "LIKE", "BETWEEN", "HAVING"], correct: 2 },
+
+                    { id: 69, question: "Which type of join returns all rows when there is a match in one table and missing rows from another?", options: ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN"], correct: 2 },
+
+                    { id: 70, question: "Which SQL statement retrieves all records from a table?", options: ["SELECT *", "FIND ALL", "SHOW TABLE", "GET *"], correct: 1 },
+
+                    { id: 71, question: "The relational algebra operation that combines tuples from two relations is:", options: ["Union", "Join", "Product", "Select"], correct: 2 },
+
+                    { id: 72, question: "Which anomaly occurs when the same data is duplicated unnecessarily?", options: ["Insertion anomaly", "Deletion anomaly", "Update anomaly", "Duplication anomaly"], correct: 3 },
+
+                    { id: 73, question: "In RDBMS, a 'view' is:", options: ["Physical table", "Virtual table", "Index", "Schema"], correct: 2 },
+
+                    { id: 74, question: "Which command is used to remove all the records from a table but keeps the structure?", options: ["DROP", "TRUNCATE", "DELETE", "REMOVE"], correct: 2 },
+
+                    { id: 75, question: "Which SQL operator retrieves rows from two queries without duplicates?", options: ["UNION", "UNION ALL", "INTERSECT", "JOIN"], correct: 1 },
+
+                    { id: 76, question: "Which RDBMS concept ensures minimum duplication across tables?", options: ["Normalization", "Denormalization", "Indexing", "View"], correct: 1 },
+
+                    { id: 77, question: "Which indexing method is commonly used in RDBMS?", options: ["Hashing", "Binary search", "B+ Tree", "Linked list"], correct: 3 },
+
+                    { id: 78, question: "Which command is used to change a record in a table?", options: ["CHANGE", "ALTER", "UPDATE", "MODIFY"], correct: 3 },
+
+                    { id: 79, question: "Which SQL operator is used to combine results of two queries and includes duplicates?", options: ["UNION", "UNION ALL", "INTERSECT", "EXCEPT"], correct: 2 },
+
+                    { id: 80, question: "Which RDBMS feature provides abstracted representation of data for users?", options: ["Schema", "View", "Index", "Join"], correct: 2 },
+                    { id: 81, question: "Which SQL command is used to define a new database?", options: ["INSERT", "CREATE DATABASE", "DEFINE DB", "MAKE DATABASE"], correct: 2 },
+
+                    { id: 82, question: "Which type of join returns only rows where there is a match in both tables?", options: ["FULL OUTER JOIN", "LEFT JOIN", "RIGHT JOIN", "INNER JOIN"], correct: 4 },
+
+                    { id: 83, question: "In RDBMS, the attribute domain refers to:", options: ["Set of allowed values", "Set of tables", "Keys in a schema", "Data dictionary"], correct: 1 },
+
+                    { id: 84, question: "Which SQL function is used to count the number of rows?", options: ["SUM()", "AVG()", "COUNT()", "ROWS()"], correct: 3 },
+
+                    { id: 85, question: "Which is NOT a goal of database normalization?", options: ["Reduce redundancy", "Ensure integrity", "Optimize storage", "Increase data duplication"], correct: 4 },
+
+                    { id: 86, question: "Which of these is a data control language (DCL) command?", options: ["GRANT", "SELECT", "DELETE", "CREATE"], correct: 1 },
+
+                    { id: 87, question: "When a transaction fails, the operation of restoring the database to a previous state is:", options: ["Commit", "Rollback", "Savepoint", "Checkpoint"], correct: 2 },
+
+                    { id: 88, question: "An update anomaly occurs when:", options: ["Data cannot be inserted", "Data must be changed in multiple places", "Data is missing", "Keys are null"], correct: 2 },
+
+                    { id: 89, question: "Which of the following best explains 'entity integrity'?", options: ["Every table must have a unique key", "Every foreign key must be null", "Entities should always have duplicates", "Tables cannot exist without attributes"], correct: 1 },
+
+                    { id: 90, question: "Which SQL keyword is used to remove duplicates and return only unique values?", options: ["DISTINCT", "UNIQUE", "FILTER", "NODUP"], correct: 1 },
+
+                    { id: 91, question: "Which part of database system manages data dictionary?", options: ["Application layer", "DBMS", "Compiler", "Network"], correct: 2 },
+
+                    { id: 92, question: "In SQL, which keyword is used to rename columns or tables in queries?", options: ["CHANGE", "AS", "RENAME", "MODIFY"], correct: 2 },
+
+                    { id: 93, question: "Which of these anomalies is resolved by ensuring referential integrity?", options: ["Update anomaly", "Insertion anomaly", "Deletion anomaly", "Relationship anomaly"], correct: 2 },
+
+                    { id: 94, question: "Which of the following is a disadvantage of file systems compared to DBMS?", options: ["Data isolation", "Data independence", "Controlled access", "Transaction support"], correct: 1 },
+
+                    { id: 95, question: "Which level of abstraction describes how data is stored physically?", options: ["Physical level", "External level", "Logical level", "Conceptual level"], correct: 1 },
+
+                    { id: 96, question: "Which SQL function is used to find the highest value in a column?", options: ["MIN()", "MAX()", "TOP()", "HIGH()"], correct: 2 },
+
+                    { id: 97, question: "Which join returns all rows when there is a match in one of the tables?", options: ["LEFT JOIN", "INNER JOIN", "CROSS JOIN", "SELF JOIN"], correct: 1 },
+
+                    { id: 98, question: "A view in SQL is:", options: ["Virtual table", "Physical table", "Index", "Schema"], correct: 1 },
+
+                    { id: 99, question: "Which SQL operator checks set membership?", options: ["IN", "LIKE", "BETWEEN", "ANY"], correct: 1 },
+
+                    { id: 100, question: "Which SQL statement is used to change data already in a table?", options: ["MODIFY", "ALTER", "UPDATE", "CHANGE"], correct: 3 },
+
+                    { id: 101, question: "Which is NOT a function of DBMS?", options: ["Data backup", "Data manipulation", "Automatic operating system updates", "Transaction handling"], correct: 3 },
+
+                    { id: 102, question: "Which of the following allows combining multiple SQL conditions?", options: ["WHERE ONLY", "AND/OR", "IF-ELSE", "DO-WHILE"], correct: 2 },
+
+                    { id: 103, question: "Which SQL keyword is used to specify conditions on aggregate results?", options: ["HAVING", "WHERE", "FROM", "ORDER"], correct: 1 },
+
+                    { id: 104, question: "In RDBMS, ACID property 'Atomicity' ensures:", options: ["All or nothing execution of a transaction", "Immediate execution", "Data recovery", "Data redundancy"], correct: 1 },
+
+                    { id: 105, question: "Which SQL clause is used to group rows that have the same values?", options: ["ORDER BY", "DISTINCT", "GROUP BY", "HAVING"], correct: 3 },
+
+                    { id: 106, question: "Which database object improves search performance but requires extra space?", options: ["Index", "View", "Schema", "Sequence"], correct: 1 },
+
+                    { id: 107, question: "Which form of normalization removes partial dependency?", options: ["1NF", "2NF", "3NF", "4NF"], correct: 2 },
+
+                    { id: 108, question: "In a relation, columns are also referred to as:", options: ["Attributes", "Entities", "Tuples", "Keys"], correct: 1 },
+
+                    { id: 109, question: "Which SQL function returns the average value of a numeric column?", options: ["SUM()", "AVG()", "COUNT()", "MEAN()"], correct: 2 },
+
+                    { id: 110, question: "Which anomaly occurs when certain facts cannot be inserted into tables?", options: ["Update anomaly", "Insertion anomaly", "Deletion anomaly", "Duplication anomaly"], correct: 2 },
+
+                    { id: 111, question: "Which SQL constraint allows a column to take null values unless specified otherwise?", options: ["DEFAULT", "CHECK", "NULL allowed", "NOT NULL"], correct: 3 },
+
+                    { id: 112, question: "Which file system drawback is avoided in RDBMS?", options: ["Redundancy", "Relationships", "Transactions", "Indexes"], correct: 1 },
+
+                    { id: 113, question: "Which type of join returns all rows from both tables matching or not?", options: ["INNER JOIN", "FULL OUTER JOIN", "LEFT JOIN", "RIGHT JOIN"], correct: 2 },
+
+                    { id: 114, question: "Which of the following depicts logical structure of database?", options: ["Index", "Schema", "View", "Tuple"], correct: 2 },
+
+                    { id: 115, question: "Referential integrity is achieved through:", options: ["CHECK constraint", "Foreign key constraint", "Primary key", "View"], correct: 2 },
+
+                    { id: 116, question: "Which of these is NOT a valid SQL aggregate function?", options: ["SUM()", "COUNT()", "AVERAGE()", "MAX()"], correct: 3 },
+
+                    { id: 117, question: "Which file system property makes queries across multiple files difficult?", options: ["Isolation", "Program dependence", "Normalization", "Integrity"], correct: 2 },
+
+                    { id: 118, question: "What does SQL ‘BETWEEN’ operator do?", options: ["Pattern match", "Range check", "Join check", "Sort records"], correct: 2 },
+
+                    { id: 119, question: "Which language defines the structure of a database?", options: ["DML", "DDL", "DCL", "TCL"], correct: 2 },
+
+                    { id: 120, question: "Which SQL keyword returns rows that match at least one condition?", options: ["AND", "OR", "ALL", "ANY"], correct: 2 },
+
+                    { id: 121, question: "Who is considered the father of the relational database?", options: ["Alan Turing", "E. F. Codd", "Charles Babbage", "Tim Berners-Lee"], correct: 2 },
+
+                    { id: 122, question: "Which feature of DBMS improves security compared to file systems?", options: ["Central storage", "Authentication & authorization", "Redundancy elimination", "Schema enforcement"], correct: 2 },
+
+                    { id: 123, question: "Which join combines every row of one table with every row of another?", options: ["INNER JOIN", "CROSS JOIN", "LEFT JOIN", "FULL JOIN"], correct: 2 },
+
+                    { id: 124, question: "The internal schema describes:", options: ["How data is viewed by users", "Physical storage of data", "Logical relationships", "Security policies"], correct: 2 },
+
+                    { id: 125, question: "Which SQL clause restricts the rows returned by a query?", options: ["WHERE", "HAVING", "ORDER BY", "DISTINCT"], correct: 1 },
+
+                    { id: 126, question: "Which SQL keyword is used to combine results of queries including duplicates?", options: ["UNION", "UNION ALL", "INTERSECT", "JOIN"], correct: 2 },
+
+                    { id: 127, question: "Data consistency in DBMS means:", options: ["Data is always redundant", "Data remains valid before and after a transaction", "Data can’t be changed", "Data is indexed automatically"], correct: 2 },
+
+                    { id: 128, question: "A table without a primary key suffers from:", options: ["Insertion anomaly", "No indexing", "Entity integrity issues", "All of the above"], correct: 4 },
+
+                    { id: 129, question: "Which type of dependency is removed by 2NF?", options: ["Transitive dependency", "Partial dependency", "Multivalued dependency", "Functional dependency"], correct: 2 },
+
+                    { id: 130, question: "Which SQL statement deletes data without removing table structure?", options: ["REMOVE", "DROP", "DELETE", "TRUNCATE"], correct: 3 },
+
+                    { id: 131, question: "Which SQL operator is used with wildcards?", options: ["LIKE", "IN", "EXISTS", "HAS"], correct: 1 },
+
+                    { id: 132, question: "Which of the following ensures rollback capability in transactions?", options: ["Savepoints", "Indexes", "Constraints", "Triggers"], correct: 1 },
+
+                    { id: 133, question: "Which SQL command modifies existing schema structures?", options: ["ALTER", "UPDATE", "MODIFY DATA", "REDEFINE"], correct: 1 },
+
+                    { id: 134, question: "An entity in ER model is represented as:", options: ["Oval", "Rectangle", "Diamond", "Line"], correct: 2 },
+
+                    { id: 135, question: "The ACID property ‘Isolation’ ensures:", options: ["Transactions execute sequentially without interference", "Transactions always rollback", "Transactions cannot fail", "Indexes are always maintained"], correct: 1 },
+
+                    { id: 136, question: "Which of these ensures long-term persistence of committed data?", options: ["Durability", "Atomicity", "Isolation", "Consistency"], correct: 1 },
+
+                    { id: 137, question: "Which SQL command is used to assign a new name to a database object?", options: ["AS", "RENAME", "ALTER", "CHANGE"], correct: 2 },
+
+                    { id: 138, question: "Which of these file system issues is avoided by relational databases?", options: ["Program-data dependence", "Normalization", "Entity relationships", "Indexing"], correct: 1 },
+
+                    { id: 139, question: "Which SQL clause is used to sort result sets?", options: ["ORDER BY", "SORT", "ARRANGE", "GROUP"], correct: 1 },
+
+                    { id: 140, question: "Which of these ensures minimum duplication of data?", options: ["Data independence", "Normalization", "Redundancy", "Indexes"], correct: 2 },
+
+                    { id: 141, question: "Which logical operation does the INTERSECT keyword perform?", options: ["Union of queries", "Common rows between queries", "Difference between queries", "Duplicate rows"], correct: 2 },
+
+                    { id: 142, question: "Which SQL operator compares each value of a column with a subquery?", options: ["ANY", "ALL", "EXISTS", "IN"], correct: 1 },
+
+                    { id: 143, question: "Which normal form removes transitive dependency?", options: ["1NF", "2NF", "3NF", "BCNF"], correct: 3 },
+
+                    { id: 144, question: "Which SQL command is a part of DML?", options: ["GRANT", "COMMIT", "INSERT", "CREATE"], correct: 3 },
+
+                    { id: 145, question: "Which SQL clause is used after GROUP BY to filter groups?", options: ["WHERE", "HAVING", "ORDER BY", "ALL"], correct: 2 },
+
+                    { id: 146, question: "CHECK constraint is used to:", options: ["Guarantee foreign key", "Restrict values in a column", "Drop duplicate rows", "Control privileges"], correct: 2 },
+
+                    { id: 147, question: "Which SQL operator is used to test for existence of rows in a subquery?", options: ["EXISTS", "BETWEEN", "INSIDE", "ALL"], correct: 1 },
+
+                    { id: 148, question: "Which of the following enforces rules automatically on data?", options: ["Constraints", "Triggers", "Views", "Indexes"], correct: 2 },
+
+                    { id: 149, question: "Which SQL clause displays records within a range?", options: ["LIKE", "BETWEEN", "EXISTS", "ORDER BY"], correct: 2 },
+
+                    { id: 150, question: "Which SQL command is used to delete all rows and free space?", options: ["DELETE", "DROP", "TRUNCATE", "CLEAR"], correct: 3 }
+
                 ],
+
             },
             "Data model basics: tables, rows, columns; schema": {
                 color: "#F97316",
@@ -15489,11 +15719,11 @@ const chapters = {
         },
     },
     "Cyber Security & Ethics": {
-        color: "#F43F5E",
+        color: "#27F58E",
         subtopics: {
             "Threats: virus, worm, trojan, ransomware, phishing, social engineering":
             {
-                color: "#F43F5E",
+                color: "#27F58E",
                 questions: [
                     {
                         id: 1,
@@ -15719,7 +15949,7 @@ const chapters = {
                 ],
             },
             "Indian context: IT Act, 2000 (overview) and digital privacy awareness": {
-                color: "#4F46E5",
+                color: "#95C7F9",
                 questions: [
                     {
                         id: 1,
@@ -16102,6 +16332,1940 @@ const chapters = {
             },
         },
     },
+    "Theory of Computation": {
+        color: "#27F5F5",
+        subtopics: {
+            "Mix all questions": {
+                color: "#27F5F5",
+                questions: [
+                    { id: 1, question: "Which of the following is a type of automata?", options: ["Finite Automata", "Pushdown Automata", "Turing Machine", "All of the above"], correct: 3 },
+                    { id: 2, question: "Finite automata is mainly used to recognize?", options: ["Regular Languages", "Context-Free Languages", "Recursive Languages", "All Languages"], correct: 0 },
+                    { id: 3, question: "Which automata uses a stack as memory?", options: ["Finite Automata", "Pushdown Automata", "Turing Machine", "None"], correct: 1 },
+                    { id: 4, question: "Which model is considered the most powerful computational model?", options: ["Finite Automata", "Pushdown Automata", "Turing Machine", "Regular Expression"], correct: 2 },
+                    { id: 5, question: "Regular expressions are used to represent?", options: ["Context-Free Languages", "Regular Languages", "Context-Sensitive Languages", "Unrestricted Languages"], correct: 1 },
+                    { id: 6, question: "The pumping lemma is used for?", options: ["Proving language is regular", "Proving language is not regular", "Proving CFG", "None"], correct: 1 },
+                    { id: 7, question: "A DFA is?", options: ["Deterministic Finite Automata", "Dynamic Function Automata", "Data Flow Automata", "None"], correct: 0 },
+                    { id: 8, question: "NFA can be converted to?", options: ["CFG", "DFA", "TM", "All of the above"], correct: 1 },
+                    { id: 9, question: "CFG stands for?", options: ["Context Free Grammar", "Context Flow Graph", "Constant Flow Grammar", "Control Function Graph"], correct: 0 },
+                    { id: 10, question: "Which machine decides all recursive languages?", options: ["FA", "PDA", "TM", "NFA"], correct: 2 },
+
+                    { id: 11, question: "Which grammar type is most general in Chomsky hierarchy?", options: ["Type 3", "Type 2", "Type 1", "Type 0"], correct: 3 },
+                    { id: 12, question: "Regular languages are closed under?", options: ["Union", "Intersection", "Complement", "All of the above"], correct: 3 },
+                    { id: 13, question: "Which language is accepted by PDA?", options: ["Regular", "Context-Free", "Context-Sensitive", "Recursive"], correct: 1 },
+                    { id: 14, question: "Which of the following is undecidable?", options: ["Halting Problem", "DFA Equivalence", "CFG Emptiness", "NFA to DFA"], correct: 0 },
+                    { id: 15, question: "ε-transition is used in?", options: ["DFA", "NFA", "PDA", "TM"], correct: 1 },
+                    { id: 16, question: "Which automata is memoryless?", options: ["FA", "PDA", "TM", "CFG"], correct: 0 },
+                    { id: 17, question: "Chomsky hierarchy has how many types?", options: ["2", "3", "4", "5"], correct: 2 },
+                    { id: 18, question: "Which machine is used as a mathematical model of computers?", options: ["Finite Automata", "Pushdown Automata", "Turing Machine", "None"], correct: 2 },
+                    { id: 19, question: "Context-sensitive grammar is type?", options: ["0", "1", "2", "3"], correct: 1 },
+                    { id: 20, question: "Which of the following is regular?", options: ["a^n b^n", "a^n b^m", "a^n b^n c^n", "0^n 1^n"], correct: 1 },
+
+                    { id: 21, question: "The complement of a regular language is?", options: ["Not regular", "Always regular", "Sometimes regular", "Undecidable"], correct: 1 },
+                    { id: 22, question: "Which parsing technique is used for CFG?", options: ["Top-Down", "Bottom-Up", "Both", "None"], correct: 2 },
+                    { id: 23, question: "Recursively enumerable languages are recognized by?", options: ["FA", "PDA", "TM", "NFA"], correct: 2 },
+                    { id: 24, question: "Which problem is undecidable?", options: ["Halting", "CFG Membership", "DFA Minimization", "NFA Conversion"], correct: 0 },
+                    { id: 25, question: "DFA has how many moves for each input symbol?", options: ["0", "1", "More than 1", "Infinite"], correct: 1 },
+                    { id: 26, question: "Which automata can use unbounded memory?", options: ["FA", "PDA", "TM", "None"], correct: 2 },
+                    { id: 27, question: "A language is regular if and only if it can be represented by?", options: ["CFG", "RE", "TM", "PDA"], correct: 1 },
+                    { id: 28, question: "Which machine accepts a^n b^n?", options: ["FA", "PDA", "TM", "RE"], correct: 1 },
+                    { id: 29, question: "Which closure property does not hold for CFLs?", options: ["Union", "Intersection", "Concatenation", "Kleene Star"], correct: 1 },
+                    { id: 30, question: "Which automata cannot accept palindromes?", options: ["FA", "PDA", "TM", "NFA"], correct: 0 },
+
+                    { id: 31, question: "Minimization of DFA is done to?", options: ["Reduce states", "Increase states", "Add ε-moves", "None"], correct: 0 },
+                    { id: 32, question: "Which language is not context-free?", options: ["a^n b^n", "a^n b^n c^n", "a^n b^m", "All"], correct: 1 },
+                    { id: 33, question: "A Turing machine has?", options: ["Finite tape", "Infinite tape", "Stack", "No memory"], correct: 1 },
+                    { id: 34, question: "Which of the following is decidable?", options: ["DFA Acceptance", "Halting Problem", "Post Correspondence", "TM Equivalence"], correct: 0 },
+                    { id: 35, question: "Chomsky Normal Form is for?", options: ["Regular Grammar", "CFG", "CSG", "Unrestricted Grammar"], correct: 1 },
+                    { id: 36, question: "Ambiguity in grammar means?", options: ["Multiple leftmost derivations", "Multiple parse trees", "Both", "None"], correct: 2 },
+                    { id: 37, question: "Which automata can recognize palindromes?", options: ["FA", "PDA", "TM", "None"], correct: 1 },
+                    { id: 38, question: "Every DFA is also?", options: ["NFA", "PDA", "TM", "RE"], correct: 0 },
+                    { id: 39, question: "Which one is more powerful?", options: ["DFA", "NFA", "Both equal", "None"], correct: 2 },
+                    { id: 40, question: "Which type of grammar generates programming languages?", options: ["Regular", "CFG", "CSG", "Unrestricted"], correct: 1 },
+
+                    { id: 41, question: "Regular languages can be represented by?", options: ["Finite Automata", "Regular Expression", "Both", "None"], correct: 2 },
+                    { id: 42, question: "Which machine halts on every input?", options: ["Decider TM", "Recognizer TM", "NFA", "PDA"], correct: 0 },
+                    { id: 43, question: "Which machine may go into infinite loop?", options: ["Decider", "Recognizer", "FA", "DFA"], correct: 1 },
+                    { id: 44, question: "Subset construction is used to convert?", options: ["NFA to DFA", "DFA to NFA", "PDA to FA", "CFG to CNF"], correct: 0 },
+                    { id: 45, question: "The Post Correspondence Problem is?", options: ["Decidable", "Undecidable", "Regular", "Context-Free"], correct: 1 },
+                    { id: 46, question: "Which automata is equivalent to regular expressions?", options: ["DFA", "NFA", "Both", "None"], correct: 2 },
+                    { id: 47, question: "Which of the following generates linear languages?", options: ["Linear Grammar", "Regular Grammar", "Context-Sensitive Grammar", "CFG"], correct: 0 },
+                    { id: 48, question: "CFG to PDA conversion is?", options: ["Always possible", "Not possible", "Sometimes possible", "Undecidable"], correct: 0 },
+                    { id: 49, question: "Which automata is nondeterministic by nature?", options: ["FA", "NFA", "TM", "PDA"], correct: 1 },
+                    { id: 50, question: "Which of the following is false?", options: ["All regular languages are CFLs", "All CFLs are regular", "Every DFA is an NFA", "Every NFA is a DFA"], correct: 1 },
+
+                    { id: 51, question: "Which automata is less powerful than PDA?", options: ["DFA", "NFA", "Both", "None"], correct: 2 },
+                    { id: 52, question: "Ambiguous grammar causes?", options: ["Parsing difficulty", "Compilation error", "Syntax error", "None"], correct: 0 },
+                    { id: 53, question: "Which normal form is used in parsing?", options: ["CNF", "GNF", "Both", "None"], correct: 2 },
+                    { id: 54, question: "Which grammar cannot be parsed by LL(1)?", options: ["Left recursive", "Right recursive", "Unambiguous", "Regular"], correct: 0 },
+                    { id: 55, question: "Every context-sensitive language is?", options: ["Regular", "Recursive", "CFL", "None"], correct: 1 },
+                    { id: 56, question: "Which machine halts on some inputs?", options: ["Decider", "Recognizer", "Both", "None"], correct: 1 },
+                    { id: 57, question: "Which type of automata is used in lexical analysis?", options: ["FA", "PDA", "TM", "CFG"], correct: 0 },
+                    { id: 58, question: "Which of the following is not a closure property of CFL?", options: ["Union", "Concatenation", "Complement", "Kleene Star"], correct: 2 },
+                    { id: 59, question: "CFG ambiguity is?", options: ["Decidable", "Undecidable", "Regular", "Recursive"], correct: 1 },
+                    { id: 60, question: "The halting problem is?", options: ["Decidable", "Undecidable", "Regular", "Recursive"], correct: 1 },
+
+                    { id: 61, question: "Which of these is not part of Chomsky hierarchy?", options: ["Type-0", "Type-1", "Type-2", "Type-4"], correct: 3 },
+                    { id: 62, question: "Which automata accepts only regular languages?", options: ["DFA", "PDA", "TM", "CFG"], correct: 0 },
+                    { id: 63, question: "Pushdown automata uses?", options: ["Queue", "Stack", "Tape", "Register"], correct: 1 },
+                    { id: 64, question: "Turing machine tape is?", options: ["Finite", "Infinite", "Fixed", "Dynamic"], correct: 1 },
+                    { id: 65, question: "Which of the following is not context-free?", options: ["a^n b^n", "a^n b^m", "a^n b^n c^n", "a*b*"], correct: 2 },
+                    { id: 66, question: "CFG can be ambiguous when?", options: ["Multiple parse trees", "Multiple languages", "Single derivation", "None"], correct: 0 },
+                    { id: 67, question: "Regular expressions cannot handle?", options: ["Finite repetition", "Nested structures", "Union", "Concatenation"], correct: 1 },
+                    { id: 68, question: "Recursive enumerable languages are closed under?", options: ["Union", "Concatenation", "Intersection", "All"], correct: 3 },
+                    { id: 69, question: "Which one is more general?", options: ["Recursive", "RE", "Regular", "CFL"], correct: 1 },
+                    { id: 70, question: "DFA minimization algorithm?", options: ["Subset", "Hopcroft", "CYK", "LL(1)"], correct: 1 },
+
+                    { id: 71, question: "CFG to CNF conversion increases?", options: ["Non-terminals", "Terminals", "Tape", "None"], correct: 0 },
+                    { id: 72, question: "Which is true?", options: ["Every RE is regular", "Every CFG is regular", "Every RE is CFG", "All"], correct: 2 },
+                    { id: 73, question: "Which machine is used for decision problems?", options: ["FA", "PDA", "TM", "NFA"], correct: 2 },
+                    { id: 74, question: "Which is false?", options: ["DFA accepts RE", "PDA accepts CFL", "TM accepts recursive", "FA accepts CSL"], correct: 3 },
+                    { id: 75, question: "Which one is decidable?", options: ["CFG Ambiguity", "DFA Acceptance", "Halting Problem", "Post Problem"], correct: 1 },
+                    { id: 76, question: "Which of the following is semi-decidable?", options: ["RE Language", "Regular Language", "CFG", "Recursive"], correct: 0 },
+                    { id: 77, question: "PDA is more powerful than?", options: ["FA", "TM", "CFG", "None"], correct: 0 },
+                    { id: 78, question: "CYK algorithm is used for?", options: ["Regular parsing", "CFL parsing", "TM simulation", "DFA minimization"], correct: 1 },
+                    { id: 79, question: "Regular grammar generates?", options: ["RE", "FA", "Both", "None"], correct: 2 },
+                    { id: 80, question: "Which automata models recursion?", options: ["FA", "PDA", "TM", "NFA"], correct: 1 },
+                    {
+                        "id": 81,
+                        "question": "Which of the following is not a type of grammar in Chomsky hierarchy?",
+                        "options": ["Regular", "Context-Free", "Context-Sensitive", "Non-Deterministic"],
+                        "answer": "Non-Deterministic"
+                    },
+                    {
+                        "id": 82,
+                        "question": "Which machine is the most powerful in the Chomsky hierarchy?",
+                        "options": ["Finite Automata", "Pushdown Automata", "Linear Bounded Automata", "Turing Machine"],
+                        "answer": "Turing Machine"
+                    },
+                    {
+                        "id": 83,
+                        "question": "Regular expressions can be converted into?",
+                        "options": ["Grammar", "NFA", "PDA", "Turing Machine"],
+                        "answer": "NFA"
+                    },
+                    {
+                        "id": 84,
+                        "question": "CFG stands for?",
+                        "options": ["Context-Free Grammar", "Computer Function Grammar", "Control Flow Graph", "Context-Free Generator"],
+                        "answer": "Context-Free Grammar"
+                    },
+                    {
+                        "id": 85,
+                        "question": "Which language is not regular?",
+                        "options": ["a*b*", "(ab)*", "a^n b^n", "a*"],
+                        "answer": "a^n b^n"
+                    },
+                    {
+                        "id": 86,
+                        "question": "Which of the following is accepted by a PDA?",
+                        "options": ["Regular Languages", "Context-Free Languages", "Context-Sensitive Languages", "Recursively Enumerable"],
+                        "answer": "Context-Free Languages"
+                    },
+                    {
+                        "id": 87,
+                        "question": "Turing machines are used to recognize?",
+                        "options": ["Regular Languages", "CFL", "Recursive & RE Languages", "None"],
+                        "answer": "Recursive & RE Languages"
+                    },
+                    {
+                        "id": 88,
+                        "question": "Which of the following is true about FA?",
+                        "options": ["Finite memory", "Stack memory", "Tape memory", "Infinite memory"],
+                        "answer": "Finite memory"
+                    },
+                    {
+                        "id": 89,
+                        "question": "CFG is used to describe?",
+                        "options": ["Lexical structure", "Syntax of programming languages", "Semantics", "Machine Code"],
+                        "answer": "Syntax of programming languages"
+                    },
+                    {
+                        "id": 90,
+                        "question": "Which problem is undecidable?",
+                        "options": ["Halting problem", "String matching", "Sorting", "Searching"],
+                        "answer": "Halting problem"
+                    },
+                    {
+                        "id": 91,
+                        "question": "DFA and NFA are?",
+                        "options": ["Different in power", "Equal in power", "NFA is stronger", "DFA is stronger"],
+                        "answer": "Equal in power"
+                    },
+                    {
+                        "id": 92,
+                        "question": "Which grammar type generates regular languages?",
+                        "options": ["Type 0", "Type 1", "Type 2", "Type 3"],
+                        "answer": "Type 3"
+                    },
+                    {
+                        "id": 93,
+                        "question": "Closure properties of CFL include?",
+                        "options": ["Union, Concatenation", "Intersection, Complement", "Both A & B", "None"],
+                        "answer": "Union, Concatenation"
+                    },
+                    {
+                        "id": 94,
+                        "question": "Which automata can be represented by state transition diagrams?",
+                        "options": ["Turing Machine", "Finite Automata", "PDA", "All of these"],
+                        "answer": "Finite Automata"
+                    },
+                    {
+                        "id": 95,
+                        "question": "Pumping lemma is used for?",
+                        "options": ["Proving a language is regular", "Proving CFL", "Syntax checking", "All of these"],
+                        "answer": "Proving a language is regular"
+                    },
+                    {
+                        "id": 96,
+                        "question": "Which machine uses a stack as memory?",
+                        "options": ["FA", "PDA", "LBA", "TM"],
+                        "answer": "PDA"
+                    },
+                    {
+                        "id": 97,
+                        "question": "Every regular language is also?",
+                        "options": ["CFL", "Context-sensitive", "Recursive", "None"],
+                        "answer": "CFL"
+                    },
+                    {
+                        "id": 98,
+                        "question": "Which of these is decidable?",
+                        "options": ["Halting problem", "Checking DFA emptiness", "Post correspondence problem", "All are undecidable"],
+                        "answer": "Checking DFA emptiness"
+                    },
+                    {
+                        "id": 99,
+                        "question": "Which problem is semi-decidable?",
+                        "options": ["Sorting", "Searching", "Halting", "String concatenation"],
+                        "answer": "Halting"
+                    },
+                    {
+                        "id": 100,
+                        "question": "Which of these is not context-free?",
+                        "options": ["a^n b^n", "a^n b^n c^n", "(ab)*", "a*b*"],
+                        "answer": "a^n b^n c^n"
+                    },
+                    {
+                        "id": 101,
+                        "question": "Which automata has more computational power?",
+                        "options": ["FA", "PDA", "TM", "NFA"],
+                        "answer": "TM"
+                    },
+                    {
+                        "id": 102,
+                        "question": "Which of these can recognize palindromes?",
+                        "options": ["FA", "NFA", "PDA", "None"],
+                        "answer": "PDA"
+                    },
+                    {
+                        "id": 103,
+                        "question": "Which of these is a non-regular language?",
+                        "options": ["a*b*", "(01)*", "a^n b^n", "ε"],
+                        "answer": "a^n b^n"
+                    },
+                    {
+                        "id": 104,
+                        "question": "Which automata is used in lexical analysis?",
+                        "options": ["FA", "PDA", "TM", "LBA"],
+                        "answer": "FA"
+                    },
+                    {
+                        "id": 105,
+                        "question": "Which of these is context-sensitive?",
+                        "options": ["a^n b^n", "a^n b^n c^n", "(ab)*", "a*"],
+                        "answer": "a^n b^n c^n"
+                    },
+                    {
+                        "id": 106,
+                        "question": "The Post Correspondence Problem is?",
+                        "options": ["Decidable", "Undecidable", "Both", "None"],
+                        "answer": "Undecidable"
+                    },
+                    {
+                        "id": 107,
+                        "question": "Which of these has linear bounded tape?",
+                        "options": ["FA", "PDA", "LBA", "TM"],
+                        "answer": "LBA"
+                    },
+                    {
+                        "id": 108,
+                        "question": "CFLs are closed under?",
+                        "options": ["Union", "Concatenation", "Kleene star", "All"],
+                        "answer": "All"
+                    },
+                    {
+                        "id": 109,
+                        "question": "Which one is not closed for CFL?",
+                        "options": ["Union", "Concatenation", "Intersection", "Kleene star"],
+                        "answer": "Intersection"
+                    },
+                    {
+                        "id": 110,
+                        "question": "Which machine can simulate all others?",
+                        "options": ["FA", "PDA", "TM", "NFA"],
+                        "answer": "TM"
+                    },
+                    {
+                        "id": 111,
+                        "question": "Which one is a decidable problem?",
+                        "options": ["DFA equivalence", "TM halting", "PCP", "All undecidable"],
+                        "answer": "DFA equivalence"
+                    },
+                    {
+                        "id": 112,
+                        "question": "Ambiguity in CFG means?",
+                        "options": ["One parse tree", "Multiple parse trees", "No parse tree", "None"],
+                        "answer": "Multiple parse trees"
+                    },
+                    {
+                        "id": 113,
+                        "question": "Which automata is deterministic?",
+                        "options": ["DFA", "NFA", "Both", "None"],
+                        "answer": "DFA"
+                    },
+                    {
+                        "id": 114,
+                        "question": "Which machine is equivalent to unrestricted grammar?",
+                        "options": ["FA", "PDA", "TM", "NFA"],
+                        "answer": "TM"
+                    },
+                    {
+                        "id": 115,
+                        "question": "CFGs are used in?",
+                        "options": ["Compiler design", "Database", "Networking", "OS"],
+                        "answer": "Compiler design"
+                    },
+                    {
+                        "id": 116,
+                        "question": "Which one is recursive?",
+                        "options": ["Sorting", "Halting problem", "PCP", "All undecidable"],
+                        "answer": "Sorting"
+                    },
+                    {
+                        "id": 117,
+                        "question": "Regular languages are closed under?",
+                        "options": ["Union", "Complement", "Intersection", "All"],
+                        "answer": "All"
+                    },
+                    {
+                        "id": 118,
+                        "question": "Which of these cannot be recognized by FA?",
+                        "options": ["Even number of 0s", "Odd number of 1s", "Palindrome", "Divisible by 3"],
+                        "answer": "Palindrome"
+                    },
+                    {
+                        "id": 119,
+                        "question": "Which automata recognizes balanced parentheses?",
+                        "options": ["FA", "PDA", "TM", "NFA"],
+                        "answer": "PDA"
+                    },
+                    {
+                        "id": 120,
+                        "question": "Every CFL is?",
+                        "options": ["Regular", "Recursive", "Context-sensitive", "Decidable"],
+                        "answer": "Decidable"
+                    },
+                    {
+                        "id": 121,
+                        "question": "Which type of automata uses stack memory?",
+                        "options": ["FA", "PDA", "TM", "NFA"],
+                        "answer": "PDA"
+                    },
+                    {
+                        "id": 122,
+                        "question": "Which machine has infinite tape?",
+                        "options": ["FA", "PDA", "TM", "NFA"],
+                        "answer": "TM"
+                    },
+                    {
+                        "id": 123,
+                        "question": "Which of these is not CFL?",
+                        "options": ["{a^n b^n}", "{a^n b^n c^n}", "{a^m b^n}", "{(ab)*}"],
+                        "answer": "{a^n b^n c^n}"
+                    },
+                    {
+                        "id": 124,
+                        "question": "The complement of CFL is always?",
+                        "options": ["CFL", "Regular", "Not necessarily CFL", "Recursive"],
+                        "answer": "Not necessarily CFL"
+                    },
+                    {
+                        "id": 125,
+                        "question": "Which of these describes Type 0 grammar?",
+                        "options": ["Regular", "Context-Free", "Context-Sensitive", "Unrestricted"],
+                        "answer": "Unrestricted"
+                    },
+                    {
+                        "id": 126,
+                        "question": "CFG is accepted by?",
+                        "options": ["FA", "PDA", "TM", "LBA"],
+                        "answer": "PDA"
+                    },
+                    {
+                        "id": 127,
+                        "question": "Which grammar type is used for programming language syntax?",
+                        "options": ["Regular", "CFG", "Context-sensitive", "Unrestricted"],
+                        "answer": "CFG"
+                    },
+                    {
+                        "id": 128,
+                        "question": "The universal Turing Machine is?",
+                        "options": ["A special TM", "Simulates any TM", "Undecidable", "All"],
+                        "answer": "Simulates any TM"
+                    },
+                    {
+                        "id": 129,
+                        "question": "Which is not true for Regular Languages?",
+                        "options": ["Closed under union", "Closed under intersection", "Closed under complement", "Closed under CFG"],
+                        "answer": "Closed under CFG"
+                    },
+                    {
+                        "id": 130,
+                        "question": "Which model describes computation in simple states?",
+                        "options": ["FA", "PDA", "TM", "LBA"],
+                        "answer": "FA"
+                    },
+                    {
+                        "id": 131,
+                        "question": "CFG ambiguity occurs when?",
+                        "options": ["Multiple derivations exist", "No derivation", "Invalid grammar", "Infinite loops"],
+                        "answer": "Multiple derivations exist"
+                    },
+                    {
+                        "id": 132,
+                        "question": "Recursive languages are?",
+                        "options": ["Decidable", "Undecidable", "CFL", "Regular"],
+                        "answer": "Decidable"
+                    },
+                    {
+                        "id": 133,
+                        "question": "Halting problem is?",
+                        "options": ["Decidable", "Undecidable", "Semi-decidable", "Recursive"],
+                        "answer": "Undecidable"
+                    },
+                    {
+                        "id": 134,
+                        "question": "Which automata is least powerful?",
+                        "options": ["FA", "PDA", "TM", "LBA"],
+                        "answer": "FA"
+                    },
+                    {
+                        "id": 135,
+                        "question": "Regular sets are closed under?",
+                        "options": ["Union", "Kleene star", "Concatenation", "All"],
+                        "answer": "All"
+                    },
+                    {
+                        "id": 136,
+                        "question": "Which of these is true about CFG?",
+                        "options": ["Recognized by FA", "Recognized by PDA", "Recognized by TM only", "None"],
+                        "answer": "Recognized by PDA"
+                    },
+                    {
+                        "id": 137,
+                        "question": "Languages accepted by LBA are?",
+                        "options": ["Regular", "CFL", "Context-sensitive", "Recursive"],
+                        "answer": "Context-sensitive"
+                    },
+                    {
+                        "id": 138,
+                        "question": "Which one can generate infinite languages?",
+                        "options": ["Finite grammar", "Regular grammar", "CFG", "All"],
+                        "answer": "All"
+                    },
+                    {
+                        "id": 139,
+                        "question": "Which of these is not recursive?",
+                        "options": ["Sorting problem", "Halting problem", "String reversal", "Multiplication"],
+                        "answer": "Halting problem"
+                    },
+                    {
+                        "id": 140,
+                        "question": "A language is recursively enumerable if?",
+                        "options": ["TM always halts", "TM may or may not halt", "No TM exists", "Only FA exists"],
+                        "answer": "TM may or may not halt"
+                    },
+                    {
+                        "id": 141,
+                        "question": "Which class is the smallest in hierarchy?",
+                        "options": ["Regular", "CFL", "Context-sensitive", "RE"],
+                        "answer": "Regular"
+                    },
+                    {
+                        "id": 142,
+                        "question": "Which is not closed for Regular languages?",
+                        "options": ["Union", "Concatenation", "Complement", "Subsequence"],
+                        "answer": "Subsequence"
+                    },
+                    {
+                        "id": 143,
+                        "question": "Which automata accepts deterministic CFL?",
+                        "options": ["DFA", "DPDA", "NFA", "LBA"],
+                        "answer": "DPDA"
+                    },
+                    {
+                        "id": 144,
+                        "question": "Chomsky hierarchy has how many levels?",
+                        "options": ["2", "3", "4", "5"],
+                        "answer": "4"
+                    },
+                    {
+                        "id": 145,
+                        "question": "Which of these is not a property of CFL?",
+                        "options": ["Closed under union", "Closed under concatenation", "Closed under complement", "Closed under Kleene star"],
+                        "answer": "Closed under complement"
+                    },
+                    {
+                        "id": 146,
+                        "question": "Which is not recognized by FA?",
+                        "options": ["Even number of 0s", "Odd number of 1s", "a^n b^n", "Divisible by 2"],
+                        "answer": "a^n b^n"
+                    },
+                    {
+                        "id": 147,
+                        "question": "Which problem is decidable?",
+                        "options": ["DFA acceptance", "TM halting", "PCP", "All undecidable"],
+                        "answer": "DFA acceptance"
+                    },
+                    {
+                        "id": 148,
+                        "question": "Which automata can recognize more languages?",
+                        "options": ["FA", "NFA", "PDA", "TM"],
+                        "answer": "TM"
+                    },
+                    {
+                        "id": 149,
+                        "question": "Which machine has finite states but no memory stack?",
+                        "options": ["FA", "PDA", "TM", "LBA"],
+                        "answer": "FA"
+                    },
+                    {
+                        "id": 150,
+                        "question": "The Church-Turing thesis relates to?",
+                        "options": ["Limits of computation", "Programming languages", "Networking", "Compiler design"],
+                        "answer": "Limits of computation"
+                    },
+                    {
+                        "id": 151,
+                        "question": "Which of the following is TRUE for regular languages?",
+                        "options": ["Closed under union", "Closed under intersection", "Closed under complementation", "All of the above"],
+                        "answer": "All of the above"
+                    },
+                    {
+                        "id": 152,
+                        "question": "Which automaton is more powerful?",
+                        "options": ["NFA", "DFA", "Both are equally powerful", "DFA with ε-moves"],
+                        "answer": "Both are equally powerful"
+                    },
+                    {
+                        "id": 153,
+                        "question": "Which problem is undecidable?",
+                        "options": ["Halting problem", "Union of regular languages", "Minimization of DFA", "Subset checking of DFAs"],
+                        "answer": "Halting problem"
+                    },
+                    {
+                        "id": 154,
+                        "question": "CFG is used to describe?",
+                        "options": ["Lexical structure", "Syntax of programming languages", "Semantics of languages", "Machine code"],
+                        "answer": "Syntax of programming languages"
+                    },
+                    {
+                        "id": 155,
+                        "question": "The pumping lemma is used to prove?",
+                        "options": ["Language is regular", "Language is not regular", "Language is context-free", "Language is finite"],
+                        "answer": "Language is not regular"
+                    },
+                    {
+                        "id": 156,
+                        "question": "Which of the following machines has the highest computational power?",
+                        "options": ["NFA", "DFA", "PDA", "Turing Machine"],
+                        "answer": "Turing Machine"
+                    },
+                    {
+                        "id": 157,
+                        "question": "In DFA, the number of transitions from each state is?",
+                        "options": ["Equal to alphabet size", "At least 1", "At most 1", "Any number"],
+                        "answer": "Equal to alphabet size"
+                    },
+                    {
+                        "id": 158,
+                        "question": "A language accepted by PDA but not by DFA is?",
+                        "options": ["Regular", "Non-regular but context-free", "Context-sensitive", "Recursive"],
+                        "answer": "Non-regular but context-free"
+                    },
+                    {
+                        "id": 159,
+                        "question": "Which of the following problems is decidable?",
+                        "options": ["Whether a DFA accepts a string", "Halting problem", "Equivalence of Turing machines", "Ambiguity of CFG"],
+                        "answer": "Whether a DFA accepts a string"
+                    },
+                    {
+                        "id": 160,
+                        "question": "The class of recursive enumerable languages is?",
+                        "options": ["Closed under union", "Closed under concatenation", "Closed under Kleene star", "All of these"],
+                        "answer": "All of these"
+                    },
+                    {
+                        "id": 161,
+                        "question": "Which of the following is NOT true for regular languages?",
+                        "options": ["Closed under union", "Closed under intersection", "Closed under reversal", "Closed under homomorphism"],
+                        "answer": "Closed under intersection"
+                    },
+                    {
+                        "id": 162,
+                        "question": "Which grammar generates the language {a^n b^n | n ≥ 0}?",
+                        "options": ["Regular grammar", "Context-free grammar", "Context-sensitive grammar", "Unrestricted grammar"],
+                        "answer": "Context-free grammar"
+                    },
+                    {
+                        "id": 163,
+                        "question": "The set of all palindromes over {a,b} is?",
+                        "options": ["Regular", "Context-free", "Context-sensitive", "Recursive"],
+                        "answer": "Context-free"
+                    },
+                    {
+                        "id": 164,
+                        "question": "Which is more powerful than CFG?",
+                        "options": ["Regular grammar", "Context-sensitive grammar", "Finite automata", "NFA"],
+                        "answer": "Context-sensitive grammar"
+                    },
+                    {
+                        "id": 165,
+                        "question": "A pushdown automaton with two stacks is equivalent to?",
+                        "options": ["DFA", "CFG", "Turing machine", "NFA"],
+                        "answer": "Turing machine"
+                    },
+                    {
+                        "id": 166,
+                        "question": "Which type of automaton is used in compilers for parsing?",
+                        "options": ["DFA", "PDA", "Turing machine", "Moore machine"],
+                        "answer": "PDA"
+                    },
+                    {
+                        "id": 167,
+                        "question": "CFG ambiguity means?",
+                        "options": ["String has multiple leftmost derivations", "String has multiple rightmost derivations", "String has multiple parse trees", "All of these"],
+                        "answer": "All of these"
+                    },
+                    {
+                        "id": 168,
+                        "question": "Which of the following languages is not regular?",
+                        "options": ["a*b*", "(ab)*", "{a^n b^n | n ≥ 0}", "Σ*"],
+                        "answer": "{a^n b^n | n ≥ 0}"
+                    },
+                    {
+                        "id": 169,
+                        "question": "Turing machines can recognize?",
+                        "options": ["Only regular languages", "Only context-free languages", "Recursively enumerable languages", "Context-sensitive languages only"],
+                        "answer": "Recursively enumerable languages"
+                    },
+                    {
+                        "id": 170,
+                        "question": "Which operation is NOT closed in context-free languages?",
+                        "options": ["Union", "Concatenation", "Intersection", "Kleene star"],
+                        "answer": "Intersection"
+                    },
+                    {
+                        "id": 171,
+                        "question": "Which automaton is used to recognize lexical tokens?",
+                        "options": ["DFA", "PDA", "Turing Machine", "CFG"],
+                        "answer": "DFA"
+                    },
+                    {
+                        "id": 172,
+                        "question": "The language accepted by a DFA is always?",
+                        "options": ["Regular", "Context-free", "Context-sensitive", "Recursive"],
+                        "answer": "Regular"
+                    },
+                    {
+                        "id": 173,
+                        "question": "Which machine halts on all inputs?",
+                        "options": ["Recursive enumerable TM", "Recursive TM", "NFA", "DFA"],
+                        "answer": "Recursive TM"
+                    },
+                    {
+                        "id": 174,
+                        "question": "Which of the following is undecidable?",
+                        "options": ["Ambiguity problem of CFG", "Membership problem for DFA", "Membership problem for CFG", "Minimization of DFA"],
+                        "answer": "Ambiguity problem of CFG"
+                    },
+                    {
+                        "id": 175,
+                        "question": "Myhill-Nerode theorem is used for?",
+                        "options": ["Minimization of DFA", "Construction of PDA", "Parsing CFG", "Designing TM"],
+                        "answer": "Minimization of DFA"
+                    },
+                    {
+                        "id": 176,
+                        "question": "The Chomsky hierarchy has how many levels?",
+                        "options": ["2", "3", "4", "5"],
+                        "answer": "4"
+                    },
+                    {
+                        "id": 177,
+                        "question": "Which type of grammar is regular?",
+                        "options": ["Type 0", "Type 1", "Type 2", "Type 3"],
+                        "answer": "Type 3"
+                    },
+                    {
+                        "id": 178,
+                        "question": "Which type of grammar is context-sensitive?",
+                        "options": ["Type 0", "Type 1", "Type 2", "Type 3"],
+                        "answer": "Type 1"
+                    },
+                    {
+                        "id": 179,
+                        "question": "Which type of grammar is unrestricted?",
+                        "options": ["Type 0", "Type 1", "Type 2", "Type 3"],
+                        "answer": "Type 0"
+                    },
+                    {
+                        "id": 180,
+                        "question": "Which type of grammar is context-free?",
+                        "options": ["Type 0", "Type 1", "Type 2", "Type 3"],
+                        "answer": "Type 2"
+                    },
+                    {
+                        "id": 181,
+                        "question": "Finite automata cannot recognize?",
+                        "options": ["a*b*", "(ab)*", "{a^n b^n}", "Strings with even number of 0s"],
+                        "answer": "{a^n b^n}"
+                    },
+                    {
+                        "id": 182,
+                        "question": "CFG can be converted into?",
+                        "options": ["DFA", "PDA", "Moore machine", "Mealy machine"],
+                        "answer": "PDA"
+                    },
+                    {
+                        "id": 183,
+                        "question": "Which parsing is used in bottom-up parsers?",
+                        "options": ["Leftmost derivation", "Rightmost derivation in reverse", "Both", "None"],
+                        "answer": "Rightmost derivation in reverse"
+                    },
+                    {
+                        "id": 184,
+                        "question": "Which language is inherently ambiguous?",
+                        "options": ["a^n b^n", "a^n b^n c^n", "ww^R", "a^i b^j c^k | i = j or j = k"],
+                        "answer": "a^i b^j c^k | i = j or j = k"
+                    },
+                    {
+                        "id": 185,
+                        "question": "Which machine is equivalent to unrestricted grammar?",
+                        "options": ["NFA", "DFA", "PDA", "Turing Machine"],
+                        "answer": "Turing Machine"
+                    },
+                    {
+                        "id": 186,
+                        "question": "Subset construction is used to convert?",
+                        "options": ["DFA to NFA", "NFA to DFA", "PDA to CFG", "CFG to PDA"],
+                        "answer": "NFA to DFA"
+                    },
+                    {
+                        "id": 187,
+                        "question": "Every DFA is also?",
+                        "options": ["NFA", "PDA", "TM", "CFG"],
+                        "answer": "NFA"
+                    },
+                    {
+                        "id": 188,
+                        "question": "Which is TRUE about Moore and Mealy machines?",
+                        "options": ["Moore more powerful", "Mealy more powerful", "Both equivalent", "Mealy weaker"],
+                        "answer": "Both equivalent"
+                    },
+                    {
+                        "id": 189,
+                        "question": "Which of the following problems is decidable?",
+                        "options": ["Emptiness problem for DFA", "Halting problem", "Ambiguity problem for CFG", "Equivalence of TM"],
+                        "answer": "Emptiness problem for DFA"
+                    },
+                    {
+                        "id": 190,
+                        "question": "The set of recursive languages is?",
+                        "options": ["Closed under union", "Closed under intersection", "Closed under complementation", "All of these"],
+                        "answer": "All of these"
+                    },
+                    {
+                        "id": 191,
+                        "question": "Which operation is not closed in context-free languages?",
+                        "options": ["Union", "Concatenation", "Kleene star", "Complementation"],
+                        "answer": "Complementation"
+                    },
+                    {
+                        "id": 192,
+                        "question": "The complement of a recursive enumerable language is?",
+                        "options": ["Always recursive enumerable", "Not necessarily recursive enumerable", "Always recursive", "None"],
+                        "answer": "Not necessarily recursive enumerable"
+                    },
+                    {
+                        "id": 193,
+                        "question": "Which normal form is used in CFG for parsing?",
+                        "options": ["CNF", "GNF", "Both", "None"],
+                        "answer": "Both"
+                    },
+                    {
+                        "id": 194,
+                        "question": "Which of the following is TRUE?",
+                        "options": ["Every regular language is context-free", "Every CFG is regular", "Every TM language is context-free", "All CFG are regular"],
+                        "answer": "Every regular language is context-free"
+                    },
+                    {
+                        "id": 195,
+                        "question": "The halting problem was proved undecidable by?",
+                        "options": ["Alan Turing", "Noam Chomsky", "Kleene", "Cook"],
+                        "answer": "Alan Turing"
+                    },
+                    {
+                        "id": 196,
+                        "question": "Which parsing technique is top-down?",
+                        "options": ["LL(1)", "LR(0)", "SLR", "LALR"],
+                        "answer": "LL(1)"
+                    },
+                    {
+                        "id": 197,
+                        "question": "Which parsing technique is bottom-up?",
+                        "options": ["LL(1)", "LR(1)", "Recursive descent", "Predictive"],
+                        "answer": "LR(1)"
+                    },
+                    {
+                        "id": 198,
+                        "question": "Language accepted by PDA is?",
+                        "options": ["Regular", "Context-free", "Recursive", "Unrestricted"],
+                        "answer": "Context-free"
+                    },
+                    {
+                        "id": 199,
+                        "question": "Which machine cannot handle memory beyond finite states?",
+                        "options": ["DFA", "NFA", "Moore", "All of these"],
+                        "answer": "All of these"
+                    },
+                    {
+                        "id": 200,
+                        "question": "Turing machine can simulate?",
+                        "options": ["DFA", "NFA", "PDA", "All of these"],
+                        "answer": "All of these"
+                    },
+                    {
+                        "id": 201,
+                        "question": "CFG without left recursion is useful for?",
+                        "options": ["Top-down parsing", "Bottom-up parsing", "DFA", "TM"],
+                        "answer": "Top-down parsing"
+                    },
+                    {
+                        "id": 202,
+                        "question": "LR parsers are?",
+                        "options": ["Top-down", "Bottom-up", "Both", "None"],
+                        "answer": "Bottom-up"
+                    },
+                    {
+                        "id": 203,
+                        "question": "Which problem is decidable for CFG?",
+                        "options": ["Membership problem", "Ambiguity problem", "Equivalence problem", "Inclusion problem"],
+                        "answer": "Membership problem"
+                    },
+                    {
+                        "id": 204,
+                        "question": "The acceptance by PDA is by?",
+                        "options": ["Final state", "Empty stack", "Both", "None"],
+                        "answer": "Both"
+                    },
+                    {
+                        "id": 205,
+                        "question": "What is a Universal Turing Machine?",
+                        "options": ["A TM that simulates any other TM", "A DFA that simulates PDA", "A TM with finite input", "A special PDA"],
+                        "answer": "A TM that simulates any other TM"
+                    },
+                    {
+                        "id": 206,
+                        "question": "Regular expression (a|b)* represents?",
+                        "options": ["Only a’s", "Only b’s", "All strings of a and b", "Empty string only"],
+                        "answer": "All strings of a and b"
+                    },
+                    {
+                        "id": 207,
+                        "question": "Which problem is undecidable?",
+                        "options": ["Halting problem", "Membership of DFA", "Minimization of DFA", "Construction of PDA"],
+                        "answer": "Halting problem"
+                    },
+                    {
+                        "id": 208,
+                        "question": "Every regular expression can be converted into?",
+                        "options": ["CFG", "DFA", "TM", "PDA"],
+                        "answer": "DFA"
+                    },
+                    {
+                        "id": 209,
+                        "question": "Which one is not part of Chomsky hierarchy?",
+                        "options": ["Type 0", "Type 1", "Type 4", "Type 3"],
+                        "answer": "Type 4"
+                    },
+                    {
+                        "id": 210,
+                        "question": "A context-sensitive grammar can be recognized by?",
+                        "options": ["DFA", "PDA", "Linear bounded automata", "TM"],
+                        "answer": "Linear bounded automata"
+                    },
+                    {
+                        "id": 211,
+                        "question": "Which language is not context-free?",
+                        "options": ["a^n b^n", "a^n b^n c^n", "(ab)*", "Palindrome"],
+                        "answer": "a^n b^n c^n"
+                    },
+                    {
+                        "id": 212,
+                        "question": "Turing machine with k tapes is?",
+                        "options": ["More powerful than 1-tape TM", "Less powerful", "Equivalent in power", "Not possible"],
+                        "answer": "Equivalent in power"
+                    },
+                    {
+                        "id": 213,
+                        "question": "Recursive languages are?",
+                        "options": ["Decidable", "Undecidable", "Not RE", "Uncomputable"],
+                        "answer": "Decidable"
+                    },
+                    {
+                        "id": 214,
+                        "question": "The closure property of regular languages includes?",
+                        "options": ["Union", "Concatenation", "Kleene star", "All of these"],
+                        "answer": "All of these"
+                    },
+                    {
+                        "id": 215,
+                        "question": "A DFA can be minimized using?",
+                        "options": ["Equivalence theorem", "Subset construction", "Pumping lemma", "Parse tree"],
+                        "answer": "Equivalence theorem"
+                    },
+                    {
+                        "id": 216,
+                        "question": "Regular languages are?",
+                        "options": ["Finite memory languages", "Infinite memory languages", "Context-sensitive", "Unrestricted"],
+                        "answer": "Finite memory languages"
+                    },
+                    {
+                        "id": 217,
+                        "question": "Which automaton uses stack as memory?",
+                        "options": ["DFA", "NFA", "PDA", "TM"],
+                        "answer": "PDA"
+                    },
+                    {
+                        "id": 218,
+                        "question": "The set {ww | w ∈ {a, b}*} is?",
+                        "options": ["Regular", "Context-free", "Context-sensitive", "Unrestricted"],
+                        "answer": "Context-sensitive"
+                    },
+                    {
+                        "id": 219,
+                        "question": "Turing machines are equivalent to?",
+                        "options": ["Finite automata", "Recursive enumerable languages", "Regular expressions", "None"],
+                        "answer": "Recursive enumerable languages"
+                    },
+                    {
+                        "id": 220,
+                        "question": "Every regular language is also?",
+                        "options": ["Recursive", "Context-free", "Both", "None"],
+                        "answer": "Both"
+                    },
+                    {
+                        "id": 221,
+                        "question": "The pumping lemma is used to prove:",
+                        "options": ["A language is regular", "A language is context-free", "A language is not regular", "A grammar is ambiguous"],
+                        "answer": "A language is not regular"
+                    },
+                    {
+                        "id": 222,
+                        "question": "Which grammar generates programming languages more commonly?",
+                        "options": ["Regular grammar", "Context-free grammar", "Unrestricted grammar", "Context-sensitive grammar"],
+                        "answer": "Context-free grammar"
+                    },
+                    {
+                        "id": 223,
+                        "question": "What does DFA have that NFA does not?",
+                        "options": ["Epsilon transitions", "Unique next state", "Multiple start states", "Multiple accepting states"],
+                        "answer": "Unique next state"
+                    },
+                    {
+                        "id": 224,
+                        "question": "Which machine is most powerful?",
+                        "options": ["Finite Automata", "Pushdown Automata", "Turing Machine", "DFA"],
+                        "answer": "Turing Machine"
+                    },
+                    {
+                        "id": 225,
+                        "question": "Chomsky hierarchy type-0 corresponds to:",
+                        "options": ["Regular", "Context-free", "Context-sensitive", "Unrestricted grammar"],
+                        "answer": "Unrestricted grammar"
+                    },
+                    {
+                        "id": 226,
+                        "question": "Which of the following languages is not regular?",
+                        "options": ["a*b*", "(ab)*", "{a^n b^n | n ≥ 0}", "a*"],
+                        "answer": "{a^n b^n | n ≥ 0}"
+                    },
+                    {
+                        "id": 227,
+                        "question": "A left-recursive grammar is problematic for:",
+                        "options": ["Bottom-up parser", "Top-down parser", "Shift-reduce parser", "LR parser"],
+                        "answer": "Top-down parser"
+                    },
+                    {
+                        "id": 228,
+                        "question": "In PDA, the stack is used to handle:",
+                        "options": ["Memory allocation", "Nesting and recursion", "Scheduling", "Registers"],
+                        "answer": "Nesting and recursion"
+                    },
+                    {
+                        "id": 229,
+                        "question": "Which of the following is decidable?",
+                        "options": ["Halting problem", "Membership problem for DFA", "Ambiguity of CFG", "Equivalence of CFG"],
+                        "answer": "Membership problem for DFA"
+                    },
+                    {
+                        "id": 230,
+                        "question": "CYK algorithm is used for:",
+                        "options": ["Lexical analysis", "Parsing context-free grammar", "Code optimization", "Turing machines"],
+                        "answer": "Parsing context-free grammar"
+                    },
+                    {
+                        "id": 231,
+                        "question": "If a language is context-free, then it is always:",
+                        "options": ["Regular", "Recursive enumerable", "Context-sensitive", "Finite"],
+                        "answer": "Recursive enumerable"
+                    },
+                    {
+                        "id": 232,
+                        "question": "Which automata is best suited for lexical analysis?",
+                        "options": ["NFA", "DFA", "PDA", "TM"],
+                        "answer": "DFA"
+                    },
+                    {
+                        "id": 233,
+                        "question": "Which of the following is not true about Turing Machines?",
+                        "options": ["They can simulate any algorithm", "They have finite memory", "They use infinite tape", "They are universal models of computation"],
+                        "answer": "They have finite memory"
+                    },
+                    {
+                        "id": 234,
+                        "question": "Which grammar allows unrestricted productions?",
+                        "options": ["Type-0", "Type-1", "Type-2", "Type-3"],
+                        "answer": "Type-0"
+                    },
+                    {
+                        "id": 235,
+                        "question": "Which parsing method is most powerful?",
+                        "options": ["LL(1)", "LR(1)", "SLR", "LALR"],
+                        "answer": "LR(1)"
+                    },
+                    {
+                        "id": 236,
+                        "question": "Which machine is weaker than PDA?",
+                        "options": ["Finite Automata", "Turing Machine", "Multi-tape Turing Machine", "Universal Turing Machine"],
+                        "answer": "Finite Automata"
+                    },
+                    {
+                        "id": 237,
+                        "question": "Closure properties of regular languages include:",
+                        "options": ["Union", "Concatenation", "Kleene star", "All of these"],
+                        "answer": "All of these"
+                    },
+                    {
+                        "id": 238,
+                        "question": "Context-sensitive languages are accepted by:",
+                        "options": ["DFA", "PDA", "Linear Bounded Automata", "Turing Machine"],
+                        "answer": "Linear Bounded Automata"
+                    },
+                    {
+                        "id": 239,
+                        "question": "Which automata model is nondeterminism equal to determinism?",
+                        "options": ["Finite Automata", "Pushdown Automata", "Turing Machine", "LBA"],
+                        "answer": "Finite Automata"
+                    },
+                    {
+                        "id": 240,
+                        "question": "Ambiguous grammars allow:",
+                        "options": ["Multiple parse trees for same string", "Single parse tree always", "No derivation", "Only left derivations"],
+                        "answer": "Multiple parse trees for same string"
+                    },
+                    {
+                        "id": 241,
+                        "question": "Which machine can recognize recursively enumerable languages?",
+                        "options": ["DFA", "NFA", "PDA", "Turing Machine"],
+                        "answer": "Turing Machine"
+                    },
+                    {
+                        "id": 242,
+                        "question": "Subset construction is used for:",
+                        "options": ["NFA to DFA conversion", "Minimization of DFA", "CFG simplification", "Parsing"],
+                        "answer": "NFA to DFA conversion"
+                    },
+                    {
+                        "id": 243,
+                        "question": "Which algorithm is used for DFA minimization?",
+                        "options": ["Hopcroft’s algorithm", "CYK algorithm", "KMP algorithm", "Prim’s algorithm"],
+                        "answer": "Hopcroft’s algorithm"
+                    },
+                    {
+                        "id": 244,
+                        "question": "Chomsky Normal Form applies to:",
+                        "options": ["DFA", "CFG", "PDA", "TM"],
+                        "answer": "CFG"
+                    },
+                    {
+                        "id": 245,
+                        "question": "Which property is undecidable?",
+                        "options": ["Membership of DFA", "Ambiguity of CFG", "Emptiness of DFA", "Finiteness of DFA"],
+                        "answer": "Ambiguity of CFG"
+                    },
+                    {
+                        "id": 246,
+                        "question": "A PDA with two stacks is equivalent to:",
+                        "options": ["Finite Automata", "CFG", "Turing Machine", "DFA"],
+                        "answer": "Turing Machine"
+                    },
+                    {
+                        "id": 247,
+                        "question": "Regular expressions cannot represent:",
+                        "options": ["Union", "Kleene star", "Concatenation", "{a^n b^n | n ≥ 0}"],
+                        "answer": "{a^n b^n | n ≥ 0}"
+                    },
+                    {
+                        "id": 248,
+                        "question": "Which of these is not part of Chomsky hierarchy?",
+                        "options": ["Regular", "Context-free", "Recursive enumerable", "Context-sensitive"],
+                        "answer": "Recursive enumerable"
+                    },
+                    {
+                        "id": 249,
+                        "question": "Which automaton cannot handle nested structures like balanced parentheses?",
+                        "options": ["DFA", "NFA", "PDA", "TM"],
+                        "answer": "DFA"
+                    },
+                    {
+                        "id": 250,
+                        "question": "Which of the following is true?",
+                        "options": ["Every regular language is context-free", "Every context-free language is regular", "Every recursive language is context-free", "Every context-sensitive language is regular"],
+                        "answer": "Every regular language is context-free"
+                    },
+                    {
+                        "id": 251,
+                        "question": "Which machine decides context-sensitive languages?",
+                        "options": ["PDA", "DFA", "Linear Bounded Automata", "Universal Turing Machine"],
+                        "answer": "Linear Bounded Automata"
+                    },
+                    {
+                        "id": 252,
+                        "question": "Recursive enumerable languages are closed under:",
+                        "options": ["Union", "Concatenation", "Intersection", "All of these"],
+                        "answer": "All of these"
+                    },
+                    {
+                        "id": 253,
+                        "question": "Which parsing method uses stack explicitly?",
+                        "options": ["LL parser", "LR parser", "Both", "None"],
+                        "answer": "Both"
+                    },
+                    {
+                        "id": 254,
+                        "question": "Which among these is the most restricted class of grammar?",
+                        "options": ["Regular", "Context-free", "Context-sensitive", "Unrestricted"],
+                        "answer": "Regular"
+                    },
+                    {
+                        "id": 255,
+                        "question": "The halting problem is:",
+                        "options": ["Decidable", "Undecidable", "Context-free", "Regular"],
+                        "answer": "Undecidable"
+                    },
+                    {
+                        "id": 256,
+                        "question": "Which of the following has memory in terms of stack?",
+                        "options": ["DFA", "NFA", "PDA", "TM"],
+                        "answer": "PDA"
+                    },
+                    {
+                        "id": 257,
+                        "question": "Deterministic PDA is less powerful than:",
+                        "options": ["DFA", "NFA", "Non-deterministic PDA", "TM"],
+                        "answer": "Non-deterministic PDA"
+                    },
+                    {
+                        "id": 258,
+                        "question": "Which normal form eliminates useless symbols?",
+                        "options": ["Chomsky Normal Form", "Greibach Normal Form", "Reduced Grammar", "Left Factored Grammar"],
+                        "answer": "Reduced Grammar"
+                    },
+                    {
+                        "id": 259,
+                        "question": "Which algorithm is used for string matching?",
+                        "options": ["Hopcroft", "CYK", "KMP", "LR"],
+                        "answer": "KMP"
+                    },
+                    {
+                        "id": 260,
+                        "question": "Languages accepted by DFA are:",
+                        "options": ["Finite", "Infinite", "Regular", "Context-free"],
+                        "answer": "Regular"
+                    },
+                    {
+                        "id": 261,
+                        "question": "Which parser handles ambiguous grammar?",
+                        "options": ["LL parser", "LR parser", "GLR parser", "SLR parser"],
+                        "answer": "GLR parser"
+                    },
+                    {
+                        "id": 262,
+                        "question": "The Myhill-Nerode theorem is used for:",
+                        "options": ["DFA minimization", "CFG simplification", "PDA design", "TM design"],
+                        "answer": "DFA minimization"
+                    },
+                    {
+                        "id": 263,
+                        "question": "Which language is not context-free?",
+                        "options": ["{a^n b^n | n ≥ 0}", "{a^n b^n c^n | n ≥ 0}", "(ab)*", "a* b*"],
+                        "answer": "{a^n b^n c^n | n ≥ 0}"
+                    },
+                    {
+                        "id": 264,
+                        "question": "Parsing is done at which phase of compilation?",
+                        "options": ["Lexical Analysis", "Syntax Analysis", "Semantic Analysis", "Code Generation"],
+                        "answer": "Syntax Analysis"
+                    },
+                    {
+                        "id": 265,
+                        "question": "Which is not a closure property of CFL?",
+                        "options": ["Union", "Concatenation", "Intersection", "Kleene Star"],
+                        "answer": "Intersection"
+                    },
+                    {
+                        "id": 266,
+                        "question": "If a PDA has no stack, it becomes:",
+                        "options": ["DFA", "TM", "CFG", "LBA"],
+                        "answer": "DFA"
+                    },
+                    {
+                        "id": 267,
+                        "question": "Which grammar form starts with terminals?",
+                        "options": ["Greibach Normal Form", "Chomsky Normal Form", "Reduced Grammar", "Left Factored"],
+                        "answer": "Greibach Normal Form"
+                    },
+                    {
+                        "id": 268,
+                        "question": "Which machine model is equivalent to RAM?",
+                        "options": ["DFA", "TM", "PDA", "LBA"],
+                        "answer": "TM"
+                    },
+                    {
+                        "id": 269,
+                        "question": "CFG ambiguity can be resolved using:",
+                        "options": ["CNF", "GNF", "Left factoring", "Subset construction"],
+                        "answer": "Left factoring"
+                    },
+                    {
+                        "id": 270,
+                        "question": "Which languages can be recognized but not decided?",
+                        "options": ["Recursive enumerable", "Recursive", "Context-free", "Regular"],
+                        "answer": "Recursive enumerable"
+                    },
+                    {
+                        "id": 271,
+                        "question": "What is the worst-case time complexity of CYK algorithm?",
+                        "options": ["O(n^2)", "O(n^3)", "O(n log n)", "O(n^4)"],
+                        "answer": "O(n^3)"
+                    },
+                    {
+                        "id": 272,
+                        "question": "Which theorem proves non-regularity?",
+                        "options": ["Rice’s theorem", "Pumping lemma", "Myhill-Nerode", "Halting theorem"],
+                        "answer": "Pumping lemma"
+                    },
+                    {
+                        "id": 273,
+                        "question": "Which machine is used for decision problems?",
+                        "options": ["DFA", "PDA", "TM", "LBA"],
+                        "answer": "TM"
+                    },
+                    {
+                        "id": 274,
+                        "question": "CFG in CNF has productions of form:",
+                        "options": ["A → BC or A → a", "A → aB", "A → ε always", "A → ABB"],
+                        "answer": "A → BC or A → a"
+                    },
+                    {
+                        "id": 275,
+                        "question": "Which of these is true?",
+                        "options": ["All recursive languages are recursive enumerable", "All recursive enumerable languages are recursive", "All regular languages are undecidable", "All CFGs are recursive"],
+                        "answer": "All recursive languages are recursive enumerable"
+                    },
+                    {
+                        "id": 276,
+                        "question": "A universal Turing machine simulates:",
+                        "options": ["Finite Automata", "Any other Turing Machine", "Only DFA", "Only PDA"],
+                        "answer": "Any other Turing Machine"
+                    },
+                    {
+                        "id": 277,
+                        "question": "Rice’s theorem applies to:",
+                        "options": ["Properties of languages", "Properties of recursive enumerable languages", "Parsing", "Optimization"],
+                        "answer": "Properties of recursive enumerable languages"
+                    },
+                    {
+                        "id": 278,
+                        "question": "Which machine decides emptiness of DFA?",
+                        "options": ["DFA", "PDA", "TM", "All"],
+                        "answer": "TM"
+                    },
+                    {
+                        "id": 279,
+                        "question": "Which of these is not a CFL?",
+                        "options": ["{a^n b^n | n ≥ 0}", "a*b*", "{a^n b^n c^n | n ≥ 0}", "(ab)*"],
+                        "answer": "{a^n b^n c^n | n ≥ 0}"
+                    },
+                    {
+                        "id": 280,
+                        "question": "CFG is useful in describing:",
+                        "options": ["Syntax of programming languages", "Semantics", "Optimization", "Machine instructions"],
+                        "answer": "Syntax of programming languages"
+                    },
+                    {
+                        "id": 281,
+                        "question": "Which among these is recursive?",
+                        "options": ["DFA membership problem", "CFG ambiguity problem", "Halting problem", "Equivalence problem for CFG"],
+                        "answer": "DFA membership problem"
+                    },
+                    {
+                        "id": 282,
+                        "question": "Which parser is efficient for deterministic context-free languages?",
+                        "options": ["LL(1)", "LR(1)", "Both", "None"],
+                        "answer": "LR(1)"
+                    },
+                    {
+                        "id": 283,
+                        "question": "A Turing Machine with a tape bounded by input length is:",
+                        "options": ["DFA", "PDA", "LBA", "TM"],
+                        "answer": "LBA"
+                    },
+                    {
+                        "id": 284,
+                        "question": "What is the closure property of regular languages under reversal?",
+                        "options": ["Closed", "Not closed", "Sometimes closed", "Depends on DFA"],
+                        "answer": "Closed"
+                    },
+                    {
+                        "id": 285,
+                        "question": "Which grammar generates palindrome language?",
+                        "options": ["Regular grammar", "CFG", "Type-0 grammar", "None"],
+                        "answer": "CFG"
+                    },
+                    {
+                        "id": 286,
+                        "question": "Non-determinism in PDA is:",
+                        "options": ["More powerful than deterministic PDA", "Less powerful", "Same power", "No relation"],
+                        "answer": "More powerful than deterministic PDA"
+                    },
+                    {
+                        "id": 287,
+                        "question": "Which of these languages is regular?",
+                        "options": ["{ww | w ∈ {a,b}*}", "{a^n b^n}", "(ab)*", "{a^n b^n c^n}"],
+                        "answer": "(ab)*"
+                    },
+                    {
+                        "id": 288,
+                        "question": "Which problem is undecidable for Turing Machine?",
+                        "options": ["Halting problem", "DFA membership", "CFG membership", "DFA equivalence"],
+                        "answer": "Halting problem"
+                    },
+
+                ]
+
+
+            }
+        }
+    },
+    "Artificial Intelligence": {
+        color: "#F5275E",
+        subtopics: {
+            "Mix all questions": {
+                color: "#F5275E",
+                questions: []
+            }
+        }
+    },
+    "Fundamentail of E-commerce": {
+        color: "#F527E0",
+        subtopics: {
+            "Mix all questions": {
+                color: "#F527E0",
+                questions: []
+            }
+        }
+    },
+    "Multimedia": {
+        color: "#F54927",
+        subtopics: {
+            "Mix all questions": {
+                color: "#F54927",
+                questions: []
+            }
+        }
+    },
+    "Internate of things": {
+        color: "#3CF527",
+        subtopics: {
+            "Mix all questions": {
+                color: "#3CF527",
+                questions: [
+                    { id: 1, question: "Which of the following best defines IoT?", options: ["Connecting computers to the internet", "Connecting everyday objects to the internet", "Creating websites for devices", "Developing mobile applications"], correct: 2 },
+                    { id: 2, question: "Which communication protocol is most commonly used in IoT devices?", options: ["HTTP", "MQTT", "SMTP", "FTP"], correct: 2 },
+                    { id: 3, question: "What does RFID stand for in IoT?", options: ["Radio Frequency Identification", "Remote Frequency Identification", "Radio File Identification", "Remote File Identification"], correct: 1 },
+                    { id: 4, question: "Which layer of IoT architecture deals with data storage and processing?", options: ["Perception Layer", "Network Layer", "Application Layer", "Middleware Layer"], correct: 4 },
+                    { id: 5, question: "Which of the following is an IoT cloud platform?", options: ["Google Firebase", "AWS IoT Core", "Microsoft Azure IoT", "All of the above"], correct: 4 },
+                    { id: 6, question: "What is the main function of sensors in IoT devices?", options: ["Store data", "Collect data", "Process data", "Transmit data"], correct: 2 },
+                    { id: 7, question: "Which of the following is an application of IoT in healthcare?", options: ["Smart watches", "Remote patient monitoring", "Online appointment booking", "Medical transcription"], correct: 2 },
+                    { id: 8, question: "Which network is commonly used for IoT low-power communication?", options: ["4G LTE", "Wi-Fi", "LoRaWAN", "Ethernet"], correct: 3 },
+                    { id: 9, question: "What is the main challenge in IoT security?", options: ["Limited devices", "Limited bandwidth", "Large attack surface", "Expensive sensors"], correct: 3 },
+                    { id: 10, question: "In IoT, actuators are used to:", options: ["Display information", "Collect data", "Perform actions", "Transmit data"], correct: 3 },
+
+                    { id: 11, question: "Which protocol is lightweight and commonly used in IoT messaging?", options: ["SMTP", "FTP", "MQTT", "SSH"], correct: 3 },
+                    { id: 12, question: "Which of the following is an IoT-enabled home device?", options: ["Smart refrigerator", "Desktop computer", "Laser printer", "Washing powder"], correct: 1 },
+                    { id: 13, question: "What does NFC stand for?", options: ["Near Field Communication", "Network Field Communication", "Near Frequency Communication", "Network Frequency Communication"], correct: 1 },
+                    { id: 14, question: "Which is NOT an application of IoT?", options: ["Smart homes", "Smart agriculture", "Smart parking", "Word processing"], correct: 4 },
+                    { id: 15, question: "Which layer ensures connectivity in IoT?", options: ["Perception Layer", "Network Layer", "Application Layer", "Business Layer"], correct: 2 },
+                    { id: 16, question: "Which device is often called the ‘heart’ of IoT systems?", options: ["Router", "Gateway", "Sensor", "Database"], correct: 2 },
+                    { id: 17, question: "Which wireless technology is most suitable for short-range IoT communication?", options: ["Zigbee", "LoRa", "5G", "Ethernet"], correct: 1 },
+                    { id: 18, question: "Which of these IoT applications relates to transportation?", options: ["Smart traffic management", "Online shopping", "Mobile banking", "Social networking"], correct: 1 },
+                    { id: 19, question: "What is the full form of CoAP?", options: ["Constrained Application Protocol", "Connected Application Protocol", "Central Access Protocol", "Control Application Protocol"], correct: 1 },
+                    { id: 20, question: "Which of the following is a security measure for IoT?", options: ["Encryption", "Firewalls", "Authentication", "All of the above"], correct: 4 },
+
+                    { id: 21, question: "Which technology is essential for IoT scalability?", options: ["Cloud computing", "LAN", "Bluetooth", "Flash drives"], correct: 1 },
+                    { id: 22, question: "IoT devices are usually constrained by:", options: ["High storage", "High speed", "Low power", "Large memory"], correct: 3 },
+                    { id: 23, question: "Which of these is a wearable IoT device?", options: ["Smartwatch", "Router", "Laptop", "USB drive"], correct: 1 },
+                    { id: 24, question: "Which IoT communication protocol is based on publish-subscribe model?", options: ["HTTP", "MQTT", "FTP", "Telnet"], correct: 2 },
+                    { id: 25, question: "Which of these is an industrial IoT application?", options: ["Predictive maintenance", "Smart cooking", "Online video streaming", "Word editing"], correct: 1 },
+                    { id: 26, question: "IoT devices usually connect to the cloud via:", options: ["Ethernet only", "Mobile apps", "Gateways", "Databases"], correct: 3 },
+                    { id: 27, question: "In IoT, edge computing helps by:", options: ["Reducing latency", "Storing huge data centrally", "Replacing sensors", "Removing gateways"], correct: 1 },
+                    { id: 28, question: "Which of the following is an IoT protocol for resource-constrained devices?", options: ["FTP", "SMTP", "CoAP", "POP3"], correct: 3 },
+                    { id: 29, question: "IoT is an integration of:", options: ["Hardware only", "Software only", "Hardware and software with internet", "None of these"], correct: 3 },
+                    { id: 30, question: "Which of these technologies will boost IoT growth?", options: ["5G", "Dial-up internet", "Floppy disks", "CRT monitors"], correct: 1 },
+
+                    { id: 31, question: "Which of these is an IoT healthcare device?", options: ["ECG monitoring device", "Typewriter", "Projector", "Printer"], correct: 1 },
+                    { id: 32, question: "Which of these communication technologies has low power consumption?", options: ["LoRa", "Fiber optic", "Ethernet", "Coaxial cable"], correct: 1 },
+                    { id: 33, question: "What does the perception layer in IoT do?", options: ["Collects data via sensors", "Processes data", "Transmits data", "Provides applications"], correct: 1 },
+                    { id: 34, question: "Which IoT application is related to agriculture?", options: ["Crop monitoring", "E-learning", "Social media", "Movie streaming"], correct: 1 },
+                    { id: 35, question: "Which wireless technology is often used in smart home IoT devices?", options: ["Zigbee", "Ethernet", "Token Ring", "DSL"], correct: 1 },
+                    { id: 36, question: "What is the role of actuators in IoT?", options: ["Sense data", "Perform physical actions", "Transmit packets", "Store data"], correct: 2 },
+                    { id: 37, question: "Which IoT application improves city infrastructure?", options: ["Smart parking", "Word processing", "Desktop publishing", "File transfer"], correct: 1 },
+                    { id: 38, question: "IoT devices often use which addressing scheme?", options: ["IPv4", "IPv6", "MAC addresses only", "Binary codes"], correct: 2 },
+                    { id: 39, question: "What is the biggest concern in IoT networks?", options: ["Security", "Color display", "High speed", "Large screens"], correct: 1 },
+                    { id: 40, question: "Which IoT device uses biometric data?", options: ["Smartwatch", "Printer", "Scanner", "Keyboard"], correct: 1 },
+
+                    { id: 41, question: "Which company provides 'AWS IoT Core'?", options: ["Google", "Amazon", "Microsoft", "IBM"], correct: 2 },
+                    { id: 42, question: "Which wireless technology is suitable for IoT device-to-device communication?", options: ["Bluetooth", "Ethernet", "DSL", "ISDN"], correct: 1 },
+                    { id: 43, question: "Which protocol is commonly used in IoT device management?", options: ["SNMP", "SMTP", "IMAP", "POP"], correct: 1 },
+                    { id: 44, question: "Which of the following IoT applications is in the energy sector?", options: ["Smart grids", "Social media", "Word processors", "Gaming"], correct: 1 },
+                    { id: 45, question: "Which of these enables remote control of IoT devices?", options: ["Mobile apps", "CD drives", "Printers", "Scanners"], correct: 1 },
+                    { id: 46, question: "IoT devices often require which type of IP?", options: ["Static IP", "Dynamic IP", "Both Static and Dynamic", "No IP"], correct: 3 },
+                    { id: 47, question: "Which of these is a low-power short-range IoT protocol?", options: ["Zigbee", "HTTP", "SMTP", "FTP"], correct: 1 },
+                    { id: 48, question: "Which industry uses IoT for supply chain tracking?", options: ["Logistics", "Education", "Entertainment", "Tourism"], correct: 1 },
+                    { id: 49, question: "What is the function of IoT middleware?", options: ["Application interface", "Data processing and management", "Device replacement", "Web browsing"], correct: 2 },
+                    { id: 50, question: "Which of these is NOT a challenge in IoT?", options: ["Security", "Scalability", "Low bandwidth", "Desktop publishing"], correct: 4 },
+                    { id: 51, question: "Which IoT application helps in reducing electricity usage?", options: ["Smart lighting", "Text editors", "Printers", "File compression"], correct: 1 },
+                    { id: 52, question: "Which of these is NOT a communication protocol in IoT?", options: ["MQTT", "CoAP", "SMTP", "XHTML"], correct: 4 },
+                    { id: 53, question: "Which of the following is an example of smart city IoT?", options: ["Smart parking", "Smart traffic lights", "Smart waste management", "All of the above"], correct: 4 },
+                    { id: 54, question: "What is the role of gateways in IoT?", options: ["Connect IoT devices to the cloud", "Provide electricity", "Store files", "Design websites"], correct: 1 },
+                    { id: 55, question: "Which one is a security risk in IoT?", options: ["Default passwords", "Encryption", "Authentication", "Firewall"], correct: 1 },
+                    { id: 56, question: "Which of these is NOT an IoT enabling technology?", options: ["AI", "Cloud computing", "Big data", "Typewriter"], correct: 4 },
+                    { id: 57, question: "Which of the following is an IoT wearable?", options: ["Fitness tracker", "Keyboard", "Monitor", "Printer"], correct: 1 },
+                    { id: 58, question: "Which IoT application is related to environment monitoring?", options: ["Air quality sensors", "Music apps", "E-books", "Video players"], correct: 1 },
+                    { id: 59, question: "IoT devices mostly work with which type of data?", options: ["Structured data only", "Unstructured data only", "Both structured and unstructured data", "No data"], correct: 3 },
+                    { id: 60, question: "Which of these is an IoT healthcare application?", options: ["Smart insulin pump", "Calculator", "Gaming console", "Scanner"], correct: 1 },
+
+                    { id: 61, question: "Which of the following is an IoT standard protocol?", options: ["Zigbee", "SMTP", "POP3", "Telnet"], correct: 1 },
+                    { id: 62, question: "IoT systems usually consist of:", options: ["Sensors, connectivity, data processing, applications", "Only sensors", "Only networks", "Only applications"], correct: 1 },
+                    { id: 63, question: "Which wireless technology has the widest coverage for IoT?", options: ["Bluetooth", "Wi-Fi", "LoRa", "Zigbee"], correct: 3 },
+                    { id: 64, question: "Which IoT application is useful in disaster management?", options: ["Flood detection sensors", "File transfer apps", "Photo editing apps", "Games"], correct: 1 },
+                    { id: 65, question: "Which of the following is NOT an IoT device?", options: ["Smart thermostat", "Smart bulb", "Smart fridge", "Word processor"], correct: 4 },
+                    { id: 66, question: "Which technology allows IoT devices to make intelligent decisions?", options: ["Artificial Intelligence", "Text processing", "Database indexing", "CRT display"], correct: 1 },
+                    { id: 67, question: "Which protocol is widely used for constrained IoT devices?", options: ["CoAP", "HTTP", "FTP", "SMTP"], correct: 1 },
+                    { id: 68, question: "What does an actuator do in IoT?", options: ["Stores data", "Senses the environment", "Takes actions", "Manages connectivity"], correct: 3 },
+                    { id: 69, question: "Which IoT device can be used for home automation?", options: ["Smart bulb", "Smart plug", "Smart thermostat", "All of the above"], correct: 4 },
+                    { id: 70, question: "IoT devices generally operate with:", options: ["High power", "Low power", "Unlimited power", "Nuclear power"], correct: 2 },
+
+                    { id: 71, question: "Which IoT protocol is application-layer based?", options: ["MQTT", "CoAP", "HTTP", "All of the above"], correct: 4 },
+                    { id: 72, question: "Which is an IoT application in the retail sector?", options: ["Smart shelves", "Smart fitting rooms", "Inventory tracking", "All of the above"], correct: 4 },
+                    { id: 73, question: "Which of the following helps in real-time IoT analytics?", options: ["Cloud computing", "Notepad", "CD-ROM", "Keyboard"], correct: 1 },
+                    { id: 74, question: "Which of these is a unique identifier in IoT devices?", options: ["IP address", "Username", "Domain name", "E-mail ID"], correct: 1 },
+                    { id: 75, question: "Which technology reduces IoT latency?", options: ["Edge computing", "Centralized computing", "Cloud storage only", "Manual processing"], correct: 1 },
+                    { id: 76, question: "Which IoT application is widely used in automobiles?", options: ["Connected cars", "Word processors", "Photo editors", "Printers"], correct: 1 },
+                    { id: 77, question: "Which IoT protocol is optimized for low-bandwidth devices?", options: ["MQTT", "SMTP", "POP3", "IMAP"], correct: 1 },
+                    { id: 78, question: "Which of these is a risk in IoT device deployment?", options: ["Data privacy issues", "Text formatting errors", "File compression", "Image resizing"], correct: 1 },
+                    { id: 79, question: "Which wireless technology is most commonly used in smart homes?", options: ["Zigbee", "DSL", "Token Ring", "ISDN"], correct: 1 },
+                    { id: 80, question: "Which is an IoT application in agriculture?", options: ["Smart irrigation", "Video games", "Social networking", "E-mail"], correct: 1 },
+
+                    { id: 81, question: "Which of these is a wearable IoT device for health monitoring?", options: ["Fitness band", "Mouse", "Keyboard", "Printer"], correct: 1 },
+                    { id: 82, question: "Which of the following is a key benefit of IoT?", options: ["Automation", "Remote monitoring", "Cost reduction", "All of the above"], correct: 4 },
+                    { id: 83, question: "Which type of IoT communication works in close proximity?", options: ["NFC", "Satellite", "Fiber optic", "DSL"], correct: 1 },
+                    { id: 84, question: "Which IoT application is used in logistics?", options: ["Fleet tracking", "Word editing", "Spreadsheet", "Gaming"], correct: 1 },
+                    { id: 85, question: "Which protocol is NOT used in IoT?", options: ["MQTT", "CoAP", "SMTP", "HTML"], correct: 4 },
+                    { id: 86, question: "Which technology ensures unique identification of IoT devices?", options: ["RFID", "NLP", "OCR", "Compiler"], correct: 1 },
+                    { id: 87, question: "Which IoT technology helps in predictive maintenance?", options: ["AI + IoT", "Gaming", "Photo editing", "Word processing"], correct: 1 },
+                    { id: 88, question: "Which of the following is an IoT cloud provider?", options: ["Google Cloud IoT", "AWS IoT", "Azure IoT", "All of the above"], correct: 4 },
+                    { id: 89, question: "Which IoT application helps reduce road accidents?", options: ["Smart traffic lights", "Smartwatches", "Fitness apps", "E-mail"], correct: 1 },
+                    { id: 90, question: "Which communication technology is the backbone of future IoT?", options: ["5G", "Dial-up", "Coaxial cable", "ISDN"], correct: 1 },
+
+                    { id: 91, question: "Which IoT device is used in smart farming?", options: ["Soil moisture sensor", "Keyboard", "Mouse", "Monitor"], correct: 1 },
+                    { id: 92, question: "What does IPv6 offer for IoT?", options: ["More IP addresses", "Less IP addresses", "No addresses", "Only private addresses"], correct: 1 },
+                    { id: 93, question: "Which IoT application is in the medical field?", options: ["Remote patient monitoring", "Gaming", "Cooking", "Photo editing"], correct: 1 },
+                    { id: 94, question: "Which is an example of IoT in energy sector?", options: ["Smart meters", "Printers", "Word processors", "Scanners"], correct: 1 },
+                    { id: 95, question: "Which IoT application belongs to transportation?", options: ["Connected vehicles", "Online chatting", "E-books", "Spreadsheet"], correct: 1 },
+                    { id: 96, question: "Which of the following is a smart wearable?", options: ["Apple Watch", "CD-ROM", "Floppy disk", "Keyboard"], correct: 1 },
+                    { id: 97, question: "Which of the following is an IoT security solution?", options: ["End-to-end encryption", "Firewalls", "Access control", "All of the above"], correct: 4 },
+                    { id: 98, question: "Which is a smart healthcare IoT device?", options: ["Smart pill dispenser", "DVD drive", "Photocopier", "Printer"], correct: 1 },
+                    { id: 99, question: "Which of the following is a smart wearable IoT gadget?", options: ["Google Glass", "Printer", "Scanner", "Monitor"], correct: 1 },
+                    { id: 100, question: "Which IoT technology supports low-power wide-area networking?", options: ["LoRaWAN", "Token Ring", "Ethernet", "DSL"], correct: 1 },
+                    { id: 101, question: "Which of the following is NOT a characteristic of IoT devices?", options: ["Low power", "Internet connectivity", "Data sensing", "High manual operation"], correct: 4 },
+                    { id: 102, question: "Which IoT protocol is designed for constrained devices and networks?", options: ["HTTP", "CoAP", "FTP", "SMTP"], correct: 2 },
+                    { id: 103, question: "Which IoT application is related to healthcare?", options: ["Remote surgery", "Movie streaming", "Photo editing", "Gaming"], correct: 1 },
+                    { id: 104, question: "Which of these is an IoT platform by Microsoft?", options: ["Azure IoT Hub", "AWS IoT Core", "Google Cloud IoT", "IBM Watson IoT"], correct: 1 },
+                    { id: 105, question: "Which IoT device is used in smart homes?", options: ["Smart thermostat", "Printer", "Scanner", "Photocopier"], correct: 1 },
+                    { id: 106, question: "Which technology enables machine-to-machine (M2M) communication?", options: ["IoT", "LAN", "Email", "SMS"], correct: 1 },
+                    { id: 107, question: "Which IoT layer focuses on sensing the environment?", options: ["Application Layer", "Perception Layer", "Network Layer", "Business Layer"], correct: 2 },
+                    { id: 108, question: "Which IoT application helps reduce pollution?", options: ["Air quality monitoring", "Gaming apps", "Spreadsheets", "Typing tutor"], correct: 1 },
+                    { id: 109, question: "Which of the following is an IoT protocol for device communication?", options: ["Zigbee", "XHTML", "CSS", "SMTP"], correct: 1 },
+                    { id: 110, question: "Which technology is essential for real-time IoT applications?", options: ["5G", "Dial-up", "ISDN", "Cable TV"], correct: 1 },
+
+                    { id: 111, question: "Which IoT application is used in hospitals?", options: ["Remote patient monitoring", "Photo editing", "Typing software", "Games"], correct: 1 },
+                    { id: 112, question: "Which of these is an IoT-enabled transportation system?", options: ["Smart traffic management", "Smart irrigation", "Smart lighting", "Smart classroom"], correct: 1 },
+                    { id: 113, question: "Which of these is a key feature of IoT?", options: ["Interconnectivity", "Isolation", "Manual operation", "Disconnection"], correct: 1 },
+                    { id: 114, question: "Which IoT device is used in smart agriculture?", options: ["Soil sensors", "Mouse", "Keyboard", "Printer"], correct: 1 },
+                    { id: 115, question: "Which protocol is widely used for IoT device messaging?", options: ["MQTT", "POP3", "IMAP", "FTP"], correct: 1 },
+                    { id: 116, question: "Which of the following is NOT an IoT architecture layer?", options: ["Perception", "Network", "Application", "Presentation"], correct: 4 },
+                    { id: 117, question: "Which IoT technology is used for contactless payments?", options: ["NFC", "SMTP", "POP3", "Ethernet"], correct: 1 },
+                    { id: 118, question: "Which IoT component is responsible for taking action?", options: ["Sensor", "Actuator", "Router", "Database"], correct: 2 },
+                    { id: 119, question: "Which IoT application is used in farming?", options: ["Smart irrigation", "Social media", "E-mail", "Games"], correct: 1 },
+                    { id: 120, question: "Which IoT technology supports short-range wireless communication?", options: ["Bluetooth", "DSL", "ISDN", "Coaxial cable"], correct: 1 },
+
+                    { id: 121, question: "Which of the following is an IoT application in healthcare?", options: ["Wearable heart monitor", "File compression tool", "Photo editor", "Scanner"], correct: 1 },
+                    { id: 122, question: "Which IoT feature allows data analysis at device-level?", options: ["Edge computing", "Cloud-only computing", "Manual processing", "Batch processing"], correct: 1 },
+                    { id: 123, question: "Which is an IoT platform by IBM?", options: ["Watson IoT", "Azure IoT", "AWS IoT", "Google IoT"], correct: 1 },
+                    { id: 124, question: "Which IoT application is used in energy?", options: ["Smart meters", "Smart cars", "Smart classrooms", "Smart cameras"], correct: 1 },
+                    { id: 125, question: "Which IoT protocol is based on request/response model?", options: ["HTTP", "MQTT", "SMTP", "IMAP"], correct: 1 },
+                    { id: 126, question: "Which IoT component enables connectivity?", options: ["Router", "Sensor", "Database", "Actuator"], correct: 1 },
+                    { id: 127, question: "Which IoT technology provides wide coverage and low power?", options: ["LoRaWAN", "Ethernet", "Token Ring", "ISDN"], correct: 1 },
+                    { id: 128, question: "Which IoT application is used in smart homes?", options: ["Smart lighting", "Smart printer", "Smart keyboard", "Smart projector"], correct: 1 },
+                    { id: 129, question: "Which of these is an IoT communication model?", options: ["Device-to-device", "Device-to-cloud", "Device-to-gateway", "All of the above"], correct: 4 },
+                    { id: 130, question: "Which IoT technology ensures scalability?", options: ["Cloud computing", "CRT displays", "Floppy disks", "Punch cards"], correct: 1 },
+
+                    { id: 131, question: "Which IoT application is used in security?", options: ["Smart surveillance cameras", "Word processors", "Printers", "Keyboards"], correct: 1 },
+                    { id: 132, question: "Which IoT feature allows devices to operate without human intervention?", options: ["Automation", "Manual input", "Isolation", "Batch processing"], correct: 1 },
+                    { id: 133, question: "Which IoT communication technology is best for wearable devices?", options: ["Bluetooth Low Energy", "Ethernet", "DSL", "Satellite"], correct: 1 },
+                    { id: 134, question: "Which IoT device is used in logistics?", options: ["GPS trackers", "Scanners", "Printers", "Projectors"], correct: 1 },
+                    { id: 135, question: "Which IoT application is related to smart cities?", options: ["Waste management", "Video streaming", "Social networking", "Gaming"], correct: 1 },
+                    { id: 136, question: "Which IoT component is responsible for sensing data?", options: ["Sensor", "Actuator", "Gateway", "Database"], correct: 1 },
+                    { id: 137, question: "Which IoT protocol is lightweight and suitable for messaging?", options: ["MQTT", "SMTP", "FTP", "POP3"], correct: 1 },
+                    { id: 138, question: "Which IoT application is used in homes?", options: ["Smart locks", "Printers", "CD-ROM", "Scanners"], correct: 1 },
+                    { id: 139, question: "Which IoT application is used in automobiles?", options: ["Connected cars", "Gaming consoles", "Photo editors", "Spreadsheets"], correct: 1 },
+                    { id: 140, question: "Which IoT technology ensures device identification?", options: ["RFID", "OCR", "Compiler", "Debugger"], correct: 1 },
+
+                    { id: 141, question: "Which of the following is an IoT cloud service?", options: ["Google Cloud IoT", "Azure IoT", "AWS IoT", "All of the above"], correct: 4 },
+                    { id: 142, question: "Which IoT application belongs to industrial IoT?", options: ["Predictive maintenance", "Gaming apps", "Music apps", "Photo editors"], correct: 1 },
+                    { id: 143, question: "Which IoT device is used in fitness?", options: ["Smartwatch", "Printer", "Scanner", "Keyboard"], correct: 1 },
+                    { id: 144, question: "Which IoT technology is widely used in contactless cards?", options: ["NFC", "Ethernet", "DSL", "Coaxial cable"], correct: 1 },
+                    { id: 145, question: "Which IoT feature enables devices to communicate directly?", options: ["M2M communication", "Isolation", "Offline processing", "Batch processing"], correct: 1 },
+                    { id: 146, question: "Which IoT application is used in agriculture?", options: ["Crop monitoring", "Photo editing", "Word processing", "Gaming"], correct: 1 },
+                    { id: 147, question: "Which IoT protocol works on the publish-subscribe model?", options: ["MQTT", "HTTP", "FTP", "SMTP"], correct: 1 },
+                    { id: 148, question: "Which IoT device is used in smart homes?", options: ["Smart speakers", "Floppy disks", "Printers", "Scanners"], correct: 1 },
+                    { id: 149, question: "Which IoT application is used in waste management?", options: ["Smart bins", "Word processors", "Gaming consoles", "Scanners"], correct: 1 },
+                    { id: 150, question: "Which IoT feature ensures unique addressing?", options: ["IPv6", "IPv4 only", "Domain names", "MAC only"], correct: 1 },
+
+                    { id: 151, question: "Which IoT application is in transportation?", options: ["Fleet tracking", "Video editing", "Word processing", "Photo scanning"], correct: 1 },
+                    { id: 152, question: "Which IoT technology helps in large-scale device deployment?", options: ["Cloud computing", "CRT monitors", "Floppy disks", "Punch cards"], correct: 1 },
+                    { id: 153, question: "Which IoT device is used for smart healthcare?", options: ["Smart insulin pumps", "Printers", "Scanners", "Typewriters"], correct: 1 },
+                    { id: 154, question: "Which IoT application is related to home automation?", options: ["Smart appliances", "Gaming consoles", "E-mail apps", "CD-ROM"], correct: 1 },
+                    { id: 155, question: "Which IoT technology supports ultra-low power consumption?", options: ["Bluetooth Low Energy", "Ethernet", "Token Ring", "DSL"], correct: 1 },
+                    { id: 156, question: "Which IoT application helps monitor climate?", options: ["Weather sensors", "Photo editors", "Music players", "Word processors"], correct: 1 },
+                    { id: 157, question: "Which IoT device is used in tracking pets?", options: ["GPS collars", "Scanners", "Monitors", "Keyboards"], correct: 1 },
+                    { id: 158, question: "Which IoT application belongs to retail?", options: ["Inventory tracking", "Gaming", "Typing", "Photo editing"], correct: 1 },
+                    { id: 159, question: "Which IoT feature reduces human intervention?", options: ["Automation", "Manual processing", "Offline storage", "Batch processing"], correct: 1 },
+                    { id: 160, question: "Which IoT device is used in smart security systems?", options: ["Smart cameras", "Printers", "Scanners", "Keyboards"], correct: 1 },
+                    { id: 161, question: "Which IoT protocol is best for lightweight messaging?", options: ["MQTT", "SMTP", "FTP", "POP3"], correct: 1 },
+                    { id: 162, question: "Which IoT application belongs to agriculture?", options: ["Soil health monitoring", "Movie streaming", "Gaming", "Social media"], correct: 1 },
+                    { id: 163, question: "Which IoT device is used for home automation?", options: ["Smart door locks", "Printers", "Scanners", "Monitors"], correct: 1 },
+                    { id: 164, question: "Which technology enhances IoT with intelligence?", options: ["Artificial Intelligence", "Floppy disks", "Typewriters", "Manual input"], correct: 1 },
+                    { id: 165, question: "Which IoT application is used in healthcare?", options: ["Wearable ECG monitor", "Gaming consoles", "Printers", "Scanners"], correct: 1 },
+                    { id: 166, question: "Which IoT protocol works in request/response model?", options: ["HTTP", "MQTT", "SMTP", "IMAP"], correct: 1 },
+                    { id: 167, question: "Which IoT application is in transportation?", options: ["Connected vehicles", "Spreadsheets", "Photo editing", "Typing software"], correct: 1 },
+                    { id: 168, question: "Which IoT feature is enabled by IPv6?", options: ["Large address space", "Small memory", "File transfer", "Manual updates"], correct: 1 },
+                    { id: 169, question: "Which IoT device is used for pet tracking?", options: ["GPS collars", "Scanners", "Monitors", "Routers"], correct: 1 },
+                    { id: 170, question: "Which IoT application is used in smart cities?", options: ["Smart traffic lights", "Music apps", "E-mail", "Word processing"], correct: 1 },
+
+                    { id: 171, question: "Which IoT protocol is secure for communication?", options: ["HTTPS", "FTP", "SMTP", "POP3"], correct: 1 },
+                    { id: 172, question: "Which IoT device is used in fitness?", options: ["Smart band", "Printer", "Keyboard", "Scanner"], correct: 1 },
+                    { id: 173, question: "Which IoT technology allows tap-and-pay?", options: ["NFC", "Ethernet", "DSL", "Coaxial cable"], correct: 1 },
+                    { id: 174, question: "Which IoT application is in smart homes?", options: ["Smart lighting systems", "Gaming consoles", "File managers", "Printers"], correct: 1 },
+                    { id: 175, question: "Which IoT technology is best for low-power long-range?", options: ["LoRaWAN", "Wi-Fi", "Bluetooth", "Ethernet"], correct: 1 },
+                    { id: 176, question: "Which IoT device helps in remote patient monitoring?", options: ["Wearable health devices", "Scanners", "Routers", "Keyboards"], correct: 1 },
+                    { id: 177, question: "Which IoT protocol is widely used for constrained devices?", options: ["CoAP", "SMTP", "Telnet", "FTP"], correct: 1 },
+                    { id: 178, question: "Which IoT application is related to environment?", options: ["Air pollution sensors", "Word processors", "E-mail", "Video games"], correct: 1 },
+                    { id: 179, question: "Which IoT feature reduces network delays?", options: ["Edge computing", "Centralized cloud only", "Manual processing", "Offline storage"], correct: 1 },
+                    { id: 180, question: "Which IoT application is related to energy?", options: ["Smart grids", "CD-ROM", "Gaming consoles", "Scanners"], correct: 1 },
+
+                    { id: 181, question: "Which IoT technology supports direct device-to-device communication?", options: ["Bluetooth", "DSL", "Ethernet", "ISDN"], correct: 1 },
+                    { id: 182, question: "Which IoT device is used in logistics?", options: ["GPS trackers", "Printers", "Scanners", "Monitors"], correct: 1 },
+                    { id: 183, question: "Which IoT application is part of Industry 4.0?", options: ["Predictive maintenance", "Gaming apps", "Word processors", "Photo editors"], correct: 1 },
+                    { id: 184, question: "Which IoT protocol is based on publish/subscribe model?", options: ["MQTT", "HTTP", "FTP", "SMTP"], correct: 1 },
+                    { id: 185, question: "Which IoT device is used for smart farming?", options: ["Soil moisture sensor", "Scanner", "Keyboard", "Monitor"], correct: 1 },
+                    { id: 186, question: "Which IoT application belongs to retail?", options: ["Smart shelves", "Spreadsheet software", "Video players", "Photo editors"], correct: 1 },
+                    { id: 187, question: "Which IoT feature enables automation?", options: ["Self-operating devices", "Manual processing", "Human-only control", "Offline files"], correct: 1 },
+                    { id: 188, question: "Which IoT device is an example of smart wearables?", options: ["Apple Watch", "Printer", "Floppy disk", "Monitor"], correct: 1 },
+                    { id: 189, question: "Which IoT application is used in public safety?", options: ["Smart surveillance", "Gaming", "Social networking", "Typing"], correct: 1 },
+                    { id: 190, question: "Which IoT technology ensures device identification?", options: ["RFID", "SMTP", "OCR", "Compiler"], correct: 1 },
+
+                    { id: 191, question: "Which IoT application belongs to waste management?", options: ["Smart bins", "CD-ROM", "Keyboard", "Spreadsheet"], correct: 1 },
+                    { id: 192, question: "Which IoT technology provides short-range, low-energy communication?", options: ["Bluetooth Low Energy", "Ethernet", "DSL", "Satellite"], correct: 1 },
+                    { id: 193, question: "Which IoT application is in healthcare?", options: ["Smart pill dispenser", "Gaming apps", "Video streaming", "Music players"], correct: 1 },
+                    { id: 194, question: "Which IoT device is used in smart classrooms?", options: ["Smart boards", "Scanners", "Printers", "Floppy disks"], correct: 1 },
+                    { id: 195, question: "Which IoT protocol is used for constrained RESTful environments?", options: ["CoAP", "SMTP", "POP3", "FTP"], correct: 1 },
+                    { id: 196, question: "Which IoT application is in energy management?", options: ["Smart meters", "Word processors", "CD-ROM", "Gaming"], correct: 1 },
+                    { id: 197, question: "Which IoT device is used in healthcare for vital tracking?", options: ["Smartwatch", "Monitor", "Keyboard", "Scanner"], correct: 1 },
+                    { id: 198, question: "Which IoT application is in transportation?", options: ["Smart parking systems", "Typing tutors", "Video games", "Music apps"], correct: 1 },
+                    { id: 199, question: "Which IoT feature ensures data security?", options: ["Encryption", "Open access", "No security", "Plain text storage"], correct: 1 },
+                    { id: 200, question: "Which IoT technology reduces latency in real-time systems?", options: ["Edge computing", "Offline files", "Manual updates", "Batch processing"], correct: 1 },
+
+                    { id: 201, question: "Which IoT device is used in smart homes?", options: ["Smart refrigerator", "Scanners", "Printers", "Monitors"], correct: 1 },
+                    { id: 202, question: "Which IoT protocol is used for machine-to-machine communication?", options: ["MQTT", "POP3", "SMTP", "FTP"], correct: 1 },
+                    { id: 203, question: "Which IoT application belongs to agriculture?", options: ["Crop monitoring", "Music players", "Gaming consoles", "Spreadsheets"], correct: 1 },
+                    { id: 204, question: "Which IoT technology ensures unique identification of objects?", options: ["RFID", "SMTP", "Compiler", "OCR"], correct: 1 },
+                    { id: 205, question: "Which IoT device is used in healthcare monitoring?", options: ["ECG sensors", "Printers", "Scanners", "Monitors"], correct: 1 },
+                    { id: 206, question: "Which IoT application is used in logistics?", options: ["Fleet management", "CD-ROM", "Gaming apps", "Video editing"], correct: 1 },
+                    { id: 207, question: "Which IoT technology is expected to drive IoT growth?", options: ["5G", "DSL", "ISDN", "Cable TV"], correct: 1 },
+                    { id: 208, question: "Which IoT application is used in smart cities?", options: ["Smart waste management", "Word processors", "E-mail apps", "Printers"], correct: 1 },
+                    { id: 209, question: "Which IoT feature provides automation?", options: ["Self-operation", "Manual updates", "Offline input", "Batch processing"], correct: 1 },
+                    { id: 210, question: "Which IoT device is used for smart security?", options: ["Smart cameras", "Floppy disks", "Scanners", "Monitors"], correct: 1 },
+
+                    { id: 211, question: "Which IoT protocol is optimized for constrained devices?", options: ["CoAP", "HTTP", "SMTP", "FTP"], correct: 1 },
+                    { id: 212, question: "Which IoT application is in healthcare?", options: ["Remote patient monitoring", "Music streaming", "Typing tutors", "Photo editing"], correct: 1 },
+                    { id: 213, question: "Which IoT device is wearable?", options: ["Fitness tracker", "Keyboard", "Printer", "Monitor"], correct: 1 },
+                    { id: 214, question: "Which IoT application belongs to smart cities?", options: ["Smart street lighting", "Word editing", "Gaming", "Typing"], correct: 1 },
+                    { id: 215, question: "Which IoT technology ensures better bandwidth and speed?", options: ["5G", "Dial-up", "ISDN", "Token Ring"], correct: 1 },
+                    { id: 216, question: "Which IoT device is used in agriculture?", options: ["Drones", "Printers", "Scanners", "Monitors"], correct: 1 },
+                    { id: 217, question: "Which IoT application is related to waste management?", options: ["Smart garbage bins", "Word processors", "Social networking", "Photo editing"], correct: 1 },
+                    { id: 218, question: "Which IoT technology allows real-time processing?", options: ["Edge computing", "Offline updates", "Batch processing", "Manual input"], correct: 1 },
+                    { id: 219, question: "Which IoT device is used in connected cars?", options: ["GPS system", "Scanners", "Printers", "Routers"], correct: 1 },
+                    { id: 220, question: "Which IoT feature ensures devices can communicate over internet?", options: ["Connectivity", "Isolation", "Manual operation", "Offline files"], correct: 1 },
+                    { id: 201, question: "Which IoT device is used in smart homes?", options: ["Smart refrigerator", "Scanners", "Printers", "Monitors"], correct: 1 },
+                    { id: 202, question: "Which IoT protocol is used for machine-to-machine communication?", options: ["MQTT", "POP3", "SMTP", "FTP"], correct: 1 },
+                    { id: 203, question: "Which IoT application belongs to agriculture?", options: ["Crop monitoring", "Music players", "Gaming consoles", "Spreadsheets"], correct: 1 },
+                    { id: 204, question: "Which IoT technology ensures unique identification of objects?", options: ["RFID", "SMTP", "Compiler", "OCR"], correct: 1 },
+                    { id: 205, question: "Which IoT device is used in healthcare monitoring?", options: ["ECG sensors", "Printers", "Scanners", "Monitors"], correct: 1 },
+                    { id: 206, question: "Which IoT application is used in logistics?", options: ["Fleet management", "CD-ROM", "Gaming apps", "Video editing"], correct: 1 },
+                    { id: 207, question: "Which IoT technology is expected to drive IoT growth?", options: ["5G", "DSL", "ISDN", "Cable TV"], correct: 1 },
+                    { id: 208, question: "Which IoT application is used in smart cities?", options: ["Smart waste management", "Word processors", "E-mail apps", "Printers"], correct: 1 },
+                    { id: 209, question: "Which IoT feature provides automation?", options: ["Self-operation", "Manual updates", "Offline input", "Batch processing"], correct: 1 },
+                    { id: 210, question: "Which IoT device is used for smart security?", options: ["Smart cameras", "Floppy disks", "Scanners", "Monitors"], correct: 1 },
+
+                    { id: 211, question: "Which IoT protocol is optimized for constrained devices?", options: ["CoAP", "HTTP", "SMTP", "FTP"], correct: 1 },
+                    { id: 212, question: "Which IoT application is in healthcare?", options: ["Remote patient monitoring", "Music streaming", "Typing tutors", "Photo editing"], correct: 1 },
+                    { id: 213, question: "Which IoT device is wearable?", options: ["Fitness tracker", "Keyboard", "Printer", "Monitor"], correct: 1 },
+                    { id: 214, question: "Which IoT application belongs to smart cities?", options: ["Smart street lighting", "Word editing", "Gaming", "Typing"], correct: 1 },
+                    { id: 215, question: "Which IoT technology ensures better bandwidth and speed?", options: ["5G", "Dial-up", "ISDN", "Token Ring"], correct: 1 },
+                    { id: 216, question: "Which IoT device is used in agriculture?", options: ["Drones", "Printers", "Scanners", "Monitors"], correct: 1 },
+                    { id: 217, question: "Which IoT application is related to waste management?", options: ["Smart garbage bins", "Word processors", "Social networking", "Photo editing"], correct: 1 },
+                    { id: 218, question: "Which IoT technology allows real-time processing?", options: ["Edge computing", "Offline updates", "Batch processing", "Manual input"], correct: 1 },
+                    { id: 219, question: "Which IoT device is used in connected cars?", options: ["GPS system", "Scanners", "Printers", "Routers"], correct: 1 },
+                    { id: 220, question: "Which IoT feature ensures devices can communicate over internet?", options: ["Connectivity", "Isolation", "Manual operation", "Offline files"], correct: 1 },
+                    { id: 221, question: "Which of the following is an example of an IoT wearable device?", options: ["Smartwatch", "Smart Fridge", "Smart TV", "Smart Car"], correct: 1 },
+                    { id: 222, question: "Which IoT application is widely used in agriculture?", options: ["Soil moisture monitoring", "Smart TV apps", "Video conferencing", "Gaming"], correct: 1 },
+                    { id: 223, question: "Which protocol is designed for constrained devices and networks in IoT?", options: ["CoAP", "FTP", "SMTP", "IMAP"], correct: 1 },
+                    { id: 224, question: "Which of the following is a cloud platform for IoT?", options: ["AWS IoT Core", "Adobe Photoshop", "Google Docs", "MS Word"], correct: 1 },
+                    { id: 225, question: "In IoT, which is the role of an actuator?", options: ["Takes action based on data", "Collects data", "Stores data", "Analyzes data"], correct: 1 },
+                    { id: 226, question: "What does LPWAN stand for in IoT?", options: ["Low Power Wide Area Network", "Large Protocol Wide Access Network", "Low Profile Wireless Access Node", "Light Power Wireless Application Network"], correct: 1 },
+                    { id: 227, question: "Which of the following is a major concern in IoT?", options: ["Security", "Cooking", "Gaming", "Entertainment"], correct: 1 },
+                    { id: 228, question: "What type of sensors are used in smart home lighting systems?", options: ["Motion sensors", "Temperature sensors", "Pressure sensors", "Sound sensors"], correct: 1 },
+                    { id: 229, question: "Which IoT protocol is most lightweight?", options: ["MQTT", "HTTP", "SMTP", "FTP"], correct: 1 },
+                    { id: 230, question: "Which IoT communication technology is based on cellular networks?", options: ["NB-IoT", "Zigbee", "Bluetooth", "Wi-Fi"], correct: 1 },
+                    { id: 231, question: "Which among these is a common IoT device in smart homes?", options: ["Smart thermostat", "Gaming console", "Printer", "Camera tripod"], correct: 1 },
+                    { id: 232, question: "IoT devices often need to run on?", options: ["Low power", "High power", "Unlimited power", "Nuclear power"], correct: 1 },
+                    { id: 233, question: "Which of the following is NOT an IoT communication protocol?", options: ["SMTP", "MQTT", "CoAP", "Zigbee"], correct: 1 },
+                    { id: 234, question: "Which company developed Alexa for smart homes?", options: ["Amazon", "Microsoft", "Google", "Apple"], correct: 1 },
+                    { id: 235, question: "Which of these is an industrial IoT application?", options: ["Predictive maintenance", "Playing music", "Gaming", "Video editing"], correct: 1 },
+                    { id: 236, question: "Which of the following IoT communication methods works over very short ranges?", options: ["Bluetooth", "LoRaWAN", "NB-IoT", "Sigfox"], correct: 1 },
+                    { id: 237, question: "IoT security often uses which encryption method?", options: ["AES", "JPEG", "MPEG", "MP3"], correct: 1 },
+                    { id: 238, question: "Which is NOT a benefit of IoT?", options: ["Increased manual work", "Automation", "Efficiency", "Cost saving"], correct: 1 },
+                    { id: 239, question: "IoT in healthcare can be used for?", options: ["Remote patient monitoring", "Watching movies", "Playing games", "Photo editing"], correct: 1 },
+                    { id: 240, question: "Which technology is most useful for IoT device location tracking?", options: ["GPS", "Photoshop", "WordPress", "PowerPoint"], correct: 1 },
+
+                    { id: 241, question: "Which is a standard for low-power wireless IoT networks?", options: ["Zigbee", "Ethernet", "HDMI", "USB"], correct: 1 },
+                    { id: 242, question: "Which IoT communication method is suitable for smart meters?", options: ["NB-IoT", "Bluetooth", "USB", "VGA"], correct: 1 },
+                    { id: 243, question: "IoT in smart cities is used for?", options: ["Traffic management", "Gaming", "Cooking", "Painting"], correct: 1 },
+                    { id: 244, question: "Which technology is commonly used in wearable IoT devices?", options: ["Bluetooth", "Ethernet", "HDMI", "NFC"], correct: 1 },
+                    { id: 245, question: "Which of these is a key IoT challenge?", options: ["Scalability", "Cooking", "Dancing", "Singing"], correct: 1 },
+                    { id: 246, question: "Which is an IoT application in transportation?", options: ["Fleet tracking", "Music playback", "Video editing", "Text editing"], correct: 1 },
+                    { id: 247, question: "Which of the following is an IoT cloud platform?", options: ["Google Cloud IoT", "Excel", "PowerPoint", "Word"], correct: 1 },
+                    { id: 248, question: "Which type of sensor detects gas leakage in IoT systems?", options: ["Gas sensor", "Light sensor", "Sound sensor", "Motion sensor"], correct: 1 },
+                    { id: 249, question: "Which of the following is NOT a wireless IoT communication technology?", options: ["Ethernet", "Zigbee", "LoRa", "Bluetooth"], correct: 1 },
+                    { id: 250, question: "IoT device identity can be managed by?", options: ["Unique IDs", "Password only", "IPV4 only", "QR code only"], correct: 1 },
+
+                    { id: 251, question: "Which IoT technology is designed for rural connectivity?", options: ["LoRaWAN", "Ethernet", "Bluetooth", "HDMI"], correct: 1 },
+                    { id: 252, question: "IoT in retail is used for?", options: ["Smart shelves", "Cooking food", "Editing images", "Making videos"], correct: 1 },
+                    { id: 253, question: "Which of the following is a security risk in IoT?", options: ["Data breach", "Fast charging", "Loud sound", "High brightness"], correct: 1 },
+                    { id: 254, question: "Which network topology is most common in IoT?", options: ["Mesh", "Ring", "Bus", "Star"], correct: 1 },
+                    { id: 255, question: "Which IoT protocol is most suitable for resource-constrained devices?", options: ["CoAP", "HTTP", "SMTP", "POP3"], correct: 1 },
+                    { id: 256, question: "Which company developed Google Nest for smart homes?", options: ["Google", "Microsoft", "Apple", "IBM"], correct: 1 },
+                    { id: 257, question: "Which of these is NOT an IoT enabling technology?", options: ["Blockchain", "5G", "Machine Learning", "Typewriter"], correct: 4 },
+                    { id: 258, question: "Which IoT communication technology supports very long range?", options: ["LoRa", "Bluetooth", "Zigbee", "NFC"], correct: 1 },
+                    { id: 259, question: "Which is an IoT application in energy management?", options: ["Smart grids", "Gaming consoles", "Video streaming", "Cooking"], correct: 1 },
+                    { id: 260, question: "Which IoT technology is designed for battery-powered devices?", options: ["LPWAN", "Ethernet", "Fiber optics", "DSL"], correct: 1 },
+
+                    { id: 261, question: "Which sensor is used in smart parking IoT systems?", options: ["Ultrasonic sensor", "Gas sensor", "Light sensor", "Sound sensor"], correct: 1 },
+                    { id: 262, question: "Which IoT device is commonly used in agriculture?", options: ["Soil sensor", "Smart TV", "Printer", "Router"], correct: 1 },
+                    { id: 263, question: "IoT devices often use which type of processors?", options: ["Microcontrollers", "Supercomputers", "Mainframes", "Quantum chips"], correct: 1 },
+                    { id: 264, question: "Which IoT protocol is based on a publish-subscribe model?", options: ["MQTT", "HTTP", "SMTP", "IMAP"], correct: 1 },
+                    { id: 265, question: "Which IoT standard focuses on interoperability?", options: ["OneM2M", "USB", "HDMI", "VGA"], correct: 1 },
+                    { id: 266, question: "Which of the following is NOT an IoT device?", options: ["Smart Refrigerator", "Smartwatch", "Gaming Mouse", "Light bulb"], correct: 3 },
+                    { id: 267, question: "Which layer of IoT architecture includes cloud services?", options: ["Application layer", "Perception layer", "Network layer", "Device layer"], correct: 1 },
+                    { id: 268, question: "IoT applications in healthcare include?", options: ["Smart insulin pumps", "Text editing", "Photo filters", "Gaming"], correct: 1 },
+                    { id: 269, question: "Which IoT device is used for home automation?", options: ["Smart thermostat", "Projector", "Scanner", "Keyboard"], correct: 1 },
+                    { id: 270, question: "Which IoT protocol is commonly used for device discovery?", options: ["CoAP", "DNS-SD", "SMTP", "POP3"], correct: 2 },
+
+                    { id: 271, question: "Which IoT application helps reduce energy consumption?", options: ["Smart lighting", "Gaming", "Cooking", "Painting"], correct: 1 },
+                    { id: 272, question: "IoT in supply chain management helps in?", options: ["Tracking goods", "Editing videos", "Playing games", "Cooking food"], correct: 1 },
+                    { id: 273, question: "Which of the following is a key feature of IoT devices?", options: ["Connectivity", "Unlimited storage", "High graphics", "Loud audio"], correct: 1 },
+                    { id: 274, question: "Which IoT protocol is based on REST architecture?", options: ["CoAP", "MQTT", "SMTP", "POP3"], correct: 1 },
+                    { id: 275, question: "Which company provides Azure IoT services?", options: ["Microsoft", "Apple", "Google", "Amazon"], correct: 1 },
+                    { id: 276, question: "IoT applications in transportation include?", options: ["Traffic monitoring", "Photo editing", "Gaming", "Cooking"], correct: 1 },
+                    { id: 277, question: "Which communication protocol is NOT used in IoT?", options: ["SMTP", "MQTT", "CoAP", "Zigbee"], correct: 1 },
+                    { id: 278, question: "Which of the following IoT applications is used in homes?", options: ["Smart door locks", "Gaming console", "Printer", "Scanner"], correct: 1 },
+                    { id: 279, question: "Which IoT standard is related to home automation?", options: ["Zigbee", "USB", "HDMI", "Ethernet"], correct: 1 },
+                    { id: 280, question: "IoT sensors in smart farming can monitor?", options: ["Soil moisture", "Gaming score", "Movie ratings", "Cooking speed"], correct: 1 },
+
+                    { id: 281, question: "Which wireless technology is commonly used in IoT healthcare devices?", options: ["Bluetooth Low Energy", "Ethernet", "HDMI", "VGA"], correct: 1 },
+                    { id: 282, question: "IoT in disaster management is used for?", options: ["Early warning systems", "Gaming", "Cooking", "Photo editing"], correct: 1 },
+                    { id: 283, question: "Which layer of IoT architecture contains sensors?", options: ["Perception layer", "Application layer", "Network layer", "Service layer"], correct: 1 },
+                    { id: 284, question: "Which IoT device is commonly used in fitness tracking?", options: ["Smartwatch", "Smart oven", "Smart fridge", "Smart TV"], correct: 1 },
+                    { id: 285, question: "Which IoT communication technology is best for long battery life?", options: ["LoRa", "Bluetooth", "Wi-Fi", "Ethernet"], correct: 1 },
+                    { id: 286, question: "IoT in industrial automation helps with?", options: ["Predictive maintenance", "Cooking", "Painting", "Gaming"], correct: 1 },
+                    { id: 287, question: "Which IoT security measure ensures data is not altered?", options: ["Integrity", "Confidentiality", "Availability", "Scalability"], correct: 1 },
+                    { id: 288, question: "Which IoT application is related to smart energy?", options: ["Smart meters", "Gaming consoles", "Printers", "Speakers"], correct: 1 },
+                    { id: 289, question: "Which protocol is often used for secure IoT communication?", options: ["TLS", "JPEG", "GIF", "MP3"], correct: 1 },
+                    { id: 290, question: "IoT in education can be used for?", options: ["Smart classrooms", "Cooking", "Painting", "Gaming"], correct: 1 },
+
+                    { id: 291, question: "Which IoT device helps control home lighting remotely?", options: ["Smart bulbs", "Projector", "Printer", "Scanner"], correct: 1 },
+                    { id: 292, question: "Which IoT technology is used in contactless payments?", options: ["NFC", "Ethernet", "HDMI", "USB"], correct: 1 },
+                    { id: 293, question: "Which of the following IoT applications is used in healthcare?", options: ["Wearable heart monitors", "Photo editing apps", "Video players", "Printers"], correct: 1 },
+                    { id: 294, question: "Which IoT device is used in smart transportation?", options: ["GPS tracker", "Joystick", "Scanner", "Monitor"], correct: 1 },
+                    { id: 295, question: "IoT devices often communicate via?", options: ["Wireless networks", "Paper letters", "DVDs", "USB only"], correct: 1 },
+                    { id: 296, question: "Which is NOT a challenge of IoT?", options: ["Increased manual work", "Security", "Scalability", "Interoperability"], correct: 1 },
+                    { id: 297, question: "IoT applications in smart homes include?", options: ["Energy management", "Cooking manually", "Gaming", "Painting"], correct: 1 },
+                    { id: 298, question: "Which IoT standard is used for device-to-device communication?", options: ["Zigbee", "SMTP", "POP3", "HTTP"], correct: 1 },
+                    { id: 299, question: "Which IoT technology supports massive device connectivity?", options: ["5G", "USB", "HDMI", "Ethernet"], correct: 1 },
+                    { id: 300, question: "Which IoT device is used in agriculture for irrigation?", options: ["Smart sprinklers", "Projector", "Speaker", "Printer"], correct: 1 },
+                    { id: 301, question: "Which protocol is lightweight and suitable for constrained IoT devices?", options: ["HTTP", "MQTT", "FTP", "SMTP"], correct: 2 },
+                    { id: 302, question: "Which layer of IoT architecture ensures device-to-device communication?", options: ["Perception Layer", "Network Layer", "Application Layer", "Processing Layer"], correct: 2 },
+                    { id: 303, question: "Which technology is used for location tracking in IoT?", options: ["GPS", "Bluetooth", "Zigbee", "LoRa"], correct: 1 },
+                    { id: 304, question: "In IoT, CoAP stands for?", options: ["Constrained Application Protocol", "Control Access Protocol", "Connected Application Protocol", "Configuration Access Protocol"], correct: 1 },
+                    { id: 305, question: "Which of the following is NOT an IoT communication protocol?", options: ["MQTT", "CoAP", "Zigbee", "MySQL"], correct: 4 },
+                    { id: 306, question: "What does LPWAN stand for?", options: ["Low Power Wide Area Network", "Low Protocol Wide Area Network", "Long Protocol Wireless Area Network", "Low Precision Wireless Area Network"], correct: 1 },
+                    { id: 307, question: "Which IoT protocol is based on the publish-subscribe model?", options: ["HTTP", "MQTT", "CoAP", "AMQP"], correct: 2 },
+                    { id: 308, question: "IoT devices usually have constraints in?", options: ["Power", "Processing", "Memory", "All of the above"], correct: 4 },
+                    { id: 309, question: "Which is the smallest unit of IoT system?", options: ["Gateway", "Device/Thing", "Cloud", "Application"], correct: 2 },
+                    { id: 310, question: "Which of these is a key feature of IoT?", options: ["Connectivity", "Automation", "Sensing", "All of the above"], correct: 4 },
+                    { id: 311, question: "Which cloud service is widely used in IoT?", options: ["AWS IoT Core", "Oracle VM", "MS Excel", "Apache Kafka"], correct: 1 },
+                    { id: 312, question: "Which wireless technology is MOST energy efficient?", options: ["Wi-Fi", "Bluetooth Low Energy", "4G LTE", "Ethernet"], correct: 2 },
+                    { id: 313, question: "Which security measure is most critical in IoT?", options: ["Authentication", "Encryption", "Access Control", "All of the above"], correct: 4 },
+                    { id: 314, question: "IoT data analytics is used to?", options: ["Collect raw data", "Visualize and derive insights", "Build sensors", "Replace hardware"], correct: 2 },
+                    { id: 315, question: "Which is an IoT middleware?", options: ["Node-RED", "Excel", "Photoshop", "Visual Studio"], correct: 1 },
+                    { id: 316, question: "IoT gateways are responsible for?", options: ["Powering sensors", "Data aggregation and forwarding", "Manufacturing sensors", "Replacing actuators"], correct: 2 },
+                    { id: 317, question: "Which of the following is an IoT operating system?", options: ["Contiki", "Windows 11", "Ubuntu Server", "RedHat Linux"], correct: 1 },
+                    { id: 318, question: "Which is an example of an IoT application?", options: ["Smart Home", "Smart City", "Smart Healthcare", "All of the above"], correct: 4 },
+                    { id: 319, question: "Which IoT communication protocol runs on UDP?", options: ["CoAP", "MQTT", "HTTP", "SMTP"], correct: 1 },
+                    { id: 320, question: "Which of these technologies allows short-range IoT communication?", options: ["Bluetooth", "Wi-Fi", "Zigbee", "All of the above"], correct: 4 },
+                    { id: 321, question: "Which IoT network is used for long-range, low-power communication?", options: ["Zigbee", "LoRaWAN", "Bluetooth", "Wi-Fi"], correct: 2 },
+                    { id: 322, question: "IoT edge computing refers to?", options: ["Processing data near devices", "Processing only in cloud", "Only storing data", "Sending all raw data to server"], correct: 1 },
+                    { id: 323, question: "Which of the following is an IoT platform?", options: ["Google Cloud IoT", "AWS IoT", "Azure IoT", "All of the above"], correct: 4 },
+                    { id: 324, question: "Which of the following is used for IoT device discovery?", options: ["mDNS", "FTP", "SMTP", "ARP"], correct: 1 },
+                    { id: 325, question: "Which is a challenge in IoT?", options: ["Interoperability", "Security", "Scalability", "All of the above"], correct: 4 },
+                    { id: 326, question: "IoT actuators are used to?", options: ["Sense data", "Store data", "Perform actions", "Transmit data"], correct: 3 },
+                    { id: 327, question: "Which type of sensor is used for temperature monitoring in IoT?", options: ["Accelerometer", "Thermistor", "Gyroscope", "Magnetometer"], correct: 2 },
+                    { id: 328, question: "Which IoT protocol is widely used for smart homes?", options: ["Zigbee", "SMTP", "FTP", "Telnet"], correct: 1 },
+                    { id: 329, question: "Which of the following is NOT a wireless IoT technology?", options: ["LoRa", "Zigbee", "Bluetooth", "USB"], correct: 4 },
+                    { id: 330, question: "Which of the following is a healthcare IoT application?", options: ["Smartwatch monitoring", "Automated farming", "Traffic light control", "Smart parking"], correct: 1 },
+                    { id: 331, question: "Which security method ensures only valid devices connect to IoT networks?", options: ["Authentication", "Encapsulation", "Virtualization", "Obfuscation"], correct: 1 },
+                    { id: 332, question: "Which IoT protocol uses a REST-based model?", options: ["MQTT", "CoAP", "Zigbee", "FTP"], correct: 2 },
+                    { id: 333, question: "Which IoT device is used in agriculture?", options: ["Soil moisture sensor", "Heart rate monitor", "Thermostat", "Camera"], correct: 1 },
+                    { id: 334, question: "IoT-based traffic systems improve?", options: ["Traffic flow", "Safety", "Air quality", "All of the above"], correct: 4 },
+                    { id: 335, question: "Which technology enables IoT devices to communicate directly without infrastructure?", options: ["Ad-hoc networks", "Wi-Fi", "Bluetooth", "Zigbee"], correct: 1 },
+                    { id: 336, question: "IoT security threats include?", options: ["Data breach", "Botnet attack", "Device hijacking", "All of the above"], correct: 4 },
+                    { id: 337, question: "Which protocol is mostly used in IoT for low-bandwidth communication?", options: ["MQTT", "SMTP", "POP3", "HTTP"], correct: 1 },
+                    { id: 338, question: "IoT nodes usually consist of?", options: ["Sensors", "Microcontrollers", "Wireless modules", "All of the above"], correct: 4 },
+                    { id: 339, question: "Which of these is an example of wearable IoT?", options: ["Fitbit", "Drone", "Smart TV", "Thermostat"], correct: 1 },
+                    { id: 340, question: "IoT in industrial automation is called?", options: ["Industry 4.0", "Smart Factory", "IIoT", "All of the above"], correct: 4 },
+                    { id: 341, question: "Which type of IoT network is Bluetooth used for?", options: ["PAN", "WAN", "LAN", "MAN"], correct: 1 },
+                    { id: 342, question: "IoT gateways reduce?", options: ["Latency", "Bandwidth usage", "Cloud load", "All of the above"], correct: 4 },
+                    { id: 343, question: "Which IoT standard is designed for smart home devices?", options: ["Matter", "SMTP", "Telnet", "IMAP"], correct: 1 },
+                    { id: 344, question: "Which type of IP addressing is suitable for IoT?", options: ["IPv6", "IPv4", "MAC address only", "NAT only"], correct: 1 },
+                    { id: 345, question: "Which cloud service model is best for IoT platforms?", options: ["IaaS", "PaaS", "SaaS", "All"], correct: 2 },
+                    { id: 346, question: "Which IoT layer processes and analyzes data?", options: ["Application Layer", "Network Layer", "Perception Layer", "Processing Layer"], correct: 4 },
+                    { id: 347, question: "Which is the biggest challenge in IoT security?", options: ["Scalability", "Device heterogeneity", "Data privacy", "Power efficiency"], correct: 3 },
+                    { id: 348, question: "Which IoT system uses RFID tags?", options: ["Inventory management", "Weather monitoring", "Smart healthcare", "Wearables"], correct: 1 },
+                    { id: 349, question: "Which of the following is a low-power IoT connectivity standard?", options: ["Z-Wave", "Ethernet", "DSL", "Cable"], correct: 1 },
+                    { id: 350, question: "IoT fog computing is used for?", options: ["Edge-level processing", "Only cloud storage", "Only data sensing", "Remote hardware repair"], correct: 1 },
+                    { id: 351, question: "Which of these is a benefit of IoT?", options: ["Automation", "Efficiency", "Real-time monitoring", "All of the above"], correct: 4 },
+                    { id: 352, question: "IoT sensors convert?", options: ["Physical signals to digital data", "Digital data to images", "Cloud data to signals", "Code to applications"], correct: 1 },
+                    { id: 353, question: "Which IoT protocol runs on top of TCP?", options: ["MQTT", "CoAP", "Zigbee", "Bluetooth"], correct: 1 },
+                    { id: 354, question: "Which is a drawback of IoT?", options: ["Security risk", "High power demand", "Scalability issues", "All of the above"], correct: 4 },
+                    { id: 355, question: "Which IoT device is used in smart parking?", options: ["Ultrasonic sensor", "Thermometer", "Heart sensor", "Barometer"], correct: 1 },
+                    { id: 356, question: "Which IoT protocol is request/response based?", options: ["HTTP", "MQTT", "Zigbee", "LoRa"], correct: 1 },
+                    { id: 357, question: "Which standard supports device interoperability in IoT?", options: ["IEEE 802.15.4", "SMTP", "HTTP", "POP3"], correct: 1 },
+                    { id: 358, question: "IoT in agriculture is also called?", options: ["Smart Farming", "Smart City", "AgriNet", "Farm Cloud"], correct: 1 },
+                    { id: 359, question: "Which protocol is widely used for IoT device messaging?", options: ["MQTT", "POP3", "SMTP", "IMAP"], correct: 1 },
+                    { id: 360, question: "Which is a primary goal of IoT in healthcare?", options: ["Patient monitoring", "Weather monitoring", "Traffic control", "Energy saving"], correct: 1 },
+                    { id: 361, question: "Which wireless technology is commonly used in smart meters?", options: ["Zigbee", "Bluetooth", "NFC", "Wi-Fi"], correct: 1 },
+                    { id: 362, question: "Which IoT attack involves controlling devices remotely?", options: ["Botnet attack", "DoS attack", "Man-in-the-middle", "Phishing"], correct: 1 },
+                    { id: 363, question: "IoT-based smart grids improve?", options: ["Power distribution", "Energy efficiency", "Demand forecasting", "All of the above"], correct: 4 },
+                    { id: 364, question: "Which IoT device is commonly used in smart homes?", options: ["Smart thermostat", "Soil sensor", "Industrial PLC", "Satellite"], correct: 1 },
+                    { id: 365, question: "Which IoT communication method is most reliable?", options: ["Wired Ethernet", "Bluetooth", "LoRa", "Zigbee"], correct: 1 },
+                    { id: 366, question: "IoT predictive maintenance is used in?", options: ["Manufacturing", "Weather", "Healthcare", "Education"], correct: 1 },
+                    { id: 367, question: "Which IoT component is used to execute physical changes?", options: ["Actuator", "Sensor", "Transmitter", "Gateway"], correct: 1 },
+                    { id: 368, question: "Which IoT platform is open-source?", options: ["ThingsBoard", "AWS IoT", "Azure IoT", "Google IoT"], correct: 1 },
+                    { id: 369, question: "Which type of data is generated by IoT devices?", options: ["Structured", "Unstructured", "Semi-structured", "All"], correct: 4 },
+                    { id: 370, question: "Which IoT protocol is text-based?", options: ["HTTP", "MQTT", "Zigbee", "LoRa"], correct: 1 },
+                    { id: 371, question: "Which is the main advantage of IPv6 in IoT?", options: ["Large address space", "Low energy", "More power", "High speed"], correct: 1 },
+                    { id: 372, question: "Which IoT device is used in supply chain tracking?", options: ["RFID tag", "Thermometer", "Gyroscope", "Barometer"], correct: 1 },
+                    { id: 373, question: "Which IoT standard is used for smart appliances?", options: ["Matter", "SMTP", "CoAP", "POP3"], correct: 1 },
+                    { id: 374, question: "IoT interoperability issue arises due to?", options: ["Different protocols", "Different platforms", "Different devices", "All of the above"], correct: 4 },
+                    { id: 375, question: "Which IoT security measure protects data transmission?", options: ["Encryption", "Obfuscation", "Compression", "Redundancy"], correct: 1 },
+                    { id: 376, question: "IoT artificial intelligence is mainly used for?", options: ["Predictive analytics", "Basic sensing", "Wired communication", "Physical connectivity"], correct: 1 },
+                    { id: 377, question: "Which IoT system is used in home automation?", options: ["Smart switches", "Soil sensor", "Wearables", "Smartwatch"], correct: 1 },
+                    { id: 378, question: "IoT scalability challenge is related to?", options: ["Increasing number of devices", "Decreasing sensors", "Low bandwidth", "Less cloud storage"], correct: 1 },
+                    { id: 379, question: "Which IoT concept enables machine-to-machine communication?", options: ["M2M", "HTTP", "SMTP", "POP3"], correct: 1 },
+                    { id: 380, question: "Which is an example of industrial IoT?", options: ["Smart factory", "Smartwatch", "Smart home", "Fitness tracker"], correct: 1 },
+                    { id: 380, question: "Which technology is primarily used in low-power wide-area networks (LPWAN) for IoT?", options: ["Zigbee", "LoRaWAN", "Bluetooth", "Wi-Fi"], correct: 2 },
+                    { id: 381, question: "Which layer of IoT architecture handles data storage and analytics?", options: ["Perception layer", "Network layer", "Application layer", "Middleware layer"], correct: 4 },
+                    { id: 382, question: "What is the function of RFID in IoT?", options: ["Data analytics", "Object identification", "Cloud computing", "Network routing"], correct: 2 },
+                    { id: 383, question: "Which IoT protocol is lightweight and works on publish/subscribe?", options: ["HTTP", "CoAP", "MQTT", "AMQP"], correct: 3 },
+                    { id: 384, question: "What does NB-IoT stand for?", options: ["New Broadband IoT", "Narrowband IoT", "Network-Based IoT", "Next-Bit IoT"], correct: 2 },
+                    { id: 385, question: "Which is NOT a characteristic of IoT?", options: ["Interconnectivity", "Scalability", "Manual processing", "Intelligence"], correct: 3 },
+                    { id: 386, question: "Which protocol is often used for IoT device discovery?", options: ["DNS-SD", "SMTP", "FTP", "POP3"], correct: 1 },
+                    { id: 387, question: "Which of these is an IoT cloud platform?", options: ["AWS IoT", "Microsoft Azure IoT Hub", "Google Cloud IoT", "All of the above"], correct: 4 },
+                    { id: 388, question: "What is the main purpose of IoT edge computing?", options: ["Perform computing at data centers", "Reduce latency by processing data near source", "Store data in cloud", "Increase power consumption"], correct: 2 },
+                    { id: 389, question: "Which of the following is a short-range IoT communication technology?", options: ["LoRaWAN", "Bluetooth", "NB-IoT", "Sigfox"], correct: 2 },
+                    { id: 390, question: "In IoT, what is an actuator?", options: ["A device that senses environment", "A device that processes data", "A device that performs actions", "A device that stores data"], correct: 3 },
+                    { id: 391, question: "Which is a key security challenge in IoT?", options: ["Scalability", "Data confidentiality", "Interoperability", "Mobility"], correct: 2 },
+                    { id: 392, question: "Which IoT protocol uses constrained devices with REST architecture?", options: ["HTTP", "CoAP", "MQTT", "AMQP"], correct: 2 },
+                    { id: 393, question: "Which IoT layer ensures secure communication?", options: ["Perception layer", "Network layer", "Middleware layer", "Application layer"], correct: 2 },
+                    { id: 394, question: "Which wireless technology supports mesh networking in IoT?", options: ["Bluetooth", "Zigbee", "Wi-Fi", "NB-IoT"], correct: 2 },
+                    { id: 395, question: "What does M2M stand for in IoT?", options: ["Machine-to-Machine", "Middleware-to-Middleware", "Model-to-Model", "Micro-to-Macro"], correct: 1 },
+                    { id: 396, question: "Which of these is NOT an IoT application?", options: ["Smart homes", "Autonomous vehicles", "Online video streaming", "Wearables"], correct: 3 },
+                    { id: 397, question: "Which protocol is used for sending messages between IoT devices and brokers?", options: ["MQTT", "SMTP", "FTP", "SSH"], correct: 1 },
+                    { id: 398, question: "Which IoT security approach ensures that devices communicate only with authorized servers?", options: ["Data integrity", "Authentication", "Encryption", "Hashing"], correct: 2 },
+                    { id: 399, question: "What is the primary function of a gateway in IoT?", options: ["Connect IoT devices to internet", "Store IoT data", "Process IoT analytics", "Generate IoT power"], correct: 1 },
+                    { id: 400, question: "Which IoT technology is designed for low power consumption and long battery life?", options: ["Bluetooth Classic", "Zigbee", "Wi-Fi", "Ethernet"], correct: 2 },
+                    { id: 401, question: "Which standard is widely used for smart home IoT devices?", options: ["Zigbee", "Ethernet", "NB-IoT", "FTP"], correct: 1 },
+                    { id: 402, question: "Which IoT network type uses unlicensed spectrum?", options: ["LoRaWAN", "NB-IoT", "LTE-M", "5G"], correct: 1 },
+                    { id: 403, question: "Which IoT protocol works on UDP for constrained devices?", options: ["HTTP", "CoAP", "MQTT", "SMTP"], correct: 2 },
+                    { id: 404, question: "Which of the following is NOT a sensor type?", options: ["Temperature sensor", "Humidity sensor", "Accelerometer", "Router"], correct: 4 },
+                    { id: 405, question: "Which of these IoT devices is wearable?", options: ["Smartwatch", "Smart bulb", "Smart fridge", "Smart speaker"], correct: 1 },
+                    { id: 406, question: "Which company developed Thread protocol for IoT?", options: ["Apple", "Google", "Intel", "Samsung"], correct: 2 },
+                    { id: 407, question: "Which IoT technology is optimized for rural and remote connectivity?", options: ["Bluetooth", "LoRaWAN", "Wi-Fi", "Ethernet"], correct: 2 },
+                    { id: 408, question: "Which IoT architecture layer interacts with end-users?", options: ["Perception", "Network", "Middleware", "Application"], correct: 4 },
+                    { id: 409, question: "Which encryption standard is widely used in IoT for secure communication?", options: ["AES", "MD5", "SHA-1", "CRC"], correct: 1 },
+                    { id: 410, question: "Which of these is a challenge in IoT deployment?", options: ["Scalability", "Security", "Interoperability", "All of the above"], correct: 4 },
+                    { id: 411, question: "Which IoT standard is used for medical devices?", options: ["IEEE 802.15.6", "IEEE 802.11", "Zigbee", "Bluetooth Classic"], correct: 1 },
+                    { id: 412, question: "Which protocol is considered more power-efficient for IoT?", options: ["MQTT", "HTTP", "FTP", "SMTP"], correct: 1 },
+                    { id: 413, question: "What is the role of cloud computing in IoT?", options: ["Data storage and analytics", "Device manufacturing", "Network routing", "Energy management"], correct: 1 },
+                    { id: 414, question: "Which IoT technology is a cellular standard?", options: ["NB-IoT", "LoRaWAN", "Zigbee", "Bluetooth"], correct: 1 },
+                    { id: 415, question: "Which IoT concept refers to billions of devices connected worldwide?", options: ["Scalability", "Ubiquity", "Connectivity", "Massive IoT"], correct: 4 },
+                    { id: 416, question: "Which IoT communication model is most energy-efficient?", options: ["Publish/Subscribe", "Request/Response", "Unicast", "Broadcast"], correct: 1 },
+                    { id: 417, question: "Which IoT protocol is best suited for constrained networks?", options: ["MQTT", "HTTP", "SMTP", "POP3"], correct: 1 },
+                    { id: 418, question: "Which is NOT an IoT protocol?", options: ["CoAP", "MQTT", "SMTP", "Zigbee"], correct: 3 },
+                    { id: 419, question: "Which IoT device is primarily used in agriculture?", options: ["Soil moisture sensor", "Smartwatch", "Smart bulb", "Fitness tracker"], correct: 1 },
+                    { id: 420, question: "Which layer in IoT is closest to physical devices?", options: ["Perception layer", "Network layer", "Middleware layer", "Application layer"], correct: 1 },
+                    { id: 421, question: "Which IoT protocol is based on REST architecture?", options: ["HTTP", "CoAP", "MQTT", "AMQP"], correct: 2 },
+                    { id: 422, question: "What is the main advantage of Zigbee in IoT?", options: ["High speed", "Low power consumption", "Long range", "High bandwidth"], correct: 2 },
+                    { id: 423, question: "Which IoT technology is best for smart meters?", options: ["NB-IoT", "Bluetooth", "Wi-Fi", "Ethernet"], correct: 1 },
+                    { id: 424, question: "Which IoT component ensures interaction with environment?", options: ["Sensor", "Gateway", "Cloud", "Router"], correct: 1 },
+                    { id: 425, question: "Which IoT protocol is widely adopted in smart lighting?", options: ["Zigbee", "SMTP", "FTP", "DNS"], correct: 1 },
+                    { id: 426, question: "Which company developed HomeKit for IoT?", options: ["Apple", "Google", "Amazon", "Microsoft"], correct: 1 },
+                    { id: 427, question: "Which of these IoT devices is used in smart healthcare?", options: ["Heart-rate monitor", "Smart bulb", "Smart lock", "Smart fridge"], correct: 1 },
+                    { id: 428, question: "Which of the following is a middleware platform in IoT?", options: ["Kaa", "CoAP", "Zigbee", "LoRaWAN"], correct: 1 },
+                    { id: 429, question: "Which IoT security risk involves taking control of devices?", options: ["Data theft", "Device hijacking", "Interoperability", "Latency"], correct: 2 },
+                    { id: 430, question: "Which IoT communication protocol runs over TCP/IP?", options: ["MQTT", "Zigbee", "LoRaWAN", "Bluetooth"], correct: 1 },
+                    { id: 431, question: "Which IoT technology provides city-wide connectivity?", options: ["Zigbee", "Wi-Fi", "LoRaWAN", "Bluetooth"], correct: 3 },
+                    { id: 432, question: "Which is the most important feature for wearable IoT devices?", options: ["Battery efficiency", "Data storage", "High speed", "Large screen"], correct: 1 },
+                    { id: 433, question: "Which of the following is NOT a cloud provider for IoT?", options: ["AWS", "Azure", "Google Cloud", "Windows XP"], correct: 4 },
+                    { id: 434, question: "Which protocol is used in IoT for constrained devices using low bandwidth?", options: ["MQTT", "HTTP", "SMTP", "FTP"], correct: 1 },
+                    { id: 435, question: "Which IoT technology works on star topology?", options: ["LoRaWAN", "Bluetooth Mesh", "Zigbee Mesh", "Ethernet"], correct: 1 },
+                    { id: 436, question: "Which IoT communication protocol is message-oriented?", options: ["MQTT", "SMTP", "FTP", "POP3"], correct: 1 },
+                    { id: 437, question: "Which IoT sensor is used for motion detection?", options: ["Accelerometer", "Thermometer", "Hygrometer", "Barometer"], correct: 1 },
+                    { id: 438, question: "Which IoT technology uses ISM bands for connectivity?", options: ["LoRaWAN", "NB-IoT", "Ethernet", "LTE"], correct: 1 },
+                    { id: 439, question: "Which IoT standard is widely used for industrial automation?", options: ["OPC-UA", "SMTP", "HTTP", "POP3"], correct: 1 },
+                    { id: 440, question: "Which of these is an example of smart city IoT application?", options: ["Smart parking", "Smartwatch", "Smart fridge", "Fitness tracker"], correct: 1 },
+                    { id: 441, question: "Which IoT device is mainly used in smart farming?", options: ["Soil sensor", "Smart lock", "Smart bulb", "Smart speaker"], correct: 1 },
+                    { id: 442, question: "Which layer of IoT ensures interoperability?", options: ["Application layer", "Network layer", "Middleware layer", "Perception layer"], correct: 3 },
+                    { id: 443, question: "Which of the following ensures device identity in IoT?", options: ["Authentication", "Encryption", "Hashing", "Routing"], correct: 1 },
+                    { id: 444, question: "Which IoT network technology has high bandwidth but high power usage?", options: ["Wi-Fi", "LoRaWAN", "Bluetooth", "Zigbee"], correct: 1 },
+                    { id: 445, question: "Which IoT communication protocol is based on lightweight binary messaging?", options: ["MQTT-SN", "HTTP", "SMTP", "FTP"], correct: 1 },
+                    { id: 446, question: "Which IoT application is used in healthcare monitoring?", options: ["Remote patient monitoring", "Smart parking", "Smart lighting", "Smart fridge"], correct: 1 },
+                    { id: 447, question: "Which of the following is a low-cost IoT board?", options: ["Arduino", "Mainframe", "Supercomputer", "Server"], correct: 1 },
+                    { id: 448, question: "Which IoT device collects atmospheric pressure?", options: ["Barometer", "Accelerometer", "Thermometer", "Hygrometer"], correct: 1 },
+                    { id: 449, question: "Which IoT technology supports both IPv4 and IPv6?", options: ["6LoWPAN", "Zigbee", "Bluetooth", "LoRaWAN"], correct: 1 },
+                    { id: 450, question: "Which IoT platform is open-source?", options: ["Kaa", "Azure IoT Hub", "AWS IoT", "Google Cloud IoT"], correct: 1 },
+                    { id: 451, question: "Which of the following is a common IoT operating system?", options: ["Windows 10", "Contiki", "MS-DOS", "Ubuntu Server"], correct: 2 },
+                    { id: 452, question: "IoT is primarily driven by advancements in?", options: ["AI", "Sensor technology", "Robotics", "5G"], correct: 2 },
+                    { id: 453, question: "Which protocol is considered lightweight for IoT messaging?", options: ["HTTP", "FTP", "MQTT", "SMTP"], correct: 3 },
+                    { id: 454, question: "Which of these is an IoT application in healthcare?", options: ["Smart Thermostat", "Wearable ECG monitor", "Smart TV", "E-learning"], correct: 2 },
+                    { id: 455, question: "Which communication technology is best for short-range IoT?", options: ["Bluetooth Low Energy", "Satellite", "LoRaWAN", "5G"], correct: 1 },
+                    { id: 456, question: "What does edge computing in IoT aim to reduce?", options: ["Latency", "Battery life", "Network size", "Protocol usage"], correct: 1 },
+                    { id: 457, question: "Which cloud platform is widely used for IoT?", options: ["Dropbox", "AWS IoT Core", "WordPress", "Salesforce"], correct: 2 },
+                    { id: 458, question: "Which IoT communication standard is designed for home automation?", options: ["Zigbee", "Ethernet", "HTTP", "SMTP"], correct: 1 },
+                    { id: 459, question: "Which of the following is NOT an IoT layer?", options: ["Perception layer", "Network layer", "Application layer", "Compilation layer"], correct: 4 },
+                    { id: 460, question: "The term 'Things' in IoT generally refers to?", options: ["Servers", "Connected devices", "Cloud platforms", "Networks"], correct: 2 },
+                    { id: 461, question: "Which wireless technology is known as 'Machine to Machine' communication?", options: ["Bluetooth", "M2M", "Wi-Fi", "NFC"], correct: 2 },
+                    { id: 462, question: "Which IoT protocol is based on publish/subscribe?", options: ["HTTP", "MQTT", "SMTP", "DNS"], correct: 2 },
+                    { id: 463, question: "Which of these enables IoT security?", options: ["Strong encryption", "Open networks", "No authentication", "Shared passwords"], correct: 1 },
+                    { id: 464, question: "Which IoT protocol works over UDP and is designed for resource-constrained devices?", options: ["CoAP", "SMTP", "FTP", "Telnet"], correct: 1 },
+                    { id: 465, question: "What does NB-IoT stand for?", options: ["Network Based IoT", "Narrowband IoT", "New Blockchain IoT", "Network Basic IoT"], correct: 2 },
+                    { id: 466, question: "Which of these is a major challenge in IoT devices?", options: ["Data storage", "Power consumption", "Display quality", "Video rendering"], correct: 2 },
+                    { id: 467, question: "IoT devices are often constrained in?", options: ["Energy, processing, and memory", "Speed, graphics, and UI", "Networking, GUI, and audio", "Color, screen size, and resolution"], correct: 1 },
+                    { id: 468, question: "Which of these is a cloud service for IoT?", options: ["Google Cloud IoT Core", "Adobe Photoshop", "Slack", "Zoom"], correct: 1 },
+                    { id: 469, question: "Which frequency band is commonly used for IoT LPWAN?", options: ["2.4 GHz", "868/915 MHz", "5 GHz", "7 GHz"], correct: 2 },
+                    { id: 470, question: "IoT analytics refers to?", options: ["Analyzing IoT data for insights", "Configuring IoT sensors", "Programming IoT boards", "Testing IoT batteries"], correct: 1 },
+                    { id: 471, question: "Which is an example of wearable IoT?", options: ["Fitbit", "Smart bulb", "Smart refrigerator", "Smart thermostat"], correct: 1 },
+                    { id: 472, question: "IoT is often referred to as the?", options: ["Internet of Servers", "Internet of Things", "Internet of Protocols", "Internet of Clouds"], correct: 2 },
+                    { id: 473, question: "Which wireless protocol is used in smart homes?", options: ["Z-Wave", "SMTP", "FTP", "NTP"], correct: 1 },
+                    { id: 474, question: "IoT is most effective when devices are?", options: ["Interconnected", "Isolated", "Unpowered", "Offline"], correct: 1 },
+                    { id: 475, question: "Which is a security concern in IoT?", options: ["Unauthorized device access", "High-resolution display", "Color contrast", "Video streaming"], correct: 1 },
+                    { id: 476, question: "IoT ecosystems include?", options: ["Devices, gateways, networks, and applications", "Only servers", "Only mobile apps", "Only cloud"], correct: 1 },
+                    { id: 477, question: "Which IoT protocol is used for real-time streaming?", options: ["MQTT", "CoAP", "RTSP", "SMTP"], correct: 3 },
+                    { id: 478, question: "IoT gateways are responsible for?", options: ["Connecting devices to cloud", "Storing offline movies", "Compiling code", "Debugging apps"], correct: 1 },
+                    { id: 479, question: "Which IoT technology is best for smart agriculture?", options: ["LoRaWAN", "Bluetooth", "Wi-Fi", "HDMI"], correct: 1 },
+                    { id: 480, question: "Which of these is an IoT healthcare device?", options: ["Blood glucose monitor", "Smart TV", "Gaming console", "Router"], correct: 1 },
+                    { id: 481, question: "Which IoT protocol works on TCP/IP and supports request/response?", options: ["HTTP", "MQTT", "SMTP", "CoAP"], correct: 1 },
+                    { id: 482, question: "IoT devices usually connect to cloud using?", options: ["Gateways", "Keyboards", "Printers", "Scanners"], correct: 1 },
+                    { id: 483, question: "Which of the following is a benefit of IoT in transportation?", options: ["Traffic management", "Video editing", "Audio mixing", "Movie streaming"], correct: 1 },
+                    { id: 484, question: "Which IoT protocol provides reliable lightweight communication?", options: ["MQTT", "FTP", "DNS", "Telnet"], correct: 1 },
+                    { id: 485, question: "Which IoT use case belongs to smart cities?", options: ["Smart street lighting", "Photo editing", "Video calling", "File sharing"], correct: 1 },
+                    { id: 486, question: "Which of the following is an IoT-enabled industrial system?", options: ["Smart factory", "Gaming console", "Television", "Printer"], correct: 1 },
+                    { id: 487, question: "IoT devices can generate huge amounts of?", options: ["Data", "Games", "Music", "Movies"], correct: 1 },
+                    { id: 488, question: "Which is a challenge in IoT networking?", options: ["Scalability", "Cooking", "Printing", "Typing"], correct: 1 },
+                    { id: 489, question: "Which IoT protocol uses RESTful APIs?", options: ["CoAP", "SMTP", "FTP", "Telnet"], correct: 1 },
+                    { id: 490, question: "Which of these is NOT an IoT protocol?", options: ["MQTT", "CoAP", "SMTP", "DNS"], correct: 3 },
+                    { id: 491, question: "IoT applications in agriculture help in?", options: ["Precision farming", "Music playback", "Movie streaming", "Gaming"], correct: 1 },
+                    { id: 492, question: "Which type of network is used by IoT devices?", options: ["PAN, LAN, WAN", "HDMI", "USB", "VGA"], correct: 1 },
+                    { id: 493, question: "Which of the following is an IoT vulnerability?", options: ["Weak authentication", "High storage", "High graphics", "Large screen"], correct: 1 },
+                    { id: 494, question: "IoT frameworks are used to?", options: ["Develop and manage IoT apps", "Play games", "Stream movies", "Write novels"], correct: 1 },
+                    { id: 495, question: "Which IoT layer processes and analyzes collected data?", options: ["Application layer", "Network layer", "Perception layer", "Data layer"], correct: 1 },
+                    { id: 496, question: "Which wireless standard is widely used in IoT wearable devices?", options: ["Bluetooth Low Energy", "HDMI", "VGA", "Ethernet"], correct: 1 },
+                    { id: 497, question: "IoT in logistics helps in?", options: ["Real-time tracking", "Watching movies", "Gaming", "Emailing"], correct: 1 },
+                    { id: 498, question: "Which IoT concept involves smart machines communicating?", options: ["M2M Communication", "Manual Communication", "Emailing", "Texting"], correct: 1 },
+                    { id: 499, question: "IoT is closely related to which emerging technology?", options: ["Artificial Intelligence", "Typewriters", "Floppy disks", "CRT monitors"], correct: 1 },
+                    { id: 500, question: "Which IoT application belongs to smart homes?", options: ["Smart thermostat", "Word processor", "Photo editor", "Antivirus"], correct: 1 }
+
+                ]
+
+            }
+        }
+    },
+
     "General Awareness / Reasoning (If Included)": {
         color: "#22C55E",
         subtopics: {
