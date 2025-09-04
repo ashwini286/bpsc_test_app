@@ -4,12 +4,15 @@ const QuestionCard = ({
   onAnswerSelect,
   onNext,
   onBackToTopics,
-  isLastQuestion
+  isLastQuestion,
+  onSkip,  
+  onClearResponse
 }) => {
   console.log("QuestionCard rendered with question:", question);
   console.log("QuestionCard rendered with selectedAnswer:", selectedAnswer);
+  
   return (
-    <div className="bg-white rounded-3 shadow p-4">
+     <div className="bg-white rounded-3 shadow p-4">
       <div className="mb-4">
         <h3 className="h5 fw-semibold text-dark mb-4">{question.question}</h3>
 
@@ -25,9 +28,6 @@ const QuestionCard = ({
                     ? "border-primary bg-primary-subtle text-primary fw-medium"
                     : "border-secondary-subtle bg-light"
                 }`}
-                style={{
-                  transition: "all 0.2s ease"
-                }}
               >
                 <div className="d-flex align-items-center">
                   <div
@@ -67,20 +67,39 @@ const QuestionCard = ({
         >
           Back to Topics
         </button>
-        <button
-          onClick={onNext}
-          disabled={selectedAnswer === undefined}
-          className={`btn px-4 py-2 fw-semibold ${
-            selectedAnswer !== undefined
-              ? "btn-primary"
-              : "btn-secondary disabled"
-          }`}
-        >
-          {isLastQuestion ? "Finish Test" : "Next Question"}
-        </button>
+
+        <div className="d-flex gap-2">
+          {/* ✅ Clear Response Button */}
+          <button
+            onClick={onClearResponse}
+            disabled={selectedAnswer === undefined}
+            className="btn btn-warning px-4 py-2 fw-semibold"
+          >
+            Clear Response
+          </button>
+
+          {/* ✅ Skip button */}
+          <button
+            onClick={onSkip}
+            className="btn btn-outline-secondary px-4 py-2 fw-semibold"
+          >
+            Skip
+          </button>
+
+          <button
+            onClick={onNext}
+            disabled={selectedAnswer === undefined}
+            className={`btn px-4 py-2 fw-semibold ${
+              selectedAnswer !== undefined
+                ? "btn-primary"
+                : "btn-secondary disabled"
+            }`}
+          >
+            {isLastQuestion ? "Finish Test" : "Next Question"}
+          </button>
+        </div>
       </div>
     </div>
   );
 };
-
 export default QuestionCard;

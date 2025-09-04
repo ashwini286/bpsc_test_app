@@ -17,7 +17,9 @@ const TestInterface = ({
   onNextQuestion,
   onPause,
   onEndTest,
+  onSkip,
   onBackToTopics,
+  onClearResponse
 }) => {
   const currentQ = questions[currentQuestion];
 
@@ -52,7 +54,9 @@ const TestInterface = ({
             selectedAnswer={answers[currentQuestion]}
             onAnswerSelect={onAnswerSelect}
             onNext={onNextQuestion}
+            onSkip={onSkip}
             onBackToTopics={onBackToTopics}
+            onClearResponse={onClearResponse}
             isLastQuestion={currentQuestion === questions.length - 1}
           />
         )}

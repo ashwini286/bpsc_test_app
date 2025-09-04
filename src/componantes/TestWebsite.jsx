@@ -94,6 +94,15 @@ const TestWebsite = () => {
     setIsPaused(!isPaused);
   };
 
+  const clearResponse = () => {
+  setAnswers(prev => {
+    const newAnswers = { ...prev };
+    delete newAnswers[currentQuestion]; // ❌ remove the current answer
+    return newAnswers;
+  });
+};
+
+
   // Navigation back to chapters
   const goBackToChapters = () => {
     setCurrentView('chapters');
@@ -161,6 +170,8 @@ const TestWebsite = () => {
         timeElapsed={timeElapsed}
         onAnswerSelect={handleAnswer}
         onNextQuestion={nextQuestion}
+        onSkip={nextQuestion} 
+        onClearResponse={clearResponse}
         onPause={pauseTest}
         onEndTest={endTest}
         onBackToTopics={goBackToSubtopics}
