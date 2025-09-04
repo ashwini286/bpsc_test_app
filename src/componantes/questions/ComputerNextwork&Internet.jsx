@@ -1,4 +1,4 @@
-const computerNextwork = {
+const ComputerNextworkANDInternet = {
 
         color: "#F97316",
         subtopics: {
@@ -557,4 +557,4 @@ const computerNextwork = {
     
 };
 
-export default computerNextwork;
+export default ComputerNextworkANDInternet;

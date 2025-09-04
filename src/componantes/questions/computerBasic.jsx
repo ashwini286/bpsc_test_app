@@ -1,4 +1,4 @@
-const computerBasic = {
+const ComputerBasic = {
         color: "#d643e2",
         subtopics: {
             "Characteristics and applications of computers; generations overview": {
@@ -5865,4 +5865,4 @@ const computerBasic = {
         },
    
 }
-export default computerBasic;
+export default ComputerBasic;
