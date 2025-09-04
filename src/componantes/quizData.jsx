@@ -1,12 +1,12 @@
-import computerBasics from "./questions/ComputerBasic"
-import computerNextwork from "./questions/ComputerNextwork&Internet";
+import ComputerNextwork from "./questions/ComputerNextwork&Internet";
+import ComputerBasics from "./questions/ComputerBasic";
 import AI from "./questions/AI";
 import Multimedia from "./questions/MultiMedia";
 import IOT from "./questions/IOT";
 import OperatingSystem from "./questions/OperatingSystem"
 import MS_Office from "./questions/MS_Office";
 import TOC from "./questions/TOC";
-import NunberSystemAndDigitalLogic from "./questions/NumberSystem&DigitalLogic";
+import NumberSystemAndDigitalLogic from "./questions/NumberSystem&DigitalLogic";
 import DBMS from "./questions/DBMS";
 import ProgrammingFundamentalsAndOOP from "./questions/ProgrammingFudamentals&Oops";
 import DataStructures from "./questions/DS";
@@ -16,11 +16,11 @@ import CyberSecurityAndEthics from "./questions/CyberSecurity&Ethics";
 import FundmentailOfECommerce from "./questions/E_Commerce";
 
 const chapters = {
-    "Computer Basics & Hardware": computerBasics,
-    "Number Systems & Digital Logic": NunberSystemAndDigitalLogic,
+    "Computer Basics & Hardware": ComputerBasics,
+    "Number Systems & Digital Logic": NumberSystemAndDigitalLogic,
     "Operating Systems": OperatingSystem,
     "Database Management System (DBMS)": DBMS,
-    "Computer Networks & Internet": computerNextwork,
+    "Computer Networks & Internet": ComputerNextwork,
     "Programming Fundamentals & OOP": ProgrammingFundamentalsAndOOP,
     "Data Structures": DataStructures,
     "Web Technologies": WebTechnologies,
