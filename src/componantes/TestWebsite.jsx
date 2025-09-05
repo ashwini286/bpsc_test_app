@@ -108,6 +108,13 @@ useEffect(() => {
   });
 };
 
+// on previous question
+  const onPrevQuestion = () => {
+  if (currentQuestion > 0) {
+    setCurrentQuestion(prev => prev - 1);
+  }
+};
+
 
   // Navigation back to chapters
   const goBackToChapters = () => {
@@ -174,6 +181,7 @@ useEffect(() => {
         testCompleted={testCompleted}
         results={results}
         timeElapsed={timeElapsed}
+        onPrev={onPrevQuestion}
         onAnswerSelect={handleAnswer}
         onNextQuestion={nextQuestion}
         onSkip={nextQuestion} 
