@@ -26,6 +26,12 @@ const TestWebsite = () => {
     return () => clearInterval(interval);
   }, [currentView, isPaused, testCompleted]);
 
+useEffect(() => {
+  // scroll to top when the view changes
+  window.scrollTo(0, 0);
+}, [currentView, currentQuestion]);
+
+
   // Navigate to subtopics
   const goToSubtopics = (chapterName) => {
     setSelectedChapter(chapterName);
