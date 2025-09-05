@@ -1,5 +1,5 @@
 import ComputerNextwork from "./questions/ComputerNextworkANDInternet";
-import ComputerBasics from "./questions/ComputerBasic.jsx";
+import ComputerBasics from "./questions/computerBasic.jsx";
 import AI from "./questions/AI";
 import Multimedia from "./questions/MultiMedia";
 import IOT from "./questions/IOT";
