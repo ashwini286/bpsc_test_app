@@ -11,13 +11,42 @@ const TopicsGrid = ({ topics, onStartTest }) => {
       <div className="container">
         {/* Title Section */}
         <div className="text-center mb-5">
-          <h1 className="fw-bold mb-3" style={{ fontSize: "2.5rem", color: "#1f2937" }}>
-           Online MCQ Test Portal for BPSC & STET
+          <h1
+            className="fw-bold mb-3"
+            style={{
+              fontSize: "2.8rem",
+              color: "#1f2937",
+              background: "linear-gradient(90deg, #2563eb, #9333ea)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Online MCQ Test Portal for BPSC & STET
           </h1>
-          <p className="fs-5" style={{ color: "#4b5563" }}>
-           Challenge yourself, track progress, and prepare smarter with 500+ questions.
+
+          <p
+            className="fs-5 mt-3"
+            style={{
+              color: "#374151",
+              fontWeight: "500",
+              maxWidth: "600px",
+              margin: "0 auto",
+            }}
+          >
+            Each topic includes <span style={{ color: "#2563eb", fontWeight: "600" }}>500+</span> MCQ questions —
+            challenge yourself, track progress, and prepare smarter.
           </p>
+
+          <div className="mt-4">
+            <button
+              className="btn btn-primary px-4 py-2 fw-semibold shadow-sm"
+              style={{ borderRadius: "12px" }}
+            >
+              🚀 Start Your Preparation
+            </button>
+          </div>
         </div>
+
 
         {/* Grid Section */}
         <div className="row g-4">
