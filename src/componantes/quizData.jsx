@@ -14,6 +14,7 @@ import WebTechnologies from "./questions/WebTechnology";
 import SoftwareEngineering from "./questions/SoftwareEnginnering";
 import CyberSecurityAndEthics from "./questions/CyberSecurityANDEthics";
 import FundmentailOfECommerce from "./questions/E_Commerce";
+import ComputerArchitecture from "./questions/ComputerArchitecture";
 
 const chapters = {
     "Computer Basics & Hardware": ComputerBasics,
@@ -21,6 +22,7 @@ const chapters = {
     "Operating Systems": OperatingSystem,
     "Database Management System (DBMS)": DBMS,
     "Computer Networks & Internet": ComputerNextwork,
+    "Computer Architecture": ComputerArchitecture,
     "Programming Fundamentals & OOP": ProgrammingFundamentalsAndOOP,
     "Data Structures": DataStructures,
     "Web Technologies": WebTechnologies,
