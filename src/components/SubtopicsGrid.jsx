@@ -1,6 +1,4 @@
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 const SubtopicsGrid = ({ chapterName, subtopics, onStartTest, onBack }) => {
 
     return (
