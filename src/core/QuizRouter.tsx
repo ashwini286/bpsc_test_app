@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect } from 'react';
-import { useNavigation, useQuiz, useTimer } from '../hooks';
+import { Routes, Route, useNavigate, useParams, Navigate } from 'react-router-dom';
+import { useQuiz, useTimer } from '../hooks';
 import { useQuizStore } from '../stores';
 import TopicsGrid from '../components/TopicsGrid';
 import SubtopicsGrid from '../components/SubtopicsGrid';
@@ -7,69 +8,19 @@ import TestInterface from '../components/TestInterface';
 import chapters from '../components/quizData';
 
 const QuizRouter: React.FC = () => {
-  const { currentView, goToSubtopics, goToTest, goToChapters } = useNavigation();
-  const { 
-    selectedChapter, 
-    selectedTopic,
-    questions,
-    currentQuestion,
-    answers,
-    isPaused,
-    testCompleted,
-    results,
-    setPaused,
-    setQuestions,
-    resetQuiz
-  } = useQuizStore();
-  const { start, pause, reset: resetTimer, timeElapsed: timerElapsed } = useTimer();
-  const quiz = useQuiz();
+  return (
+    <Routes>
+      <Route path="/" element={<ChaptersView />} />
+      <Route path="/chapter/:chapterName" element={<SubtopicsView />} />
+      <Route path="/test/:chapterName/:topicName" element={<TestView />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  );
+};
 
-  // Load questions when test starts
-  useEffect(() => {
-    if (currentView === 'test' && selectedChapter && selectedTopic) {
-      const chapterData = (chapters as any)[selectedChapter];
-      if (chapterData && chapterData.subtopics[selectedTopic]) {
-        const questionsData = chapterData.subtopics[selectedTopic].questions;
-        setQuestions(questionsData);
-      }
-    }
-  }, [currentView, selectedChapter, selectedTopic, setQuestions]);
-
-  // Handle navigation to subtopics
-  const handleGoToSubtopics = useCallback((chapterName: string) => {
-    goToSubtopics(chapterName);
-  }, [goToSubtopics]);
-
-  // Handle starting a test
-  const handleStartTest = useCallback((topicName: string) => {
-    goToTest(topicName);
-    // Start timer when test begins
-    start();
-  }, [goToTest, start]);
-
-  // Handle pause/resume
-  const handlePause = useCallback(() => {
-    if (isPaused) {
-      start();
-    } else {
-      pause();
-    }
-    setPaused(!isPaused);
-  }, [isPaused, start, pause, setPaused]);
-
-  // Handle back to chapters
-  const handleBackToChapters = useCallback(() => {
-    resetQuiz();
-    resetTimer();
-    goToChapters();
-  }, [resetQuiz, resetTimer, goToChapters]);
-
-  // Handle back to subtopics
-  const handleBackToSubtopics = useCallback(() => {
-    resetQuiz();
-    resetTimer();
-    goToSubtopics(selectedChapter);
-  }, [resetQuiz, resetTimer, goToSubtopics, selectedChapter]);
+// Chapters View Component
+const ChaptersView: React.FC = () => {
+  const navigate = useNavigate();
 
   // Prepare topics data for chapters view
   const chaptersData = Object.keys(chapters).reduce((acc, chapterName) => {
@@ -81,71 +32,144 @@ const QuizRouter: React.FC = () => {
     return acc;
   }, {} as Record<string, { color: string; questions: any[] }>);
 
-  // Render appropriate view based on current state
-  if (currentView === 'chapters') {
-    return (
-      <TopicsGrid
-        topics={chaptersData}
-        onStartTest={handleGoToSubtopics}
-      />
-    );
+  const handleGoToSubtopics = useCallback((chapterName: string) => {
+    navigate(`/chapter/${encodeURIComponent(chapterName)}`);
+  }, [navigate]);
+
+  return (
+    <TopicsGrid
+      topics={chaptersData}
+      onStartTest={handleGoToSubtopics}
+    />
+  );
+};
+
+// Subtopics View Component
+const SubtopicsView: React.FC = () => {
+  const navigate = useNavigate();
+  const { chapterName } = useParams<{ chapterName: string }>();
+  const decodedChapterName = chapterName ? decodeURIComponent(chapterName) : '';
+
+  const handleStartTest = useCallback((topicName: string) => {
+    navigate(`/test/${encodeURIComponent(decodedChapterName)}/${encodeURIComponent(topicName)}`);
+  }, [navigate, decodedChapterName]);
+
+  const handleBackToChapters = useCallback(() => {
+    navigate('/');
+  }, [navigate]);
+
+  const chapterData = (chapters as any)[decodedChapterName];
+
+  // If chapter doesn't exist, redirect to home
+  if (!chapterData) {
+    return <Navigate to="/" replace />;
   }
 
-  if (currentView === 'subtopics') {
-    const chapterData = (chapters as any)[selectedChapter];
-    if (!chapterData) {
-      return <div>Chapter not found</div>;
+  return (
+    <SubtopicsGrid
+      chapterName={decodedChapterName}
+      subtopics={chapterData.subtopics}
+      onStartTest={handleStartTest}
+      onBack={handleBackToChapters}
+    />
+  );
+};
+
+// Test View Component
+const TestView: React.FC = () => {
+  const navigate = useNavigate();
+  const { chapterName, topicName } = useParams<{ chapterName: string; topicName: string }>();
+  const decodedChapterName = chapterName ? decodeURIComponent(chapterName) : '';
+  const decodedTopicName = topicName ? decodeURIComponent(topicName) : '';
+
+  const {
+    questions,
+    currentQuestion,
+    answers,
+    isPaused,
+    testCompleted,
+    results,
+    setPaused,
+    setQuestions,
+    resetQuiz
+  } = useQuizStore();
+
+  const { start, pause, reset: resetTimer, timeElapsed: timerElapsed } = useTimer();
+  const quiz = useQuiz();
+
+  // Handle pause/resume
+  const handlePause = useCallback(() => {
+    if (isPaused) {
+      start();
+    } else {
+      pause();
     }
+    setPaused(!isPaused);
+  }, [isPaused, start, pause, setPaused]);
 
-    return (
-      <SubtopicsGrid
-        chapterName={selectedChapter}
-        subtopics={chapterData.subtopics}
-        onStartTest={handleStartTest}
-        onBack={handleBackToChapters}
-      />
-    );
+  // Handle back to subtopics
+  const handleBackToSubtopics = useCallback(() => {
+    resetQuiz();
+    resetTimer();
+    navigate(`/chapter/${encodeURIComponent(decodedChapterName)}`);
+  }, [resetQuiz, resetTimer, navigate, decodedChapterName]);
+
+  // Load questions when component mounts or when chapter/topic changes
+  useEffect(() => {
+    const chapterData = (chapters as any)[decodedChapterName];
+    if (chapterData && chapterData.subtopics[decodedTopicName]) {
+      const questionsData = chapterData.subtopics[decodedTopicName].questions;
+      setQuestions(questionsData);
+      // Start timer when test begins
+      start();
+    } else {
+      // Invalid chapter/topic combination, redirect to home
+      navigate('/', { replace: true });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [decodedChapterName, decodedTopicName]); // Only depend on the route parameters
+
+  // If no valid chapter/topic, redirect
+  const chapterData = (chapters as any)[decodedChapterName];
+  if (!chapterData || !chapterData.subtopics[decodedTopicName]) {
+    return <Navigate to="/" replace />;
   }
 
-  if (currentView === 'test') {
-    // Show loading while questions are being loaded
-    if (!questions || questions.length === 0) {
-      return (
-        <div className="min-vh-100 d-flex align-items-center justify-content-center" style={{ background: 'linear-gradient(to bottom right, #eff6ff, #e0e7ff)' }}>
-          <div className="text-center">
-            <div className="spinner-border text-primary mb-3" role="status" style={{ width: '3rem', height: '3rem' }}>
-              <span className="visually-hidden">Loading...</span>
-            </div>
-            <h4 className="text-dark">Loading Questions...</h4>
-            <p className="text-muted">Please wait while we prepare your test</p>
+  // Show loading while questions are being loaded
+  if (!questions || questions.length === 0) {
+    return (
+      <div className="min-vh-100 d-flex align-items-center justify-content-center" style={{ background: 'linear-gradient(to bottom right, #eff6ff, #e0e7ff)' }}>
+        <div className="text-center">
+          <div className="spinner-border text-primary mb-3" role="status" style={{ width: '3rem', height: '3rem' }}>
+            <span className="visually-hidden">Loading...</span>
           </div>
+          <h4 className="text-dark">Loading Questions...</h4>
+          <p className="text-muted">Please wait while we prepare your test</p>
         </div>
-      );
-    }
-
-    return (
-      <TestInterface
-        selectedTopic={selectedTopic}
-        questions={questions}
-        currentQuestion={currentQuestion}
-        answers={answers}
-        isPaused={isPaused}
-        testCompleted={testCompleted}
-        results={results}
-        timeElapsed={timerElapsed}
-        onPrev={quiz.previousQuestion}
-        onAnswerSelect={(index: number) => quiz.submitAnswer(index)}
-        onNextQuestion={quiz.nextQuestion}
-        onSkip={quiz.nextQuestion}
-        onClearResponse={quiz.clearCurrentAnswer}
-        onPause={handlePause}
-        onEndTest={quiz.endQuiz}
-        onBackToTopics={handleBackToSubtopics}
-      />
+      </div>
     );
   }
 
-  return null;
+  return (
+    <TestInterface
+      selectedTopic={decodedTopicName}
+      questions={questions}
+      currentQuestion={currentQuestion}
+      answers={answers}
+      isPaused={isPaused}
+      testCompleted={testCompleted}
+      results={results}
+      timeElapsed={timerElapsed}
+      onPrev={quiz.previousQuestion}
+      onAnswerSelect={(index: number) => quiz.submitAnswer(index)}
+      onNextQuestion={quiz.nextQuestion}
+      onSkip={quiz.nextQuestion}
+      onClearResponse={quiz.clearCurrentAnswer}
+      onPause={handlePause}
+      onEndTest={quiz.endQuiz}
+      onBackToTopics={handleBackToSubtopics}
+    />
+  );
 };
 
 export default QuizRouter;

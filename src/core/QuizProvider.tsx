@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useNavigation } from '../hooks';
+import { useLocation } from 'react-router-dom';
 import { useQuizStore } from '../stores';
 
 interface QuizProviderProps {
@@ -7,13 +7,13 @@ interface QuizProviderProps {
 }
 
 export const QuizProvider: React.FC<QuizProviderProps> = ({ children }) => {
-  // Auto-scroll to top on navigation changes
-  const { currentView } = useNavigation();
+  const location = useLocation();
   const { currentQuestion } = useQuizStore();
 
+  // Auto-scroll to top on route changes and question changes
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [currentView, currentQuestion]);
+  }, [location.pathname, currentQuestion]);
 
   return <>{children}</>;
 };
